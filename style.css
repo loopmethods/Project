@@ -735,7 +735,7 @@ border-top-color: #acacac;
     font-size: 18px;
     height:90px;
     line-height: 20px;
-    padding:5px 9px 5px 15px;
+    padding:5px 9px 5px 6px;
 }
 .wrong_password{
 	color:#fff;
@@ -1420,7 +1420,7 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 20px;
   color: #777777;
-  padding-left:6px !important;
+  padding-left:10px !important;
 }
 .favourate_bg {
   width: 100%;
