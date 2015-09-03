@@ -11,6 +11,7 @@
 
 }
 
+
 .pageh
 {
 background-color:#000;
@@ -60,6 +61,7 @@ height:35px;
 }
 .logo {
     margin-top:50px;
+
 }
 
 
@@ -135,8 +137,9 @@ height:35px;
 {
 	color: #000000;
 	width:91%;
-	background-color:#FFCC00;
-	font-size:18px;
+	background-color:#f08300;
+	font-size:20px;
+	font-weight:bold;
 	border-radius:5px;
 	text-shadow:none;
 	font-family:"Palatino Linotype";
