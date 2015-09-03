@@ -105,7 +105,7 @@ height:35px;
 {
 	margin-top:35px;
 	margin-bottom:10px;
-	color: #FFF;
+	color: #333;
 	font-size:15px;
 	width:96%;
 	font-family:"Open Sans";
@@ -149,7 +149,7 @@ height:35px;
 	margin:0px auto 0px auto;
 	padding:7px 0px 0px 0px;
 	bottom:15px;
-	height:35px;
+	height:40px;
 	
 }
 .text_area{
@@ -469,7 +469,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 
 .settings_app
 {
-	margin-top:50px;
+	margin-top:28px;
 	padding-bottom:10px;
 	color: #333;
 	font-size:22px;
@@ -493,23 +493,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 .settings_taxisecu{
 	width:100%;
 	height:auto;
-	padding:0px 0px 0px 0px;
+	padding:0px 0px 225px 0px;
     margin: 0 auto 0 auto;
+	width:100%;
+	 overflow:hidden;
+	
+	 padding-right:0px;
+    z-index:99;
+    top:20px; bottom:84px; left:0px;
+	
 	}
 	
 .settings_taxisecu_lt{
 	width:17%;
-	height:50px;
+	height:45px;
 	padding:10px 0px 10px 15px;
 	 margin: 0 auto 0 auto;
 	float:left;
     line-height:22px;
 	border-bottom:1px solid #acacac;
 	color:#333;
+	
 }
 .settings_taxisecu_rt{
 	width:83%;
-	height:50px;
+	height:45px;
 	padding:10px 0px 10px 5px;
     margin: 0 auto 0 auto;
 	float:left;
@@ -518,12 +526,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 	color:#fff;
 }
 .ui-body-c .ui-link {
-  color: #333 !important;
+  color: #000;
   font-weight: normal;
- font-family:"Palatino Linotype";
+ font-family:Calibri;
   text-decoration: none;
-  font-size: 15px !important;
+  font-size: 17px !important;
 }
+
+
 
 .riding_history_main {
 width:100%;
@@ -533,7 +543,6 @@ width:100%;
     z-index:1;
     top:0px; bottom:86px; left:0;
     width:100%;
-    background:#aaa;
     overflow:auto;
 	
 	}
@@ -1444,11 +1453,11 @@ color: #FFFFFF;
   float: left;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 7px !important;
+  padding-right: 5px !important;
   font-size: 18px;
   line-height: 20px;
   color: #777777;
-  padding-left:10px !important;
+  padding-left:3px !important;
 }
 .favourate_bg {
   width: 100%;
@@ -1475,7 +1484,7 @@ color: #FFFFFF;
 }
 .settings_app
 {
-	margin-top:50px;
+	margin-top:28px;
 	color: #000 !important;
 	font-size:20px;
 	text-align:center;
@@ -1485,6 +1494,22 @@ color: #FFFFFF;
 }
 
 }
+
+
+@media only screen and (max-width: 330px) {
+
+.navbar-brand {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 5px !important;
+  font-size: 18px;
+  line-height: 20px;
+  color: #777777;
+  padding-left:5px !important;
+}
+}
+
 
 @media only screen and (max-width: 240px) {
 	
@@ -2022,3 +2047,22 @@ height:50px !important;
 }
 
 
+.press-release, .press-release-bottom, .press-release-top {
+    background: #eee none repeat scroll 0 0;
+    border-left: 3px solid #fff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: all 0.6s ease 0s;
+}
+.press-release:hover {
+    background: #fff none repeat scroll 0 0;
+    border-left: 3px solid #f9c400;
+	box-shadow:0px 0px 2px 0px #666;
+}
+
+.press-release p.lead-font {
+  font-size: 18px;
+  margin-bottom: 0;
+  text-align:justify;
+  font-family:Calibri;
+}
