@@ -135,7 +135,7 @@ height:35px;
 }
 .contant_home
 {
-	color: #000000;
+	color: #fff;
 	width:91%;
 	background-color:#f08300;
 	font-size:20px;
@@ -2048,16 +2048,18 @@ height:50px !important;
 
 
 .press-release, .press-release-bottom, .press-release-top {
-    background: #eee none repeat scroll 0 0;
-    border-left: 3px solid #fff;
+    background: #fff none repeat scroll 0 0;
     margin-bottom: 10px;
     padding: 15px 20px;
     transition: all 0.6s ease 0s;
+	  border-bottom: 3px solid #f88000;
+box-shadow:0px 0px 3px 0px #666;
 }
 .press-release:hover {
     background: #fff none repeat scroll 0 0;
-    border-left: 3px solid #f9c400;
-	box-shadow:0px 0px 2px 0px #666;
+    border-bottom: 3px solid #f9c400;
+	box-shadow:0px 0px 3px 0px #666;
+	  transition: all 0.6s ease 0s;
 }
 
 .press-release p.lead-font {
@@ -2065,4 +2067,11 @@ height:50px !important;
   margin-bottom: 0;
   text-align:justify;
   font-family:Calibri;
+}
+
+.press-release-bottom {
+  border-bottom: 3px solid #f88000;
+  border-left: 0px solid #FFF;
+  margin-bottom: 0;
+  background: #FFF;
 }
