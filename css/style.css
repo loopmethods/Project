@@ -22,6 +22,7 @@ width:100%;
 text-align:center;
 
 height:35px;
+z-index:9999;
 
 }
 .pageh_left
@@ -499,8 +500,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 	 overflow:hidden;
 	
 	 padding-right:0px;
-    z-index:99;
-    top:20px; bottom:84px; left:0px;
+    z-index:10;
+    top:35px; bottom:84px; left:0px;
+	
+	}
+	
+	
+	.settings_photo{
+	width:100%;
+	height:auto;
+	padding:0px 0px 50px 0px;
+    margin: 0 auto 0 auto;
+	 overflow:auto;
+	 padding-right:0px;
+	
 	
 	}
 	
