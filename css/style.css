@@ -10,7 +10,7 @@
     font-style: normal;
 
 }
-
+.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page{top:0;left:0;width:100%;height:100%;position:absolute;display:none;border:0; background-color:#fff;}.ui-mobile .ui-page-active{display:block;overflow:visible}
 
 .pageh
 {
@@ -539,7 +539,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 width:100%;
 	background-color:#FFF;
     margin:32px auto 0 auto;
-    position:absolute; 
+
     z-index:1;
     top:0px; bottom:86px; left:0;
     width:100%;
