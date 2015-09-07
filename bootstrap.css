@@ -372,6 +372,9 @@ hr {
 
 p {
   margin: 0 0 0px;
+  text-align: justify;
+  padding: 5px;
+  font-size: 13px;
 }
 
 .lead {
