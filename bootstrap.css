@@ -3241,12 +3241,12 @@ button.close {
 
 .navbar-brand {
   float: left;
-  padding: 6px 6px 0;
+  padding: 2px 6px 0;
   padding-bottom: 0px;
-  padding-right:3px;
+  padding-right:24px;
   font-size: 18px;
   line-height: 20px;
-  padding-left:10px;
+  padding-left:24px;
   color: #777777;
 }
 

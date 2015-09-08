@@ -20,7 +20,6 @@ padding:0px 0px 0px 0px;
 position:fixed;
 width:100%;
 text-align:center;
-
 height:35px;
 z-index:9999;
 
@@ -46,7 +45,6 @@ float:left;
 color:#fff;
 font-size:18px;
 font-family:Calibri;
-
 height:35px;
 }
 
@@ -65,7 +63,6 @@ height:35px;
 
 }
 
-
 .welcome
 {
 	margin-top:20px;
@@ -74,9 +71,7 @@ height:35px;
 	text-align:center;
 	width:100%;
 	font-family:"Palatino Linotype";
-	
-	
-	
+		
 }
 .welcome_one
 {
@@ -86,7 +81,7 @@ height:35px;
 	font-style:italic;
 	text-align:center;
 	width:100%;
-	font-family:"Palatino Linotype";
+	font-family: 'Roboto', sans-serif;
 	
 	
 }
@@ -98,7 +93,7 @@ height:35px;
 	font-size:16px;
 	text-align:center;
 	width:100%;
-	font-family:"Palatino Linotype";
+	font-family:'Roboto', sans-serif;
 	
 }
 
@@ -109,8 +104,8 @@ height:35px;
 	color: #333;
 	font-size:15px;
 	width:96%;
-	font-family:"Open Sans";
-	line-height:22px;
+	font-family: 'Roboto', sans-serif;
+	line-height:30px;
 	text-align:justify;
 	 overflow:auto;
 	 position:absolute;
@@ -127,8 +122,8 @@ height:35px;
 	color: #FFF;
 	font-size:15px;
 	width:100%;
-	font-family:"Open Sans";
-	line-height:22px;
+	font-family: 'Roboto', sans-serif;
+	line-height:30px;
 	text-align:justify;
 	color:#333;
 
@@ -143,7 +138,7 @@ height:35px;
 	font-weight:bold;
 	border-radius:5px;
 	text-shadow:none;
-	font-family:"Palatino Linotype";
+	font-family: 'Roboto', sans-serif;
 	cursor:pointer;
 	padding:8px;
 	position:fixed;
@@ -170,7 +165,7 @@ clear:both;
 	font-size:18px;
 	border-radius:5px;
 	text-shadow:none;
-	font-family:"Palatino Linotype";
+	font-family: 'Roboto', sans-serif;
 	cursor:pointer;
 	margin-top:15px;
 	
@@ -184,7 +179,7 @@ clear:both;
 	font-size:18px;
 	border-radius:5px;
 	text-shadow:none;
-	font-family:"Palatino Linotype";
+	font-family: 'Roboto', sans-serif;
 	cursor:pointer;
 	
 }
@@ -211,7 +206,7 @@ clear:both;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height: 90px;
+  height: 70px;
   line-height: 20px;
   padding: 0px 10px 0px 0px;
 }
@@ -274,7 +269,7 @@ clear:both;
 		padding:0px 0px 0px 0px;
 		float:left; font-weight:bold;
 		font-size:16px;
-		font-family:"Open Sans";
+		font-family: 'Roboto', sans-serif;
 	
 }
 
@@ -311,7 +306,7 @@ clear:both;
 		padding:0px 0px 0px 0px;
 		float:left; font-weight:bold;
 		font-size:14px;
-		font-family:"Open Sans";
+		font-family: 'Roboto', sans-serif;
 		
 
 }
@@ -498,8 +493,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
     margin: 0 auto 0 auto;
 	width:100%;
 	 overflow:hidden;
-	
-	 padding-right:0px;
+	 background-color:#fff;
+    padding-right:0px;
     z-index:10;
     top:35px; bottom:84px; left:0px;
 	
@@ -524,7 +519,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 	 margin: 0 auto 0 auto;
 	float:left;
     line-height:22px;
-	border-bottom:1px solid #acacac;
+	border-bottom:1px solid #f88000;
 	color:#333;
 	
 }
@@ -535,7 +530,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
     margin: 0 auto 0 auto;
 	float:left;
 	line-height:22px;
-	border-bottom:1px solid #acacac;
+	border-bottom:1px solid #f88000;
 	color:#fff;
 }
 .ui-body-c .ui-link {
@@ -543,7 +538,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
   font-weight: normal;
  font-family:Calibri;
   text-decoration: none;
-  font-size: 17px !important;
+  font-size: 15px !important;
+   font-family: "Roboto",sans-serif;
 }
 
 
@@ -551,7 +547,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 .riding_history_main {
 width:100%;
 	background-color:#FFF;
-    margin:32px auto 0 auto;
+    margin:45px auto 12px auto;
 
     z-index:1;
     top:0px; bottom:86px; left:0;
@@ -717,7 +713,7 @@ border-top-color: #acacac;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height: 90px;
+  height:70px;
   line-height: 20px;
   padding: 0px 10px 0px 0px;
 }
@@ -783,7 +779,7 @@ border-top-color: #acacac;
 .navbar-brand {
     float: left;
     font-size: 18px;
-    height:90px;
+    height:70px;
     line-height: 20px;
     padding:5px 9px 5px 6px;
 }
@@ -991,7 +987,7 @@ color: #FFFFFF;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height: 90px;
+  height:70px;
   line-height: 20px;
   padding: 5px 9px 5px 8px;
 }
@@ -1015,7 +1011,7 @@ color: #FFFFFF;
 	.navbar-brand {
   float: left;
   font-size: 18px;
-  height: 90px;
+  height: 70px;
   line-height: 20px;
   padding: 5px 9px 5px 15px;
 }
@@ -1026,7 +1022,7 @@ color: #FFFFFF;
 	.navbar-brand {
   float: left;
   font-size: 18px;
-  height: 90px;
+  height:70px;
   line-height: 20px;
   padding: 5px 9px 5px 8px;
 }
@@ -2061,25 +2057,25 @@ height:50px !important;
 
 
 .press-release, .press-release-bottom, .press-release-top {
-    background: #fff none repeat scroll 0 0;
-    margin-bottom: 10px;
+    background: #EEE none repeat scroll 0 0;
+    margin-bottom: 0px;
     padding: 15px 20px;
     transition: all 0.6s ease 0s;
 	  border-bottom: 3px solid #f88000;
-box-shadow:0px 0px 3px 0px #666;
+
 }
 .press-release:hover {
     background: #fff none repeat scroll 0 0;
     border-bottom: 3px solid #f9c400;
-	box-shadow:0px 0px 3px 0px #666;
+ 
 	  transition: all 0.6s ease 0s;
 }
 
 .press-release p.lead-font {
-  font-size: 18px;
+  font-size: 15.5px;
   margin-bottom: 0;
   text-align:justify;
-  font-family:Calibri;
+ 	font-family: 'Roboto', sans-serif;
 }
 
 .press-release-bottom {
