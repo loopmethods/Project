@@ -3243,10 +3243,10 @@ button.close {
   float: left;
   padding: 2px 6px 0;
   padding-bottom: 0px;
-  padding-right:24px;
+  padding-right:3px;
   font-size: 18px;
   line-height: 20px;
-  padding-left:24px;
+  padding-left:10px;
   color: #777777;
 }
 
