@@ -528,7 +528,44 @@ Even as we combat with common threats - the threat from international terrorism;
 
     </div>
 
+<div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
 
+              <div id="owl-demo1" class="ocarouselwl-">
+                <div class="item"><img src="images/Title Photo_opti_1441280676.jpg" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                <div class="item"><img src="images/IMG_0983_1438696175.JPG" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                <div class="item"><img src="images/MOS(VKS)_1441089125.jpg" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                <div class="item"><img src="images/planting-photo.jpg" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                    <div class="item"><img src="images/Title Photo_opti_1441280676.jpg" alt="Owl Image">
+                    <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                    </div>
+                <div class="item"><img src="images/IMG_0983_1438696175.JPG" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                <div class="item"><img src="images/MOS(VKS)_1441089125.jpg" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                </div>
+                <div class="item"><img src="images/planting-photo.jpg" alt="Owl Image">
+                <p>"Briefing meeting on IAFS 2015, for Heads of Missions from African Countries, chaired by Secretary(West), Ministry of External Affairs on 01 Sep 2015"</p>
+                
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+    </div>
     </div>
  
  
@@ -562,6 +599,22 @@ Even as we combat with common threats - the threat from international terrorism;
 		  display: block;
 		  margin-top:50px;
   padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index:9999;
+  margin-bottom:10px;
+  
+  
+    }
+	#owl-demo1 .item{
+        margin:10px;
+		  display: block;
+
+  padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -570,9 +623,14 @@ Even as we combat with common threats - the threat from international terrorism;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   z-index:9999;
-  margin-bottom:25px;
+  margin-bottom:40px;
   
   
+    }
+	#owl-demo1 .item img{
+        display: block;
+        width: 100%;
+        height: auto;
     }
     #owl-demo .item img{
         display: block;
@@ -585,6 +643,17 @@ Even as we combat with common threats - the threat from international terrorism;
     <script>
     $(document).ready(function() {
       $("#owl-demo").owlCarousel({
+        autoPlay: false,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo1").owlCarousel({
         autoPlay: false,
         items : 4,
         itemsDesktop : [1199,3],
