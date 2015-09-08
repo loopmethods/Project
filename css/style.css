@@ -206,7 +206,7 @@ clear:both;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height: 70px;
+  height: 90px;
   line-height: 20px;
   padding: 0px 10px 0px 0px;
 }
@@ -713,7 +713,7 @@ border-top-color: #acacac;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height:70px;
+  height:90px;
   line-height: 20px;
   padding: 0px 10px 0px 0px;
 }
@@ -779,7 +779,7 @@ border-top-color: #acacac;
 .navbar-brand {
     float: left;
     font-size: 18px;
-    height:70px;
+    height:90px;
     line-height: 20px;
     padding:5px 9px 5px 6px;
 }
@@ -987,7 +987,7 @@ color: #FFFFFF;
 .navbar-brand {
   float: left;
   font-size: 18px;
-  height:70px;
+  height:90px;
   line-height: 20px;
   padding: 5px 9px 5px 8px;
 }
@@ -1011,7 +1011,7 @@ color: #FFFFFF;
 	.navbar-brand {
   float: left;
   font-size: 18px;
-  height: 70px;
+  height:90px;
   line-height: 20px;
   padding: 5px 9px 5px 15px;
 }
@@ -1022,7 +1022,7 @@ color: #FFFFFF;
 	.navbar-brand {
   float: left;
   font-size: 18px;
-  height:70px;
+  height:90px;
   line-height: 20px;
   padding: 5px 9px 5px 8px;
 }
@@ -1519,6 +1519,19 @@ color: #FFFFFF;
 }
 }
 
+@media only screen and (max-width: 400px) {
+
+.navbar-brand {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #777777;
+  padding-left:15px;
+}
+}
 
 @media only screen and (max-width: 240px) {
 	
