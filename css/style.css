@@ -208,7 +208,7 @@ clear:both;
   font-size: 18px;
   height: 90px;
   line-height: 20px;
-  padding: 0px 10px 0px 0px;
+  padding: 5px 15px 0px 15px;
 }
 
 .mob_radio {
@@ -1523,13 +1523,13 @@ color: #FFFFFF;
 
 .navbar-brand {
   float: left;
-  padding-top: 15px;
+  padding-top:5px;
   padding-bottom: 15px;
-  padding-right: 15px;
+  padding-right: 6px;
   font-size: 18px;
   line-height: 20px;
   color: #777777;
-  padding-left:15px;
+  padding-left:9px;
 }
 }
 
