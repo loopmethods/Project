@@ -135,7 +135,7 @@ height:35px;
 .contant_home
 {
 	color: #fff;
-	width:91%;
+	width:96%;
 	background-color:#f08300;
 	font-size:20px;
 	font-weight:bold;
@@ -143,11 +143,8 @@ height:35px;
 	text-shadow:none;
 	font-family: 'Roboto', sans-serif;
 	cursor:pointer;
-	padding:8px;
-	position:fixed;
-	margin:0px auto 0px auto;
+	margin:0px auto 25px 10px;
 	padding:7px 0px 0px 0px;
-	bottom:15px;
 	height:40px;
 	
 }
@@ -1529,11 +1526,11 @@ color: #FFFFFF;
   float: left;
   padding-top:5px;
   padding-bottom: 15px;
-  padding-right: 6px;
+  padding-right: 10px;
   font-size: 18px;
   line-height: 20px;
   color: #777777;
-  padding-left:9px;
+  padding-left:10px;
 }
 }
 
@@ -2116,3 +2113,104 @@ height:50px !important;
 	position:absolute;
 	margin-top:35px;
  }
+ 
+ 
+ .calender_home{
+	 width:100%;
+	 height:300px;
+	
+	 margin:0px auto 0px auto;
+	 padding:0px 0px 0px 0px;
+	 position:fixed;
+	 bottom:50px;
+	 float:right;
+	 
+ }
+ 
+  .calender_home_left{
+	 width:30%;
+	 height:300px;
+	
+	  margin:0px auto 0px auto;
+	 padding:0px 0px 0px 10px;
+	 float:left;
+	 
+ }
+   .calender_home_right{
+	 width:70%;
+	 height:300px;
+
+	  margin:0px auto 0px auto;
+	 padding:0px 0px 0px 0px;
+	 float:left;
+	 
+ }
+ 
+ .calender_icon
+ {
+	 width:60px;
+	 height:60px;
+	 background-color:#f78000;
+	  margin:10px auto 0px auto;
+	 padding:10px 0px 0px 14px;
+	 border-radius:5px;
+ }
+ .location_icon
+ {
+	 width:60px;
+	 height:60px;
+	 background-color:#f78000;
+	  margin:0px auto 0px auto;
+	 padding:12px 0px 0px 20px;
+	 border-radius:5px;
+ }
+ 
+ .venu_address
+ {
+	 width:200px;
+	 height:200px;
+	 background-color:#ffffff;
+	  margin:10px auto 0px auto;
+	 padding:0px 0px 0px 20px;
+	 border-radius:5px;
+	 float:left;
+	 opacity:0.9;
+ }
+ .venu_address h1{
+	 font-size:16px;
+	 color:#f88000;
+	 text-align:right;
+	 padding:5px 7px 0px 0px;
+	 margin:0px auto 0px auto;
+ }
+	 
+ .venu_address p{
+     margin-top:0px;
+	 padding:0px 7px 0px 0px;
+	color: #FFF;
+	font-size:15px;
+	width:100%;
+	font-family: 'Roboto', sans-serif;
+	line-height:20px;
+	
+	color:#000;
+	
+ }
+ 
+ .regitered_button
+{
+color: #fff;
+  width: 90%;
+  background-color: #f08300;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  margin: 15px auto 20px 0px;
+  padding: 7px 0px 0px 0px;
+  height: 35px;
+  text-align: center;
+	
+}
