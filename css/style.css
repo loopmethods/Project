@@ -10,7 +10,7 @@
     font-style: normal;
 
 }
-.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page{top:0;left:0;width:100%;height:100%;position:absolute;display:none;border:0; background-color:#fff;}.ui-mobile .ui-page-active{display:block;overflow:visible}
+.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page{top:0;left:0;width:100%;height:100%;position:absolute;display:none;border:0;}.ui-mobile .ui-page-active{display:block;overflow:visible}
 
 .pageh
 {
@@ -61,6 +61,7 @@ height:35px;
 .logo {
     margin-top:50px;
 
+
 }
 
 .welcome
@@ -96,6 +97,8 @@ height:35px;
 	font-family:'Roboto', sans-serif;
 	
 }
+
+
 
 .about_profile
 {
@@ -548,12 +551,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 .riding_history_main {
 width:100%;
 	background-color:#FFF;
-    margin:45px auto 12px auto;
-
-    z-index:1;
-    top:0px; bottom:86px; left:0;
-    width:100%;
+    margin:34px auto 12px auto;
+	height:auto;
+   z-index:99;
+    top:0px; bottom:75px; left:0;
     overflow:auto;
+	position:absolute;
 	
 	}
 .riding_history {
@@ -2100,4 +2103,16 @@ height:50px !important;
 }
 
 
-
+.main_pages{
+	
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-image:url(../images/confrence.jpg);
+	min-height:90%;
+	background-size:cover;
+	width:100%;
+	position:absolute;
+	margin-top:35px;
+ }

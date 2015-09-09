@@ -304,8 +304,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-image:url(images/bg_pattern_03.jpg);
-  background-repeat:repeat;
+
  }
 
 input,
@@ -737,6 +736,7 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
+
 }
 
 .container:before,
