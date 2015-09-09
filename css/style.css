@@ -2112,6 +2112,8 @@ height:50px !important;
 	width:100%;
 	position:absolute;
 	margin-top:35px;
+	height:600px;
+	overflow:auto;
  }
  
  
@@ -2120,7 +2122,7 @@ height:50px !important;
      margin:0px auto 0px auto;
 	 padding:0px 0px 0px 0px;
 	 position:fixed;
-	 bottom:2px;
+	 bottom:7px;
 	 right:0px;
 	 float:right;
 	 
