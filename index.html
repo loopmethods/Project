@@ -12,6 +12,8 @@
 <link href="bootstrap.css" rel="stylesheet" media="screen">
 <script src="jquery-mobile/jquery.min.js"></script>
 <script src="jquery-mobile/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 <!--Start of the Welcome of the IAFS -->
@@ -19,12 +21,12 @@
   <div data-role="header">
     <div class="container">
       <div align="center">
-       <div class="logo" > <a href=""> <img src="images/welcome.png" width="100%"></a> </div>
+       <div class="logo" > <a href=""> <img src="images/welcome.jpg" width="100%"></a> </div>
     
       </div>
     </div>
   </div>
-  <div data-role="content">
+  <div  class="ui-content-welcome">
     <div align="center"> <a href="#page1">
       <div class="contant_home" style="background-size:cover;">Welcome to IAFS</div>
       </a> </div>
@@ -37,10 +39,21 @@
 <div data-role="page" id="page1">
 <div class="pageh">
 
-<div class="pageh_left"><img src="images/logo.png" width="33" height="30"/></div>
+<div class="pageh_left"><img src="images/logo.png" width="40" height="37"/></div>
+<div id="menu-toggle">
+		<img src="images/menu.png" width=20 height=20 alt="Menu"></img>
+	</div>
+
+	<nav id="menu">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Login</a>
+		<a href="#">A Link</a>
+		<a href="#">Another Link</a>
+	</nav>
 <div class="pageh_center">Home - IAFS 2015</div>
-<div class="pageh_check">     <!--<a href="#page3"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
-    <!--<img src="logo.png">-->
+<div class="pageh_check">   </div>
+
         </div>
    
         
@@ -100,7 +113,7 @@
 <div data-role="page" id="page2" style="background-color:#fff;">
 <div class="pageh">
 
-<div class="pageh_left"><img src="images/logo.png" width="33" height="30"/></div>
+<div class="pageh_left"><img src="images/logo.png" width="50" height="40"/></div>
 <div class="pageh_center">Home - IAFS 2015</div>
 <div class="pageh_check">     <!--<a href="#page3"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
     <!--<img src="logo.png">-->
@@ -650,6 +663,7 @@ Even as we combat with common threats - the threat from international terrorism;
 	</div></nav>
   </div>
 </div>
+ <script type="text/javascript" src="js/script.js"></script>
     <link href="css/owl.carousel.css" rel="stylesheet">
  <script src="js/jquery-1.9.1.min.js"></script> 
     <script src="js/owl.carousel.js"></script>
@@ -726,5 +740,6 @@ Even as we combat with common threats - the threat from international terrorism;
 
     });
     </script>
+   
 </body>
 </html>
