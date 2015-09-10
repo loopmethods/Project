@@ -135,7 +135,7 @@ height:35px;
 .contant_home
 {
 	color: #fff;
-	width:96%;
+	width:100%;
 	background-color:#f08300;
 	font-size:20px;
 	font-weight:bold;
@@ -143,7 +143,7 @@ height:35px;
 	text-shadow:none;
 	font-family: 'Roboto', sans-serif;
 	cursor:pointer;
-	margin:0px auto 25px 10px;
+	margin:0px auto 25px 0px;
 	padding:7px 0px 0px 0px;
 	height:40px;
 	
@@ -2122,7 +2122,7 @@ height:50px !important;
      margin:0px auto 0px auto;
 	 padding:0px 0px 0px 0px;
 	 position:fixed;
-	 bottom:7px;
+	 bottom:15px;
 	 right:0px;
 	 float:right;
 	 
@@ -2200,18 +2200,19 @@ height:50px !important;
  
  .regitered_button
 {
-color: #fff;
-  width: 90%;
+  color: #fff;
+  width:50%;
   background-color: #f08300;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
   text-shadow: none;
-  font-family: 'Roboto', sans-serif;
+  font-family:'Roboto', sans-serif;
   cursor: pointer;
-  margin: 15px auto 20px 0px;
+  margin: 15px 10px 20px 0px;
   padding: 7px 0px 0px 0px;
   height: 35px;
   text-align: center;
+  float:right;
 	
 }
