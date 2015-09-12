@@ -119,7 +119,7 @@ height:45px;
 {
 	margin-top:0px;
 
-	font-size:17px;
+	font-size:16px;
 	width:99%;
 	font-family: 'Roboto', sans-serif;
 	line-height:25px;
@@ -2186,19 +2186,9 @@ height:50px !important;
 }
 
 .main_pages{
-	
-	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.428571429;
   color: #333333;
-  background-image:url(../images/confrence.jpg);
-	min-height:80%;
-	background-size:cover;
-	width:100%;
-	position:absolute;
-	margin-top:45px;
-	height:400px;
-	overflow:auto;
  }
  
  
@@ -2206,27 +2196,24 @@ height:50px !important;
 	 width:90%;
      margin:0px auto 0px auto;
 	 padding:0px 0px 0px 0px;
-	 position:fixed;
 	 bottom:15px;
 	 right:0px;
-	 float:right;
+	 float:left;
 	 
  }
  
   .calender_home_left{
-	 width:30%;
-	 height:300px;
-	
-	  margin:0px auto 0px auto;
-	 padding:0px 0px 0px 10px;
+	 width:20%;
+	 height:auto;
+	 margin:0px auto 0px auto;
+	 padding:0px 0px 0px 0px;
 	 float:left;
 	 
  }
    .calender_home_right{
 	 width:70%;
-	 height:300px;
-
-	  margin:0px auto 0px auto;
+	 height:auto;
+      margin:0px auto 0px auto;
 	 padding:0px 0px 0px 0px;
 	 float:left;
 	 
@@ -2253,22 +2240,26 @@ height:50px !important;
  
  .venu_address
  {
-	 width:200px;
-	 height:200px;
-	 background-color:#ffffff;
-	  margin:10px auto 0px auto;
+	 margin:10px auto 0px auto;
 	 padding:0px 0px 0px 20px;
-	 border-radius:5px;
 	 float:left;
-	 opacity:0.9;
  }
  .venu_address h1{
 	 font-size:16px;
 	 color:#f88000;
-	 text-align:right;
-	 padding:5px 10px 0px 0px;
+	 text-align:left;
+	 padding:0px 10px 0px 0px;
 	 margin:0px auto 0px auto;
  }
+	 
+.venu_location h1{
+	 font-size:16px;
+	 color:#f88000;
+	 text-align:left;
+	 padding:0px 10px 0px 0px;
+	 margin:10px auto 0px auto;
+ }
+	 
 	 
  .venu_address p{
      margin-top:0px;
@@ -2285,20 +2276,20 @@ height:50px !important;
  
  .regitered_button
 {
-  color: #fff;
-  width:50%;
-  background-color: #f08300;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-shadow: none;
-  font-family:'Roboto', sans-serif;
-  cursor: pointer;
-  margin: 15px 10px 20px 0px;
-  padding: 7px 0px 0px 0px;
-  height: 35px;
-  text-align: center;
-  float:right;
+   background-color: #f08300;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-family: "Roboto",sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    height: 42px;
+    margin: 15px 10px 20px 19px;
+    padding: 7px 0 0;
+    text-align: center;
+    text-shadow: none;
+    width:96%;
 	
 }
 
@@ -2393,4 +2384,19 @@ height:50px !important;
 	  transition: all 0.6s ease 0s;
 }
 
-
+.about-iafs
+{
+	margin-bottom:10px;
+	color: #333;
+	font-size:15px;
+	width:100%;
+	font-family:"Open Sans";
+	line-height:22px;
+	text-align:justify;
+	 overflow:auto;
+	 position:absolute;
+    z-index:1;
+    top:0px; bottom:84px;
+	
+	
+}
