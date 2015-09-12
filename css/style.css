@@ -102,33 +102,31 @@ height:45px;
 
 .about_profile
 {
-	margin-top:35px;
-	margin-bottom:10px;
 	color: #333;
 	font-size:17px;
 	width:99%;
 	font-family: 'Roboto', sans-serif;
 	line-height:30px;
 	text-align:justify;
-	 overflow:auto;
-	 position:absolute;
-	 padding-right:15px;
-    z-index:1;
-    top:0px; bottom:84px; left:10px;
+	margin:0px auto 0px auto;
+	padding:0px 10px 10px 10px;
+
+  	
 	
 	
 }
 .about_profile p
 {
-	margin-top:10px;
-	margin-bottom:10px;
-	color: #FFF;
-	font-size:16px;
-	width:100%;
+	margin-top:0px;
+
+	font-size:17px;
+	width:99%;
 	font-family: 'Roboto', sans-serif;
 	line-height:25px;
 	text-align:justify;
 	color:#333;
+	
+	
 
 	
 }
@@ -540,8 +538,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
   color: #000;
   font-weight: normal;
   text-decoration: none;
-  font-size: 17px !important;
+  font-size: 14px !important;
  font-family: 'Roboto', sans-serif;
+ 
+
 }
 
 
@@ -1059,6 +1059,14 @@ color: #FFFFFF;
   margin-left:5px;
   float: left;
   
+}
+.slider-iafs
+{
+	margin-top:40px;
+	width:100%;
+	height:350px;
+
+	
 }	
 }
 @media (max-width:360px){
@@ -1069,6 +1077,14 @@ color: #FFFFFF;
   height:90px;
   line-height: 20px;
   padding: 5px 9px 5px 15px;
+}
+.slider-iafs
+{
+	margin-top:40px;
+	width:100%;
+	height:350px;
+
+	
 }
 }
 
@@ -2044,6 +2060,14 @@ height:50px !important;
 	.student-pic img{
 		width:100%;
 	}
+	.slider-iafs
+{
+	margin:35px auto 0px auto;
+	padding:0px 0px 0px 0px;
+	width:100%;
+	height:auto;
+	
+}
 	
 	
 	}
@@ -2370,12 +2394,3 @@ height:50px !important;
 }
 
 
-.slider-iafs
-{
-	margin-top:24px auto 0px auto;
-	padding:0px 0px 0px 0px;
-	width:100%;
-	height:350px;
-
-	
-}
