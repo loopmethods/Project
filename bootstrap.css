@@ -1571,6 +1571,7 @@ label {
   display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
+  padding-left:10px;
 }
 
 input[type="search"] {

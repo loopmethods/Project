@@ -28,7 +28,7 @@
   </div>
   <div  class="ui-content-welcome">
     <div align="center"> <a href="#page1">
-      <div class="contant_home" style="background-size:cover;">Welcome to IAFS</div>
+      <div class="contant_home" style="background-size:cover;">WELCOME TO IAFS 2015</div>
       </a> </div>
   </div>
 </div>
@@ -41,7 +41,7 @@
 
 <div class="pageh_left"></div>
 <div class="pageh_center">Home - IAFS 2015</div>
-<div class="pageh_check"> <img src="images/logo.png" width="40" height="40"/>    <!--<a href="#page2"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
+<div class="pageh_check"> <img src="images/logo.png" width="40" height="35"/>    <!--<a href="#page2"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="content">
@@ -61,7 +61,7 @@
         <h1>WHERE</h1>
         <p>Indira Gandhi Stadium Complex, New Delhi 
 
-</p><div class="regitered_button" >Login</div>
+</p><div class="regitered_button"><a href="#dvLogin" style="color:#fff; font-weight:bold;">Login</a></div>
         </div>
         </div>
         
@@ -103,14 +103,14 @@
 
 <div class="pageh_left"></div>
 <div class="pageh_center">Media Center - IAFS 2015</div>
-<div class="pageh_check"> <img src="images/logo.png" width="40" height="40"/>    <!--<a href="#page2"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
+<div class="pageh_check"> <img src="images/logo.png" width="40" height="35"/>    <!--<a href="#page2"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
   <div class="settings_app"> </div>
   <div class="settings_taxisecu">
-  <div class="settings_taxisecu_lt"><img src="images/about_icon.png"></div>
-    <div class="settings_taxisecu_rt"><a href="#page4" class="active">About Us</a></div>
+<!--  <div class="settings_taxisecu_lt"><img src="images/about_icon.png"></div>
+    <div class="settings_taxisecu_rt"><a href="#page4" class="active">About Us</a></div>-->
        <div class="settings_taxisecu_lt"><img src="images/photogallery_icon.png"> </div>
     <div class="settings_taxisecu_rt"><a href="#page12">Photo Gallery</a></div>
     <div class="settings_taxisecu_lt"> <img src="images/press_icon.png"></div>
@@ -120,6 +120,9 @@
     
          <div class="settings_taxisecu_lt"><img src="images/mediaadvisiory_icon.png"> </div>
     <div class="settings_taxisecu_rt"><a href="#page7">Media Advisory</a></div>
+    
+    <div class="settings_taxisecu_lt"><img src="images/contact_icon.png"> </div>
+    <div class="settings_taxisecu_rt"><a href="#page11">Speakers</a></div>
     <div class="settings_taxisecu_lt"><img src="images/speease.png"> </div>
     <div class="settings_taxisecu_rt"><a href="#page8">Speeches & Statements</a></div>
     
@@ -130,8 +133,8 @@
                 <div class="settings_taxisecu_rt"><a href="#page13">Documents </a></div>
 
 
-    <div class="settings_taxisecu_lt"><img src="images/contact_icon.png"> </div>
-    <div class="settings_taxisecu_rt"><a href="#page11">Contact Us</a></div>
+   <!-- <div class="settings_taxisecu_lt"><img src="images/contact_icon.png"> </div>
+    <div class="settings_taxisecu_rt"><a href="#page11">Contact Us</a></div>-->
   </div>
       
  
@@ -158,43 +161,131 @@
 
 <!-- Start of the about About Us --> 
 <div data-role="page" id="page4">
-<!--<script code About us page4-->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var jsonList = "http://test.iafs.in/api/getAboutUs.php";
-                var json = $.getJSON(jsonList, function (data) {
-                    //alert(data.data[0].title1);
-                    var block = "<div>";
 
-                    //for (var i = 0; i < data.data.length; i++) {
-                        //alert(data.data[i].archive_id);
-                        //console.log(data.data[i].title2);
-
-                        var row = "<h1>" + data.data[0].title + "</h1>";                      
-                        row += "<p class='lead-font'>" + data.data[0].content + "</p>";                        
-                        block += row;
-                    //}
-                    block += '</div>';
-                    $('#dvAboutUs').html(block);
-                    $("#dvAboutUs").slideDown("slow");
-
-                });
-                //alert(json);
-            });
-        </script>
 <div class="pageh">
 <div class="pageh_left"> <a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">About Us - IAFS 2015</div>
-<div class="pageh_check"> <img src="images/logo.png" width="40" height="37"/>   </div>
+<div class="pageh_check"> <img src="images/logo.png" width="40" height="35"/>   </div>
     <!--<img src="logo.png">-->
         </div>
 
    <div data-role="content">
 
-  <div id="dvAboutUs" class="about_profile">
+ <!-- <div id="dvAboutUs" class="about_profile">-->
 
-  </div>
-      
+  <div id="slider1_container" style="position: relative; margin:18px auto;
+        top: 0px; left: 0px; width: 1300px; height: 300px; max-height:300px; overflow: hidden;">
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 300px; overflow: hidden;">
+            <div>
+                <img u="image" src="1920/slider1.jpg" />
+                                
+            </div>
+            <div>
+                <img u="image" src="1920/slider2.jpg" />
+                
+                
+            </div>
+            <div>
+                <img u="image" src="1920/slider3.jpg" />
+                
+                
+            </div>
+             <div>
+                <img u="image" src="1920/slider4.jpg" />
+                
+                
+            </div>
+        </div>
+                
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 {
+                position: absolute;
+            }
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                line-height: 19px;
+                color: white;
+                font-size: 12px;
+                background: url(b21.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l                  (normal)
+            .jssora21r                  (normal)
+            .jssora21l:hover            (normal mouseover)
+            .jssora21r:hover            (normal mouseover)
+            .jssora21l.jssora21ldn      (mousedown)
+            .jssora21r.jssora21rdn      (mousedown)
+            */
+            .jssora21l, .jssora21r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21l.jssora21ldn { background-position: -243px -33px; }
+            .jssora21r.jssora21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+       
+    </div>
+
  
 
  
@@ -254,7 +345,6 @@
                             //console.log(paritem.archive_id);
                             //alert(paritem.archive_id);
                             var row = "<div id='box-press-release-link'>";
-                            row += "<a href='" + paritem.download_link + "' class='press-release-link'>Download</a>";
                             row += "<br/><br/><br/>";
                             row += "<div id='dv_Title1' class='press-release'><p class='lead-font'>" + paritem.title1 + "</p></div>";
                             row += "<div id='dv_Description' class='press-release-desc'><p class='lead-font'>" + paritem.description + "</p></div>";
@@ -274,7 +364,7 @@
 <div class="pageh">
 <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">Press Releases - IAFS 2015</div>
-<div class="pageh_check">   <img src="images/logo.png" width="40" height="40"/>  </div>
+<div class="pageh_check">   <img src="images/logo.png" width="40" height="35"/>  </div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
@@ -371,7 +461,7 @@
 <div class="pageh">
 <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">Media Coverage - IAFS 2015</div>
-<div class="pageh_check"> <img src="images/logo.png" width="40" height="40"/> </div>
+<div class="pageh_check"> <img src="images/logo.png" width="40" height="35"/> </div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
@@ -406,7 +496,7 @@
 <div class="pageh">
 <div class="pageh_left"> <a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">Media Advisory - IAFS 2015 </div>
-<div class="pageh_check"> <img src="images/logo.png" width="40" height="40"/> </div>
+<div class="pageh_check"> <img src="images/logo.png" width="40" height="35"/> </div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
@@ -440,7 +530,7 @@
 <div class="pageh">
 <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">Speeches & Statements  </div>
-<div class="pageh_check"><img src="images/logo.png" width="40" height="40"/> </div>
+<div class="pageh_check"><img src="images/logo.png" width="40" height="35"/> </div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
@@ -544,7 +634,7 @@
 <!-- Start of the Registration --> 
 <div data-role="page" id="page10">
 <div class="pageh">
-<div class="pageh_left"><img src="images/logo.png" width="40" height="40"/></div>
+<div class="pageh_left"><img src="images/logo.png" width="40" height="35"/></div>
 <div class="pageh_center">Registration - IAFS 2015</div>
 <div class="pageh_check">     <!--<a href="#page3"><i class="fa fa-arrow-right" style="padding-right:15px; color:#FFF; font-size:20px; float:right; padding-top:5px;"></i></a>--></div>
     <!--<img src="logo.png">-->
@@ -593,8 +683,10 @@
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
-    
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28021.036422012763!2d77.21724092960358!3d28.61088813419931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b8096232c3%3A0xd74927f5b5f1d548!2sJawaharlal+Nehru+Bhawan!5e0!3m2!1sen!2sin!4v1441971811959" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="press-release-contact">
+    
+   
                         <h1 style="font-size:16px !important; line-height:22px; font-weight:400; margin-top:30px; text-align:justify;"> <strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.</h1>
 
                         <p>
@@ -664,7 +756,6 @@
                             //console.log(paritem.archive_id);
                             //alert(paritem.archive_id);
                             var row = "<div id='box-press-release-link'>";
-                            row += "<a href='" + paritem.download_link + "' class='press-release-link'>Download</a></div>";
                             row += "<br/><br/><br/>";
                             row += "<div id='dv_Title1' class='press-release'><p class='lead-font'>" + paritem.title1 + "</p></div>";
                             row += "<div id='dv_Description' class='press-release-desc'><p class='lead-font'>" + paritem.description + "</p></div>";
@@ -717,7 +808,7 @@
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
             <div class="pageh_center">Description - IAFS 2015</div>
-            <div class="pageh_check"><img src="images/logo.png" width="40" height="40"/></div>
+            <div class="pageh_check"><img src="images/logo.png" width="40" height="35"/></div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
@@ -798,7 +889,7 @@
 <div class="pageh">
 <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
 <div class="pageh_center">Photo Gallery - IAFS 2015 </div>
-<div class="pageh_check">     <img src="images/logo.png" width="40" height="40"/></div>
+<div class="pageh_check">     <img src="images/logo.png" width="40" height="35"/></div>
     <!--<img src="logo.png">-->
         </div>
    <div data-role="ui-content_fav">
@@ -883,7 +974,7 @@
         <div class="pageh">
          <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color:#FFF; font-size:25px; float:right; padding-top:4px;"></i></a></div>
             <div class="pageh_center">Photo Gallery - IAFS 2015 </div>
-            <div class="pageh_check"><img src="images/logo.png" width="40" height="40"/></div>
+            <div class="pageh_check"><img src="images/logo.png" width="40" height="35"/></div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
@@ -925,8 +1016,140 @@
 	</div></nav>
         </div>
     </div>
+ <!-- End of the Photo Gallery -->
+ <!-- Start Login-->
+    <div data-role="page" id="dvLogin">
+        <div class="pageh">
+            <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right:0px; color: #FFF; font-size: 25px; float: right; padding-top:4px;"></i></a>
+               
+            </div>
+            <div class="pageh_center">Login - IAFS 2015</div>
+            <div class="pageh_check">
+                 <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <div data-role="ui-content_fav">
+            <div class="riding_history_main">
+                <div id="dvLoginConcept" class="press-release-login">
 
+                    <form id="myform" method="post">
 
+                        <label>Login ID </label>
+                        <input type="text" id="txtUserId" name="txtUserId" required style="color: black;">
+                    
+                        <label>Password </label>
+                        <input type="password" id="txtPassword" name="txtPassword" required style="color: black;">
+                        <br>
+                        <input type="submit" value="Login" id="btnSubmit" onclick="LoginFunc(); return false" style="color:#fff;font-size:15px;">
+                    </form>
+                    <div id="dvResult"></div>
+                      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+                  
+                    <script type="text/javascript">
+                        function LoginFunc() {
+                            try {
+                                //e.preventDefault();
+                                //e.stopPropagation();
+                                //Get control's values
+                                var sUserId = $("#txtUserId").val();
+                                var sPwd = $("#txtPassword").val();
+
+                                var msg = "";
+                                //check for validation
+                                if (sUserId == '') {
+                                    msg += "<li>Please enter User-Id</li>";
+                                    return false;
+                                }
+                                if (sPwd == '') {
+                                    msg += "<li>Please enter password</li>";
+                                    return false;
+                                }
+
+                                if (msg.length == 0) {
+                                    //Jquery ajax call to server side method
+                                    $.ajax({
+                                        type: "post",
+                                        dataType: "json",
+                                        //contentType: "application/json; charset=utf-8",
+                                        //Url is the path of our web method (Page name/function name)
+                                        url: "http://constantdesign.com/samples/indian-african/api/getLogin.php",
+                                        //url: "http://devservices.mparkdashboard.com/getallvehicleclasses",
+                                        //Pass paramenters to the server side function
+                                        //data: "{'user_name':'" + sUserId + "', 'password':'" + sPwd + "'}",
+                                        data: '{"user_name":' + sUserId + ', "password":' + sPwd + '}',
+                                        //data: '{"country":"India"}',
+
+                                        success: function (data) {
+                                            var aa = data.data.status;
+                                            console.log(aa);
+
+                                            alert(aa);
+                                            alert('success func');
+                                            debugger
+                                            if (aa == 1) {
+                                                //Set message
+                                                $('#dvResult').text("Your are successfully login.");
+                                                //Reset controls                          
+                                                $('#txtUserId').val('');
+                                                $('#txtPassword').val('');
+                                                window.location.href = "#page15";
+                                                alert('success func end');
+                                            }
+                                            else {
+                                                $('#dvResult').text("Your are not successfully login. Try again.");
+                                                alert('success else func');
+                                            }
+                                            //Fade Out to disappear message after 6 seconds
+                                            $('#dvResult').fadeOut(6000);
+                                        },
+                                        error: function (xhr, textStatus, error) {
+                                            //Show error message(if occured)
+                                            $('#dvResult').text("Error: " + error);
+                                            alert('error func');
+                                        }
+                                    });
+                                }
+                                else {
+                                    //Validation failure message
+                                    $('#dvResult').html('');
+                                    $('#dvResult').html(msg);
+                                }
+                                $('#dvResult').fadeIn();
+                            }
+                            catch (ex) { ex.message.toString(); }
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+            <div data-role="footer">
+
+                <div class="navbar-header page-scroll">
+
+                    <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
+                        <img src="images/home.png" />
+                    </a>
+                    <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                        <img src="images/agenda.png" />
+                    </a>
+               
+                    <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                        <img src="images/media_hover.png" />
+                    </a>
+                    
+                         <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <img src="images/register.png" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Login -->
 
  <!--<script type="text/javascript" src="js/script.js"></script>-->
     <link href="css/owl.carousel.css" rel="stylesheet">
@@ -1006,5 +1229,90 @@
     });
     </script>
    
+   
+   <script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    
+  
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
 </body>
 </html>
