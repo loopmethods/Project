@@ -2194,7 +2194,7 @@ height:50px !important;
  
  .calender_home{
 	 width:90%;
-     margin:0px auto 0px auto;
+     margin:0px auto 83px auto;
 	 padding:0px 0px 0px 0px;
 	 bottom:15px;
 	 right:0px;
@@ -2396,7 +2396,7 @@ height:50px !important;
 	 overflow:auto;
 	 position:absolute;
     z-index:1;
-    top:0px; bottom:84px;
+    top:0px;
 	
 	
 }
