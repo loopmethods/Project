@@ -534,6 +534,106 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 	font-size:16px;
 	color:#fff;
 }
+/**Hitesh 140915 Start*/
+.iafs_dashboard_lt{
+	width:18%;
+	height:70px;
+	padding:10px 10px 10px 15px;
+	 margin: 0 auto 0 auto;
+	float:left;
+    line-height:22px;
+	border-bottom:2px solid #f88000;
+	color:#333;
+	
+}
+
+.iafs_dashboard_lt img{
+	height:58px;
+    width:75px;
+    text-align:left;
+    margin-top:-9px;
+    margin-left:-10px;
+	
+}
+
+.iafs_dashboard_lt:hover {
+	border-left:2px solid #f88000;
+    border-right:3px solid gray;
+	
+}
+.iafs_dashboard_rt{
+	width:82%;
+	height:70px;
+	padding:10px 0px 10px 5px;
+    margin: 0 auto 0 auto;
+	float:right;
+	line-height:22px;
+	border-bottom:2px solid #f88000;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	color:#fff;
+}
+.iafs_dashboard_rt:hover{
+	/*background-color:lightgray;*/
+}
+.iafs_Hotel {
+    width:100%;
+	height:60px;
+	padding:10px 0px 10px 15px;
+	margin: 0 auto 0 auto;
+	float:left;
+    line-height:22px;
+	border-bottom:2px solid #f88000;
+	color:#333;
+    font-size:16px;
+}
+
+.iafs_Hotel:hover {
+  -moz-box-shadow: -5px -5px 5px #888;
+-webkit-box-shadow: -5px -5px 5px #888;
+box-shadow: -5px -5px 5px #888;
+}
+#Example_B {
+-moz-box-shadow: -5px -5px 5px #888;
+-webkit-box-shadow: -5px -5px 5px #888;
+box-shadow: -5px -5px 5px #888;
+font-size:16px;
+font-style:italic;
+}
+
+.countryBlock {
+     width:90%;
+	height:50px;
+	padding:5px;
+	margin: 10px auto;
+    border:solid 1px black;
+    text-align:center;
+}
+.countryBlock .lead-font-country {
+    padding:5px; 
+    text-align:center;
+    font-style:italic;
+}
+.h1countryBlock {
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    border:solid 0px black;
+    height:50px;
+    font-size:24px;
+    text-align:center;
+    
+}
+.h1countryBlock:hover {
+    border:1px solid #000;
+}
+.countryBlock:hover {
+    -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+border:solid 0px black;
+}
+/**Hitesh 140915 Start*/
 .ui-body-c .ui-link {
   color: #000;
   font-weight: normal;
@@ -2400,3 +2500,28 @@ height:50px !important;
 	
 	
 }
+/*Hitesh 140915*/
+
+.table {
+    padding: 5px;
+    margin: 5px;
+    border: solid 2px black;
+    width:100%;
+}
+    
+
+    table tr {
+        padding: 5px;
+        margin: 5px;
+        font-size: 12px;
+         border: solid 2px #000;
+         height:20px;
+    }
+
+    table tr th {
+        font-weight: bolder;
+        padding: 5px;
+        margin: 5px;
+        font-size: 14px;
+        height:30px;
+    }
