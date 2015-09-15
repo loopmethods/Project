@@ -183,14 +183,14 @@
                 <div class="about_profile">
                     <h1>Welcome to the IAFS 2015</h1>
 
-                    <p>
-                        <strong>The India-Africa Forum Summit (IAFS)</strong> is a celebration of the close partnership between Africa and India. It is an acknowledgement of our shared history as well as our future prospects.
-                            
-                            
-      
-                    </p>
-                    <p><a href="#" style="float: right !important; padding: 2px; color: #06C; font-weight: bold;">Read More...</a></p>
-
+                    <p class="lead-font">The <strong>India-Africa Forum Summit (IAFS)</strong> is a celebration of the close partnership between Africa and India.
+                    It is an acknowledgement of our shared history as well as our future prospects. From our struggle against colonialism and apartheid, we have emerged to jointly accept the challenges of a globalizing world.  Even as we combat with common threats - the threat from international terrorism; the scourge of poverty, disease, illiteracy and hunger; the challenge of climate change - and collectively promote the socio-economic advancement of all our people, we believe that India and Africa traverse the same path, share the same values and cherish the same dreams.</p>
+                <p class="lead-font">A vibrant India and a resurgent Africa have a vision of a close partnership.  A partnership that is anchored in the principles of equality, mutual respect and mutual benefit.This vision takes us beyond our strong bilateral relationships, our close ties with regional economic communities and aims to develop a new paradigm of cooperation which takes into account Africa's own aspirations for pan-African institutions and development programmes.</p>
+				<p class="lead-font">The third edition of the four day IAFS summit which will take place during 26th-29th October 2015 enables consultations at the highest political level between the heads of government of 54 nations across Africa and the Indian government to give a new thrust to our age-old partnership. It provides an opportunity to not only reflect on the past, but to define the road ahead in tune with the times we live in.</p>
+                     
+    </div>
+    <p  id="more" style="float: right !important; padding: 2px; color: #06C; font-weight: bold; font-size:13px; cursor:pointer;">Read More...</p>
+   
 
                     <div class="main_pages">
                         <div class="calender_home">
@@ -217,15 +217,38 @@
                                 <div class="regitered_button"><a href="#dvLogin" style="color: #fff; font-weight: bold; font-size: 18px !important;"><a href="#dvLogin">LOGIN</a></div>
                             </div>
 
+  
 
                         </div>
 
                     </div>
+              
+ 
+            
+                <div class="space"></div>
+<div class="about-contact"> 
+<h2>Contact Us :</h2>
 
-                </div>
+
+
+                <p ><strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.</p>
+
+                <p>
+                    <strong>Tel :</strong> +91-11-4901 6676, +91-11-4901 6678
+                </p>
+                <p>
+                    <strong>Fax :</strong> +91-11-4901 8607, +91-11-49015408
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="#" style="text-decoration: underline; color: #06C;">info@iafs.in</a>
+                </p>
+
+       
+</div>
+
 
             </div>
-
+   
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
                 <div data-role="footer">
 
@@ -2735,5 +2758,31 @@
 
     <script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
+    
+    <script>
+	var cc=1;
+	var startHieght=0;
+	$('#more').click(function() {
+    var reducedHeight = $('.about_profile').height();
+	
+    $('.about_profile').css('height', 'auto');
+    var fullHeight = $('.about_profile').height();
+	
+    $('.about_profile').height(reducedHeight);
+if(cc==1)
+{
+    $('.about_profile').animate({height: fullHeight}, 500);
+	startHieght=reducedHeight;
+	cc=2;
+}
+	else
+{
+	 $('.about_profile').animate({height: startHieght}, 500);
+
+cc=1;
+}
+	
+});
+	</script>
 </body>
 </html>
