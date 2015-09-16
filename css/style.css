@@ -106,7 +106,7 @@ height:45px;
 	font-size:16px;
 	width:99%;
 	font-family: 'Roboto', sans-serif;
-	line-height:30px;
+	line-height:25px;
 	text-align:justify;
 	margin:0px auto 0px auto;
 	padding:0px 7px 0px 7px;
@@ -536,6 +536,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 	font-size:16px;
 	color:#fff;
 }
+
+.dashboard_taxisecu_lt{
+	width:17%;
+	height:55px;
+    padding:10px 0px 10px 15px;
+	 margin: 0 auto 0 auto;
+	float:left;
+    line-height:22px;
+	border-bottom:2px solid #f88000;
+	color:#333;
+	
+}
+.dashboard_taxisecu_rt{
+	width:83%;
+	height:55px;
+	padding:11px 0px 10px 5px;
+    margin: 0 auto 0 auto;
+	float:left;
+	line-height:22px;
+	border-bottom:2px solid #f88000;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	color:#fff;
+}
 /**Hitesh 140915 Start*/
 .iafs_dashboard_lt{
 	width:18%;
@@ -590,11 +614,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
     font-size:16px;
 }
 
-.iafs_Hotel:hover {
-  -moz-box-shadow: -5px -5px 5px #888;
--webkit-box-shadow: -5px -5px 5px #888;
-box-shadow: -5px -5px 5px #888;
-}
+
 #Example_B {
 -moz-box-shadow: -5px -5px 5px #888;
 -webkit-box-shadow: -5px -5px 5px #888;
@@ -604,17 +624,20 @@ font-style:italic;
 }
 
 .countryBlock {
-     width:90%;
+     width:100%;
 	height:50px;
 	padding:5px;
 	margin: 10px auto;
-    border:solid 1px black;
-    text-align:center;
+  border: 1px solid #f88000;
+    text-align:left;
+	padding-top:14px;
+	background-color:#eee;
 }
 .countryBlock .lead-font-country {
     padding:5px; 
     text-align:center;
-    font-style:italic;
+	font-size:15px;
+  	font-family: 'Roboto', sans-serif;
 }
 .h1countryBlock {
     -moz-box-shadow: 0 0 5px #888;
@@ -622,25 +645,22 @@ font-style:italic;
     box-shadow: 0 0 5px #888;
     border:solid 0px black;
     height:50px;
-    font-size:24px;
+    font-size:20px;
     text-align:center;
+	font-family: 'Roboto', sans-serif;
+	background-color:#f08300;
+	color:#fff;
+	padding-top:10px;
     
 }
-.h1countryBlock:hover {
-    border:1px solid #000;
-}
-.countryBlock:hover {
-    -moz-box-shadow: 0 0 5px #888;
--webkit-box-shadow: 0 0 5px#888;
-box-shadow: 0 0 5px #888;
-border:solid 0px black;
-}
+
+
 /**Hitesh 140915 Start*/
 .ui-body-c .ui-link {
   color: #000;
   font-weight: normal;
   text-decoration: none;
-  font-size: 14px !important;
+  font-size: 16px !important;
  font-family: 'Roboto', sans-serif;
  
 
@@ -648,15 +668,38 @@ border:solid 0px black;
 
 
 
-.riding_history_main {
-width:100%;
-	background-color:#FFF;
-    margin:34px auto 12px auto;
-	height:auto;
-   z-index:99;
-    top:0px; bottom:75px; left:0;
-    overflow:auto;
-	position:absolute;
+.riding_history_maining {
+	width: 100%;
+	background-color: #FFF;
+	margin: 34px auto 12px auto;
+	height: auto;
+	z-index: 99;
+	top: 0px;
+	bottom: 75px;
+	left: 2px;
+	overflow: auto;
+	position: absolute;
+	 font-family: 'Roboto', sans-serif;
+	
+	}
+	.riding_history_maining p {
+
+	 font-family: 'Roboto', sans-serif;
+	 font-size:16px;
+	 padding:14px;
+	
+	}
+	.riding_history_hotel {
+	width: 100%;
+	background-color: #FFF;
+	margin: 45px auto 12px auto;
+	height: auto;
+	z-index: 99;
+	top: 0px;
+	bottom: 75px;
+	left: 2px;
+	overflow: auto;
+	position: absolute;
 	
 	}
 	
@@ -2266,7 +2309,7 @@ height:50px !important;
 }
 
 .press-release p.lead-font {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 0;
   text-align:justify;
  	font-family: 'Roboto', sans-serif;
@@ -2387,10 +2430,10 @@ height:50px !important;
     font-weight: bold;
     height: 42px;
     margin: 15px 10px 10px 19px;
-    padding: 7px 0 0;
+    padding: 12px 0 0;
     text-align: center;
     text-shadow: none;
-    width:96%;
+    width:80%;
 	
 }
 
@@ -2491,7 +2534,7 @@ height:50px !important;
 	color: #333;
 	font-size:15px;
 	width:100%;
-	font-family:"Open Sans";
+	font-family: "Roboto",sans-serif;
 	line-height:22px;
 	text-align:justify;
 	 overflow:auto;
@@ -2508,15 +2551,17 @@ height:50px !important;
     margin: 5px;
     border: solid 2px black;
     width:100%;
+		 font-family: "Roboto",sans-serif;
 }
     
 
     table tr {
         padding: 5px;
         margin: 5px;
-        font-size: 12px;
+        font-size: 15px;
          border: solid 2px #000;
          height:20px;
+		 font-family: "Roboto",sans-serif;
     }
 
     table tr th {
@@ -2534,10 +2579,16 @@ height:50px !important;
 
 	width:100%;
 	font-family:"Open Sans";
-	background-color:#f8c300;
 	height:auto;
 	line-height:22px;
-	margin-bottom:80px;
+	background: #EEE none repeat scroll 0 0;
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    transition: all 0.6s ease 0s;
+	  border-bottom: 3px solid #f88000;
+	    border-top: 3px solid #f88000;
+		padding-bottom:85px;
+		margin-top:10px;
 
 	
 	
@@ -2565,7 +2616,7 @@ height:50px !important;
 	font-size:14px;
 	width:99%;
 	font-family: 'Roboto', sans-serif;
-	line-height:22px;
+	line-height:25px;
 	text-align:justify;
 	padding:10px;
 	color:#333;
