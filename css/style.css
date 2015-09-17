@@ -2630,13 +2630,31 @@ height:50px !important;
 	text-align:justify;
 	padding:10px;
 	color:#333;
-	
-	
-
-	
 }
 .space{
 	
 	clear:both;
 	
 }
+/*Hitesh 160915*/
+.AAlogout {
+    color: #fff;
+    font-weight:bold;
+}
+.AAlogout:hover {
+    cursor:default;
+}
+.circle {
+position: relative;
+
+    line-height: 4;
+    vertical-align: top;
+    left:22px;
+    /* background-color: #fff; */
+    width: 134px;
+	color:red
+
+}
+
+
+/*Hitesh 160915*/

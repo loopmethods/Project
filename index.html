@@ -12,6 +12,7 @@
     <link href="bootstrap.css" rel="stylesheet" media="screen">
     <script src="jquery-mobile/jquery.min.js"></script>
     <script src="jquery-mobile/bootstrap.min.js"></script>
+    <script src="js/content.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
@@ -38,17 +39,6 @@
         </div>
     </div>
     <!--End of the Welcome of the AIFS -->
-
-    <!--Start of the Main Page IAFS -->
-
-
-    <!--END of the Main Page IAFS -->
-
-
-
-
-
-
     <!-- Start of the IAFS Media Center-->
     <div data-role="page" id="page3">
         <div class="pageh">
@@ -56,10 +46,10 @@
             <div class="pageh_left"></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
-      
+                <img src="images/logo.png" width="35" height="35" />
+
             </div>
-        
+
         </div>
         <div data-role="ui-content_fav">
             <div class="settings_app"></div>
@@ -106,12 +96,14 @@
 
                         <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
                             <img src="images/home.png" />
+
                         </a>
                         <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
                             <img src="images/agenda.png" /></a>
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -124,14 +116,15 @@
     <div data-role="page" id="page1">
 
         <div class="pageh">
+
             <div class="pageh_left">
-       
+                <div class="AAlogout"></div>
             </div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-       
+
         </div>
 
         <div data-role="content">
@@ -176,88 +169,94 @@
                 <div class="about_profile">
                     <h1>Welcome to the IAFS 2015</h1>
 
-                    <p class="lead-font">The <strong>India-Africa Forum Summit (IAFS)</strong> is a celebration of the close partnership between Africa and India.
-                    It is an acknowledgement of our shared history as well as our future prospects. From our struggle against colonialism and apartheid, we have emerged to jointly accept the challenges of a globalizing world.  Even as we combat with common threats - the threat from international terrorism; the scourge of poverty, disease, illiteracy and hunger; the challenge of climate change - and collectively promote the socio-economic advancement of all our people, we believe that India and Africa traverse the same path, share the same values and cherish the same dreams.</p>
-                <p class="lead-font">A vibrant India and a resurgent Africa have a vision of a close partnership.  A partnership that is anchored in the principles of equality, mutual respect and mutual benefit.This vision takes us beyond our strong bilateral relationships, our close ties with regional economic communities and aims to develop a new paradigm of cooperation which takes into account Africa's own aspirations for pan-African institutions and development programmes.</p>
-				<p class="lead-font">The third edition of the four day IAFS summit which will take place during 26th-29th October 2015 enables consultations at the highest political level between the heads of government of 54 nations across Africa and the Indian government to give a new thrust to our age-old partnership. It provides an opportunity to not only reflect on the past, but to define the road ahead in tune with the times we live in.</p>
-                     
-    </div>
-    <p  id="more" style="float: right !important; padding: 2px; padding-right:12px; color: #06C; font-weight: bold; font-size:13px; cursor:pointer;">Read More...</p>
-   
+                    <p class="lead-font">
+                        The <strong>India-Africa Forum Summit (IAFS)</strong> is a celebration of the close partnership between Africa and India.
+                    It is an acknowledgement of our shared history as well as our future prospects. From our struggle against colonialism and apartheid, we have emerged to jointly accept the challenges of a globalizing world.  Even as we combat with common threats - the threat from international terrorism; the scourge of poverty, disease, illiteracy and hunger; the challenge of climate change - and collectively promote the socio-economic advancement of all our people, we believe that India and Africa traverse the same path, share the same values and cherish the same dreams.
+                    </p>
+                    <p class="lead-font">A vibrant India and a resurgent Africa have a vision of a close partnership.  A partnership that is anchored in the principles of equality, mutual respect and mutual benefit.This vision takes us beyond our strong bilateral relationships, our close ties with regional economic communities and aims to develop a new paradigm of cooperation which takes into account Africa's own aspirations for pan-African institutions and development programmes.</p>
+                    <p class="lead-font">The third edition of the four day IAFS summit which will take place during 26th-29th October 2015 enables consultations at the highest political level between the heads of government of 54 nations across Africa and the Indian government to give a new thrust to our age-old partnership. It provides an opportunity to not only reflect on the past, but to define the road ahead in tune with the times we live in.</p>
 
-                    <div class="main_pages">
-                        <div class="calender_home">
-                            <div class="calender_home_left">
-                                <div class="calender_icon"><i class="fa fa-calendar" style="color: #fff; font-size: 35px;"></i></div>
-                                <br>
-                                <div class="location_icon"><i class="fa fa-map-marker" style="color: #fff; font-size: 35px;"></i></div>
-                            </div>
-                            <div class="calender_home_right">
-                                <div class="venu_address">
-                                    <h1>WHEN</h1>
+                </div>
+                <p id="more" style="float: right !important; padding: 2px; padding-right: 12px; color: #06C; font-weight: bold; font-size: 13px; cursor: pointer;">Read More...</p>
+
+
+                <div class="main_pages">
+                    <div class="calender_home">
+                        <div class="calender_home_left">
+                            <div class="calender_icon"><i class="fa fa-calendar" style="color: #fff; font-size: 35px;"></i></div>
+                            <br>
+                            <div class="location_icon"><i class="fa fa-map-marker" style="color: #fff; font-size: 35px;"></i></div>
+                        </div>
+                        <div class="calender_home_right">
+                            <div class="venu_address">
+                                <h1>WHEN</h1>
+                                <p>
+                                    26th - 29th October, 2015 
+                                </p>
+                                <div class="venu_location">
+                                    <h1>WHERE</h1>
                                     <p>
-                                         26th - 29th October, 2015 
+                                        Indira Gandhi Stadium Complex, New Delhi 
+
                                     </p>
-                                    <div class="venu_location">
-                                        <h1>WHERE</h1>
-                                        <p>
-                                            Indira Gandhi Stadium Complex, New Delhi 
-
-                                        </p>
-                                    </div>
                                 </div>
-
-                                <div class="regitered_button"> <a href="#dvLogin" style="color: #fff; font-weight: bold; font-size: 18px !important;">LOGIN</a></div>
                             </div>
 
-  
-
+                            <div class="regitered_button"><a id="aaLogin" href="#" style="color: #fff; font-weight: bold; font-size: 18px !important;">LOGIN</a></div>
                         </div>
 
+
+
                     </div>
-  <div class="space"></div>
-<div class="about-contact"> 
-<h2>Contact Us :</h2>
+
+                </div>
+                <div class="space"></div>
+                <div class="about-contact">
+                    <h2>Contact Us :</h2>
 
 
 
-                <p> <strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.<br>
+                    <p>
+                        <strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.<br>
 
 
 
-                    <strong>Tel :</strong> +91-11-4901 6676, +91-11-4901 6678<br>
+                        <strong>Tel :</strong> +91-11-4901 6676, +91-11-4901 6678<br>
 
-           
-            
-                    <strong>Fax :</strong> +91-11-4901 8607, +91-11-49015408<br>
 
-             
-             
-                    <strong>Email:</strong> <a href="#" style="text-decoration: underline; color: #06C;">info@iafs.in</a>
-                </p>
 
-       
-</div>
+                        <strong>Fax :</strong> +91-11-4901 8607, +91-11-49015408<br>
+
+
+
+                        <strong>Email:</strong> <a href="#" style="text-decoration: underline; color: #06C;">info@iafs.in</a>
+                    </p>
+
+
+                </div>
 
 
             </div>
-   
+
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
                 <div data-role="footer">
 
                     <div class="navbar-header page-scroll">
 
-                   
-                          <p><a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto;"><img src="images/home_hover.png" /></a>
+
+                        <p>
+                            <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto;">
+                                <img src="images/home_hover.png" /></a>
                             <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto;">
-                              <img src="images/agenda.png" /></a>
-                            
+                                <img src="images/agenda.png" /></a>
+
                             <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto;">
-                              <img src="images/media.png" /></a>
-                            <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto;">
-                              <img src="images/register.png" /></a>
-                          </p>
-                     
+                                <img src="images/media.png" /></a>
+                            <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto;" >
+                              <sup class="circle"></sup>
+                                <img src="images/register.png"></a>
+                        </p>
+
                     </div>
                 </div>
             </nav>
@@ -268,64 +267,13 @@
 
     <!-- Start of the Press Releases -->
     <div data-role="page" id="page5">
-        <!--<script code page5-->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var xJsonData = "[]";
-                //var jsonList = "PressReleases.json";
-                var jsonList = "http://iafs.in/api/getPressReleases.php";
-                $.getJSON(jsonList, function (r) {
-                    xJsonData = r.data;
-                    console.log(r.data);
-                    var items = [];
-                    $("#dvpressRelease").html("");
-                    var block = "<div>";
-                    $.each(xJsonData, function (index, item) {
-                        var row = "<div class='press-release'>";
-                        row += "<a class='PRDesc' href='#dvPRDescription' data-id=" + item.archive_id + ">";
-                        row += "<p class='lead-font'>" + item.title1 + "</p></a>";
-                        row += "</div>";
-                        block += row;
-                    });
-                    block += '</div>';
-                    $('#dvpressRelease').html(block);
-                    $("#dvpressRelease").slideDown("slow");
 
-                });
-
-                $("#page5").on("click", "a.PRDesc", function () {
-
-                    var sArchiveId = $(this).attr("data-id");
-                    $("#dvPressReleaseDrp").html("");
-                    var block = "<div>";
-                    $.each(xJsonData, function (parindex, paritem) {
-                        if (paritem.archive_id === sArchiveId) {
-                            //console.log(paritem.archive_id);
-                            //alert(paritem.archive_id);
-                            var row = "<div id='box-press-release-link'>";
-                            row += "";
-                            row += "<div id='dv_Title1' class='press-release'><p class='lead-font'>" + paritem.title1 + "</p></div>";
-                            row += "<div id='dv_Description' class='press-release-desc'><p class='lead-font'>" + paritem.description + "</p></div>";
-                            block += row;
-                            //$.each(paritem.images, function (childindex, childitem) {
-                            //    $("#children").append("<img class='img' data-id='" + childitem.gallery_media_id + "' tite='" + childitem.gallery_media_id + "' src='http://iafs.in/images/gallery/" + childitem.url + "' />");
-                            //});
-                        }
-                    });
-                    block += '</div>';
-                    $('#dvPressReleaseDrp').html(block);
-                    $("#dvPressReleaseDrp").slideDown("slow");
-
-                });
-            });
-        </script>
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-            <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_press">
@@ -346,7 +294,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -359,12 +308,12 @@
     <div data-role="page" id="dvPRDescription">
         <div class="pageh">
             <div class="pageh_left">
-                <a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a>
+                <a href="#page5"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a>
 
             </div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="40" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -384,7 +333,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -395,41 +345,14 @@
 
     <!-- Start of the Media Coverage -->
     <div data-role="page" id="page6">
-        <!--<script code Media Coverage page6-->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                //var jsonList = "mediaCovrage.json";
-                var jsonList = "http://iafs.in/api/getMediaCoverage.php";
-                var json = $.getJSON(jsonList, function (data) {
-                    //alert(data.data[0].title1);
-                    var block = "<div>";
-
-                    for (var i = 0; i < data.data.length; i++) {
-                        //alert(data.data[i].archive_id);
-                        //console.log(data.data[i].title2);
-
-                        var row = "<div class='press-release'>";
-                        row += '<a href="#">';
-                        row += "<p class='lead-font'>" + data.data[i].title1 + "</p></a>";
-                        row += '</div>';
-                        block += row;
-                    }
-                    block += '</div>';
-                    $('#dvMediaCovrage').html(block);
-                    $("#dvMediaCovrage").slideDown("slow");
-
-                });
-                //alert(json);
-            });
-        </script>
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"></div>
+            <div class="pageh_center">Media Coverage - IAFS 2015</div>
             <div class="pageh_check">
                 <img src="images/logo.png" width="40" height="35" />
             </div>
             <!--<img src="logo.png">-->
-      
+        </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_Coverage">
                 <div id="dvMediaCovrage">
@@ -448,12 +371,15 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
+                </div>
             </nav>
         </div>
-    </div>  </div>
+    </div>
+    </div>
     <!-- End of the Press Releases -->
 
     <!-- Start of the Media Advisory -->
@@ -462,15 +388,16 @@
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
-                <p style="text-align: center; padding-top: 10px;">Content coming soon</p>
-
+                <div id="dvMediaAdvisory">
+                </div>
             </div>
+
 
 
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
@@ -485,7 +412,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -497,19 +425,17 @@
     <div data-role="page" id="page8">
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"> </div>
+            <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
-                <p style="text-align: center; padding-top: 10px;">Content coming soon</p>
-
+                <div id="dvSpeeches">
+                </div>
             </div>
-
-
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
                 <div data-role="footer">
 
@@ -522,7 +448,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -534,42 +461,12 @@
 
     <!-- Start of the Summit Agenda -->
     <div data-role="page" id="page9">
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var xJsonData = "[]";
-                //var jsonList = "Aganda.json";
-                var jsonListAganda = "http://iafs.in/api/getProgramme.php";
-                $.getJSON(jsonListAganda, function (r) {
-                    xJsonData = r.data;
-                    console.log(r.data);
-                    var items = [];
-                    var block = "<div>";
-                    $.each(xJsonData, function (index, item) {
-                        //alert(data.data[i].archive_id);
-                        //console.log(data.data[i].title2);
-                        //alert(item.archive_id);
-                        var row = "<div class='press-release'>";
-                        row += "<h1 style='display: block; text-align: left; width: 100%; font-size: 22px; font-family: 'Roboto', sans-serif;'><b>" + item.schedule_name + "</b></h1>";
-                        row += "<div style='display: block; text-align: left; width: 100%;'>";
-                        row += "<i class='fa fa-calendar' style='display: inline-block;'></i><div style='display: inline-block; font-size: 15.5px; margin-left:10px; font-family: 'Roboto', sans-serif;'>" + item.time + "</div>";
-                        row += "</div>";
-                        row += "<p class='lead-font'>" + item.location + "</p>";
-                        row += "</div>";
-                        block += row;
-                    });
-                    block += '</div>';
-                    $('#dvSummitAgenda').html(block);
-                    $("#dvSummitAgenda").slideDown("slow");
-
-                });
-            });
-        </script>
         <div class="pageh">
             <div class="pageh_left"></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-        
-                <img src="images/logo.png" width="40" height="35px;" />
+
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -577,11 +474,7 @@
             <div class="riding_history_main">
                 <div id="dvSummitAgenda">
                 </div>
-
-
             </div>
-
-
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
                 <div data-role="footer">
 
@@ -594,7 +487,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
 
                     </div>
@@ -604,68 +498,17 @@
     </div>
     <!-- End of the Summit Agenda -->
 
-
-    <!-- Start of the Registration -->
-    <div data-role="page" id="page10">
-        <div class="pageh">
-            <div class="pageh_left">
-                <img src="images/logo.png" width="40" height="35" />
-            </div>
-            <div class="pageh_center"></div>
-            <div class="pageh_check">
-             
-            </div>
-           
-        </div>
-        <div data-role="ui-content_fav">
-            <div class="riding_history_main">
-                <h1 style="padding-top: 2px; padding-left: 22px; padding-right: 7px;">Instructions for filling the Online Registration Form</h1>
-                <div class="press-release">
-
-                    <a href="#">
-                        <p class="lead-font">Excerpts from Media briefing by Secretary (West), Ministry of External Affairs announcing India Africa Forum Summit –III</p>
-                    </a>
-                </div>
-                <div class="press-release">
-                    <a href="#">
-                        <p class="lead-font">The 9th Session of the India-South Africa Joint Ministerial Commission (JMC)</p>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
-                <div data-role="footer">
-
-                    <div class="navbar-header page-scroll">
-
-                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
-                            <img src="images/home.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
-                            <img src="images/agenda.png" /></a>
-
-                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
-                            <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#page10" style="margin-left: auto; margin-right: auto">
-                            <img src="images/register_hover.png" /></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- End of the Registration -->
     <!-- Start of the Contact Us -->
     <div data-role="page" id="page11">
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"> </div>
+            <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="40" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
-        <div style="display:none;"></div>
+        <div style="display: none;"></div>
         <div data-role="ui-content_fav">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28021.036422012763!2d77.21724092960358!3d28.61088813419931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b8096232c3%3A0xd74927f5b5f1d548!2sJawaharlal+Nehru+Bhawan!5e0!3m2!1sen!2sin!4v1441971811959" width="100%" height="250" frameborder="0" style="border: 0" allowfullscreen></iframe>
             <div class="press-release-contact">
@@ -697,7 +540,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -708,63 +552,12 @@
 
     <!-- Start of the Documents -->
     <div data-role="page" id="page13">
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var xJsonData = "[]";
-                var jsonList = "http://iafs.in/api/getMediaArchive.php";
-                $.getJSON(jsonList, function (r) {
-                    xJsonData = r.data;
-                    console.log(r.data);
-                    var items = [];
-                    var block = "<div>";
-                    $.each(xJsonData, function (index, item) {
-                        //alert(item.archive_id);
-                        var row = "<div class='press-release'>";
-                        row += "<a class='DDesc' href='#page14' data-id=" + item.archive_id + ">";
-                        row += "<p class='lead-font'>" + item.title1 + "</p></a>";
-                        row += "</div>";
-                        block += row;
-                    });
-                    block += '</div>';
-                    $('#dvDocument').html(block);
-                    $("#dvDocument").slideDown("slow");
-
-                });
-
-                $("#page13").on("click", "a.DDesc", function () {
-
-                    var sArchiveId = $(this).attr("data-id");
-                    $("#dvDocumentDesc").html("");
-                    var block = "<div>";
-                    $.each(xJsonData, function (parindex, paritem) {
-                        if (paritem.archive_id === sArchiveId) {
-                            //console.log(paritem.archive_id);
-                            //alert(paritem.archive_id);
-                            var row = "<div id='box-press-release-link'>";
-                            row += "";
-                            row += "<div id='dv_Title1' class='press-release'><p class='lead-font'>" + paritem.title1 + "</p></div>";
-                            row += "<div id='dv_Description' class='press-release-desc'><p class='lead-font'>" + paritem.description + "</p></div>";
-                            block += row;
-                            //$.each(paritem.images, function (childindex, childitem) {
-                            //    $("#children").append("<img class='img' data-id='" + childitem.gallery_media_id + "' tite='" + childitem.gallery_media_id + "' src='http://iafs.in/images/gallery/" + childitem.url + "' />");
-                            //});
-                        }
-                    });
-                    block += '</div>';
-                    $('#dvDocumentDesc').html(block);
-                    $("#dvDocumentDesc").slideDown("slow");
-
-                });
-            });
-        </script>
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="40" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-            <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div id="dvDocument" class="riding_history_Coverage">
@@ -782,7 +575,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -791,14 +585,12 @@
     </div>
     <!-- End of the Press Releases -->
     <!-- Start of the Press Releases Description-->
-
-    <!--<script code page5-dvPRDescription-->
     <div data-role="page" id="page14">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left"><a href="#page13"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -817,72 +609,24 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- End of the Document-->
+    <!-- End of the Press Releases Description-->
+
     <!-- Start of the Photo Gallery -->
     <div data-role="page" id="page12">
-        <script type="text/javascript">
-            var xJsonData = "[]";
-            $(function () {
-                var jsonListPhotoGallery = "http://iafs.in/api/getImageGallery.php";
-                //var jsonListPhotoGallery = "ImageGallary.json";
-                $.getJSON(jsonListPhotoGallery, function (r) {
-                    xJsonData = r.data;
-                    console.log(r.data);
-                    var items = [];
-                    var block = "<div id='owl-demo' class='ocarouselwl-'>";
-                    $.each(xJsonData, function (index, item) {
-                        //alert(item.gallery_id);
-                        var row = "<a href='#dvImageList'>";
-                        row += "<div class='item'>";
-                        row += "<img class='img' data-id=" + item.gallery_id + " src='" + item.thumb + "' alt='Owl Image'/>";
-                        row += "<p>" + item.title1 + "</p>";
-                        row += "</div>";
-                        row += "</a>";
-                        block += row;
-                    });
-                    block += '</div>';
-                    $('#myImgGallary').html(block);
-                });
 
-                $("#myImgGallary").on("click", "img.img", function () {
-                    var xParID = $(this).attr("data-id");
-                    $("#dvPhotoList").html("");
-                    var block = "<div id='owl-demo' class='ocarouselwl-'>";
-                    $.each(xJsonData, function (parindex, paritem) {
-                        if (paritem.gallery_id === xParID) {
-                            console.log(paritem.images);
-                            //alert(paritem.images);
-                            $.each(paritem.images, function (childindex, childitem) {
-                                var row = "<div class='item'>";
-                                row += "<img class='img' title=" + childitem.gallery_media_id + " src='http://iafs.in/images/gallery/" + childitem.url + "' alt='Owl Image'/>";
-                                row += "<p>" + childitem.caption + "</p>";
-                                row += "</div>";
-                                block += row;
-
-                                //$("#dvPhotoList").append("<img class='img' data-id='" + childitem.gallery_media_id + "' tite='" + childitem.gallery_media_id + "' src='http://iafs.in/images/gallery/" + childitem.url + "' />");
-                            });
-                            block += '</div>';
-                            $('#dvPhotoList').html(block);
-                            $("#dvPhotoList").slideDown("slow");
-                        }
-                    });
-                });
-            });
-
-
-        </script>
         <div class="pageh">
             <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -901,7 +645,7 @@
                 </div>
             </div>
 
-          
+
 
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
                 <div data-role="footer">
@@ -915,7 +659,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -924,15 +669,14 @@
 
 
     </div>
-
-    <!-- Start of the Photo Gallery -->
+    <!-- End of the Photo Gallery -->
+    <!-- Start Image List -->
     <div data-role="page" id="dvImageList">
-
         <div class="pageh">
-            <div class="pageh_left"><a href="#page3"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"> </div>
+            <div class="pageh_left"><a href="#page12"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -969,14 +713,15 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- End of the Photo Gallery -->
+    <!-- End Image List -->
     <!-- Start Login-->
     <div data-role="page" id="dvLogin">
         <div class="pageh">
@@ -986,14 +731,13 @@
             </div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
                 <div id="dvLoginConcept" class="press-release-login">
-
                     <form id="myform" method="post">
 
                         <label>Login ID </label>
@@ -1005,148 +749,6 @@
                         <input type="button" value="Login" id="btnSubmit" onclick="javascript: LoginFunc();">
                     </form>
                     <div id="dvResult"></div>
-
-                    <script type="text/javascript">
-                        function GetDashboard(sUserId) {
-                            //alert(sUserId);
-                            debugger;
-
-                            $.ajax({
-                                type: "post",
-                                dataType: "json",
-                                url: "http://constantdesign.com/samples/indian-african/api/getDashboard.php",
-                                data: 'user_id=' + sUserId + '',
-                                success: function (res) {
-                                    debugger;
-                                    var sJsonData1 = res.data
-                                    var a22 = sJsonData1[0].title;
-                                    var aa = sJsonData1.length;
-                                    debugger;
-                                    if (aa > 0) {
-                                        //$("#dvDeshboardd").html("");
-                                        //var block = "<div>";
-                                        //$.each(sJsonData1, function (parindex1, paritem1) {
-                                        //debugger;
-                                        //alert(a22);
-                                        //alert(sJsonData1[0].title);
-                                        //$("#P1").text(sJsonData1[0].title);
-                                        //$("#P2").text(sJsonData1[1].title);
-                                        //$("#P3").text(sJsonData1[2].title);
-                                        //$("p#P4").text(sJsonData1[3].title);
-                                        //$("p#P5").text(sJsonData1[4].title);
-                                        //$("p#P6").text(sJsonData1[5].title);
-                                        //$("p#P7").text(sJsonData1[6].title);
-                                        //$("p#P8").text(sJsonData1[7].title);
-                                        //$("p#P9").text(sJsonData1[8].title);
-                                        //$("p#P10").text(sJsonData1[9].title);
-                                        //var row = "<div  class='press-release'><a href='" + paritem1.url + "' ><p class='lead-font'>" + paritem1.title + "</p></a></div>";
-                                        //block += row;
-                                        //debugger;
-
-                                        //});
-                                        //block += '</div>';
-                                        //$('#dvDeshboardd').html(block);
-                                        //$("#dvDeshboardd").slideDown("slow");
-                                        //debugger;
-                                        window.location.href = "#page15";
-                                        //debugger;
-
-                                    }
-                                    else {
-                                        $('#dvResult').text("Data is not available. Try again");
-                                        alert('Data are not available. Try again.');
-                                    }
-                                },
-                                error: function (xhr, textStatus, error) {
-                                    debugger;
-                                    //Show error message(if occured)
-                                    //$('#dvResult').text("Error: " + error);
-                                    alert("Error: " + error);
-                                    debugger;
-                                }
-                            });
-
-                        }
-
-                        function LoginFunc() {
-                            try {
-                                var sJsonData = "[]";
-                                //e.preventDefault();
-                                //e.stopPropagation();
-                                //Get control's values
-                                var sUserId = $("#txtUserId").val();
-                                var sPwd = $("#txtPassword").val();
-
-                                var msg = "";
-                                //check for validation
-                                if (sUserId == '') {
-                                    msg = "Please enter User-Id.";
-                                    alert(msg);
-                                    return false;
-                                }
-                                if (sPwd == '') {
-                                    msg = "Please enter password";
-                                    alert(msg);
-                                    return false;
-                                }
-
-                                if (msg.length == 0) {
-                                    //Jquery ajax call to server side method
-                                    $.ajax({
-                                        type: "post",
-                                        dataType: "json",
-                                        url: "http://constantdesign.com/samples/indian-african/api/getLogin.php",
-                                        data: 'user_name=' + sUserId + '&password=' + sPwd,
-
-                                        success: function (res) {
-
-                                            debugger;
-                                            sJsonData = res.data;
-                                            var a22 = sJsonData[0].status;
-                                            debugger;
-                                            var aa = sJsonData.length;
-                                            //console.log(aa);
-
-                                            debugger;
-                                            if (a22 == 1) {
-
-                                                //Set message
-                                                //$('#dvResult').text("Your are successfully login.");
-                                                //Reset controls                          
-                                                $('#txtUserId').val('');
-                                                $('#txtPassword').val('');
-                                                alert('You are successfully logged in');
-                                                var uid = sJsonData[0].user_id;
-                                                GetDashboard(uid);
-                                                debugger;
-                                                //window.location.href = "#page15";
-
-                                            }
-                                            else {
-                                                $('#dvResult').text("You are not a valid user. Try again.");
-                                                alert('Your are not a valid user. Try again.');
-                                                window.location.href = "#pageError";
-                                            }
-                                            //Fade Out to disappear message after 6 seconds
-                                            $('#dvResult').fadeOut(6000);
-                                        },
-                                        error: function (xhr, textStatus, error) {
-                                            //Show error message(if occured)
-                                            $('#dvResult').text("Error: " + error);
-                                            //alert('error func');
-                                        }
-                                    });
-                                }
-                                else {
-                                    //Validation failure message
-                                    $('#dvResult').html('');
-                                    $('#dvResult').html(msg);
-                                }
-                                $('#dvResult').fadeIn();
-                            }
-                            catch (ex) { ex.message.toString(); }
-                        }
-                    </script>
                 </div>
             </div>
 
@@ -1168,7 +770,8 @@
                         <img src="images/media.png" />
                     </a>
 
-                    <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                    <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                        <div class="circle">12</div>
                         <img src="images/register.png" />
                     </a>
                 </div>
@@ -1176,103 +779,159 @@
         </nav>
     </div>
     <!-- End Login -->
+
     <!--Dashboard Start-->
     <div data-role="page" id="page15">
         <div class="pageh">
             <div class="pageh_left">
-               
+                <div class="AAlogout"></div>
                 <a href="#page1"><i class="fa fa-arrow-left" style="padding-left: 15px; color: #FFF; font-size: 25px; float: right; padding-top: 5px;"></i></a>
             </div>
             <div class="pageh_center"></div>
-            <div class="pageh_check"> <img src="images/logo.png" width="40" height="35" /></div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="35" height="35" /></div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="settings_app"></div>
+            <div id="dvDashboarddd" class="riding_history_main" style="margin-bottom: 50px; display: none;">
+                <p>
+                    <h1 style="margin: 50px;">Coming soon</h1>
+                </p>
+            </div>
 
-           
-            <div class="settings_taxisecu">
-           
+            <div id="dvDashboardd" class="settings_taxisecu" style="display: none;">
+
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/DB1.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#">Click here to redirect to registration page</a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba1" href="#">
+                        <p id="P1"></p>
+                    </a>
+
+                </div>
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/DB2.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#">Change Password</a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba2" href="#">
+                        <p id="P2"></p>
+                    </a>
+                </div>
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/DB3.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#page20">Travel to India</a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba3" href="#page20">
+                        <p id="P3"></p>
+                    </a>
+                </div>
 
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/DB4.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#page21">Travel from Africa</a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba4" href="#page21">
+                        <p id="P4"></p>
+                    </a>
+                </div>
 
-               <div class="dashboard_taxisecu_lt"><img src="images/DB5.png"> </div>
-    <div class="dashboard_taxisecu_rt"><a href="#page22">Visa Advisory</a></div>
+                <div class="dashboard_taxisecu_lt">
+                    <img src="images/DB5.png">
+                </div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba5" href="#page22">
+                        <p id="P5"></p>
+                    </a>
+                </div>
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/DB6.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#page23">City Guide-Delhi</a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba6" href="#page23">
+                        <p id="P6"></p>
+                    </a>
+                </div>
 
 
                 <div class="dashboard_taxisecu_lt">
                     <img src="images/doc.png">
                 </div>
-                <div class="dashboard_taxisecu_rt"><a href="#page24" style="padding-top:2px;">Forms related to airports / vehicles / arms &amp; ammunition etc </a></div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba7" href="#page24">
+                        <p id="P7"></p>
+                    </a>
+                </div>
 
 
-              <div class="dashboard_taxisecu_lt"><img src="images/doc.png"> </div>
-    <div class="dashboard_taxisecu_rt"><a href="#page25">List of Yellow Fever Endemic Countries</a></div>
-          
-             <div class="dashboard_taxisecu_lt"><img src="images/DB6.png"> </div>
-    <div class="dashboard_taxisecu_rt"><a href="#page18">Venue</a></div>
-    
-      <div class="dashboard_taxisecu_lt"><img src="images/DB10.png"> </div>
-    <div class="dashboard_taxisecu_rt"><a href="#page19">Hotel List</a></div>
+                <div class="dashboard_taxisecu_lt">
+                    <img src="images/doc.png">
+                </div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba8" href="#page25">
+                        <p id="P8"></p>
+                    </a>
+                </div>
+
+                <div class="dashboard_taxisecu_lt">
+                    <img src="images/DB6.png">
+                </div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba9" href="#page18">
+                        <p id="P9">Venue</p>
+                    </a>
+                </div>
+
+                <div class="dashboard_taxisecu_lt">
+                    <img src="images/DB10.png">
+                </div>
+                <div class="dashboard_taxisecu_rt">
+                    <a id="dba10" href="#page19">
+                        <p id="P10">Hotel List</p>
+                    </a>
+                </div>
             </div>
 
 
-  </div>
-           
-
-
-         
-
-
-            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
-                <div data-role="footer">
-
-                    <div class="navbar-header page-scroll">
-
-                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
-                            <img src="images/home_hover.png" />
-                        </a>
-                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
-                            <img src="images/agenda.png" />
-                        </a>
-
-                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
-                            <img src="images/media.png" />
-                        </a>
-
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
-                            <img src="images/register.png" />
-                        </a>
-                    </div>
-                </div>
-            </nav>
         </div>
-   
+
+
+
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+            <div data-role="footer">
+
+                <div class="navbar-header page-scroll">
+
+                    <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
+                        <img src="images/home_hover.png" />
+                    </a>
+                    <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                        <img src="images/agenda.png" />
+                    </a>
+
+                    <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                        <img src="images/media.png" />
+                    </a>
+
+                    <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                        <div class="circle">12</div>
+                        <img src="images/register.png" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- End of the Dashboard-->
+
     <!--Error page Start-->
     <div data-role="page" id="pageError">
         <div class="pageh">
             <div class="pageh_left">
-                <img src="images/logo.png" width="33" height="30" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <div class="pageh_center"></div>
             <div class="pageh_check"><a href="#page13"><i class="fa fa-arrow-right" style="padding-right: 15px; color: #FFF; font-size: 20px; float: right; padding-top: 5px;"></i></a></div>
@@ -1295,7 +954,8 @@
                         <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
                             <img src="images/agenda.png" />
                         </a>
-                        <a class="navbar-brand page-scroll" href="#page10" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" />
                         </a>
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
@@ -1307,21 +967,23 @@
         </div>
     </div>
     <!-- End of the Error page-->
+
     <!-- Start Venue -->
     <div data-role="page" id="page18">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"> </div>
+            <div class="pageh_left">
+                 <div class="AAlogout"></div>
+                <a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="40" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-           
+
         </div>
         <div data-role="ui-content_fav">
             Indira Gandhi Stadium Complex, New Delhi India
        <iframe frameboader="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" src="http://maps.google.com/maps?hl=en&q=India Gandhi Stadium Complex, New Delhi India &ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"></iframe>
             <div class="press-release-contact">
-
             </div>
 
             <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
@@ -1336,7 +998,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -1347,60 +1010,78 @@
 
 
 
-    <!--Error page Start-->
+    <!--Hotel List Start-->
     <div data-role="page" id="page19">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-left: 15px; color: #FFF; font-size: 25px; float: right; padding-top: 5px;"></i></a>
-               
+            <div class="pageh_left">
+                 <div class="AAlogout"></div>
+                <a href="#page15"><i class="fa fa-arrow-left" style="padding-left: 15px; color: #FFF; font-size: 25px; float: right; padding-top: 5px;"></i></a>
+
             </div>
             <div class="pageh_center"></div>
-            <div class="pageh_check"> <img src="images/logo.png" width="40" height="35" /></div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="35" height="35" /></div>
 
         </div>
         <div data-role="ui-content_fav">
-       
 
             <div id="Div3" class="riding_history_hotel" style="margin-bottom: 50px;">
-             <h2 style="padding-top:12px; padding-left:15px; font-size:20px;">Hotels List</h2>
-             <div style="border-top:2px solid #f88000;"></div>
+                <h2 style="padding-top: 12px; padding-left: 15px; font-size: 20px;">Hotels List</h2>
+                <div style="border-top: 2px solid #f88000;"></div>
+               <!-- <div style="width:100%; height:100px; border:solid; display:inline-block;">
+                    <div style="width:40%; border:solid; height:80px; margin:4px;">
+                        <img src="logo.png" width="100%" height="auto" />
+                    </div>
+
+                </div>-->
+
                 <p class="iafs_Hotel">
-                    The Lalit                  
+                    <a href="#page27" title="The Lalit">The Lalit</a>
                 </p>
 
                 <p class="iafs_Hotel">
-                    The Imperial              
+                    <a href="#page28" title="The Imperial ">The Imperial  </a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    Shangri-La
+                    <a href="#page29" title="Shangri-La">Shangri-La</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    Le Meridian
+                    <a href="#page30" title=" Le Meridian">Le Meridian</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    Taj Palace
+                    <a href="#page31" title=" Taj Palace">Taj Palace</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    ITC Maurya
+                    <a href="#page32" title="ITC Maurya">ITC Maurya</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    The Ashok
+                    <a href="#page33" title="The Ashok">The Ashok</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    The Leela
+                    <a href="#page34" title="The Leela">The Leela</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    The Oberoi
+                    <a href="#page35" title="The Oberoi">The Oberoi</a>
+
                 </p>
 
                 <p class="iafs_Hotel">
-                    Taj Mahal
+                    <a href="#page36" title="Taj Mahal">Taj Mahal</a>
+
                 </p>
 
 
@@ -1417,7 +1098,8 @@
                         <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
                             <img src="images/agenda.png" />
                         </a>
-                        <a class="navbar-brand page-scroll" href="#page10" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" />
                         </a>
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
@@ -1428,45 +1110,46 @@
             </nav>
         </div>
     </div>
-    <!-- End of the Error page-->
+    <!-- End Hotel List Start-->
 
-    <!-- Start of Travel India -->
     <!-- Start of Travel India -->
     <div data-role="page" id="page20">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-left: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
-            <div class="pageh_center"> </div>
+            <div class="pageh_left">
+                 <div class="AAlogout"></div>
+                <a href="#page15"><i class="fa fa-arrow-left" style="padding-left: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
-                <div style="width:100%; text-align:justify;">
-                  <div style="width:95%; margin:20px auto; padding-bottom:82px;">
-                    <h1>Travel to India</h1>
-                    <h3>Airports &amp; Airlines</h3>
-                    <p style="margin-left: 0">
-                        India has five main gateways for international flights; however, a number of other cities such as Goa, Kochi (Cochin), Lucknow and Trivandrum also service international carriers.<br />
-                       
-                        <strong>The Major international airports are:</strong><br />
-                        1) Indira Gandhi International Airport, New Delhi: <a href="http://www.newdelhiairport.in" target="_blank">www.newdelhiairport.in</a><br />
-                        2) Chattrapathi Shivaji International Airport, Mumbai: <a href="http://www.csia.in/" target="_blank">www.csia.in/</a><br />
-                        3) Bengaluru International Airport, Bengaluru: <a href="www.bengaluruairport.com" target="_blank">www.bengaluruairport.com</a><br />
-                        4) Rajiv Gandhi International Airport, Hyderabad: <a href="www.hyderabad.aero" target="_blank">www.hyderabad.aero</a><br />
-                        5) Chennai International Airport, Chennai: <a href="http://www.aai.aero/chennai/index.jsp" target="_blank">http://www.aai.aero/chennai/index.jsp</a><br />
-                        
-                        Click here for a list of international airports: <a href="http://www.aai.aero/allAirports/airports.jsp" target="_blank">http://www.aai.aero/allAirports/airports.jsp</a><br />
-                   
-                        India's national carrier is Air India, which operates international and domestic flights.
-                    </p>
-                    <h3>Air Tickets</h3>
-                    <p style="margin-left: 0">
-                        Departure tax and other charges are included in airline tickets. You are required to show a copy of your ticket and your passport in order to enter the airport, whether flying internationally or within India.
-                    </p>
-                </div>
+                <div style="width: 100%; text-align: justify;">
+                    <div style="width: 95%; margin: 20px auto; padding-bottom: 82px;">
+                        <h1>Travel to India</h1>
+                        <h3>Airports &amp; Airlines</h3>
+                        <p style="margin-left: 0">
+                            India has five main gateways for international flights; however, a number of other cities such as Goa, Kochi (Cochin), Lucknow and Trivandrum also service international carriers.<br />
+
+                            <strong>The Major international airports are:</strong><br />
+                            1) Indira Gandhi International Airport, New Delhi: <a href="http://www.newdelhiairport.in" target="_blank">www.newdelhiairport.in</a><br />
+                            2) Chattrapathi Shivaji International Airport, Mumbai: <a href="http://www.csia.in/" target="_blank">www.csia.in/</a><br />
+                            3) Bengaluru International Airport, Bengaluru: <a href="www.bengaluruairport.com" target="_blank">www.bengaluruairport.com</a><br />
+                            4) Rajiv Gandhi International Airport, Hyderabad: <a href="www.hyderabad.aero" target="_blank">www.hyderabad.aero</a><br />
+                            5) Chennai International Airport, Chennai: <a href="http://www.aai.aero/chennai/index.jsp" target="_blank">http://www.aai.aero/chennai/index.jsp</a><br />
+
+                            Click here for a list of international airports: <a href="http://www.aai.aero/allAirports/airports.jsp" target="_blank">http://www.aai.aero/allAirports/airports.jsp</a><br />
+
+                            India's national carrier is Air India, which operates international and domestic flights.
+                        </p>
+                        <h3>Air Tickets</h3>
+                        <p style="margin-left: 0">
+                            Departure tax and other charges are included in airline tickets. You are required to show a copy of your ticket and your passport in order to enter the airport, whether flying internationally or within India.
+                        </p>
                     </div>
+                </div>
 
             </div>
 
@@ -1483,7 +1166,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -1491,33 +1175,35 @@
         </div>
     </div>
     <!-- End of the Travel India -->
-    <!-- End of the Travel India -->
 
 
     <!-- Start of Travel from Africa -->
-   <div data-role="page" id="page21">
+    <div data-role="page" id="page21">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left">
+                 <div class="AAlogout"></div>
+                <a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-       
+
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
-                <div style="width:100%;">
-                    <div style="margin:12px auto; text-align: justify; padding:0px; line-height:30px;">
+                <div style="width: 100%;">
+                    <div style="margin: 12px auto; text-align: justify; padding: 0px; line-height: 30px;">
 
-<div style="padding:15px;">
-                        <h1 style="border-bottom: solid 2px #f88000;">Travel from Africa</h1>
-                        <h3 style="font-size: 17px;">The main gateway from Africa are:</h3>
-                        <p style="font-size: 16px; border-bottom: solid 2px #f88000;">
-                            <strong>East Africa:</strong> Nairobi (Kenya) &amp; Dar es Salaam (Tanzania)<br />
-                            <strong>South Africa:</strong> Johannesburg &amp; Cape Town<br />
-                            <strong>West Africa:</strong>  Dakar (Senegal), Accra (Ghana) and Lagos (Nigeria)<br />
-                            <strong>North Africa:</strong> Casablanca (Morocco) &amp; Cairo (Egypt)
-                        </p></div>
+                        <div style="padding: 15px;">
+                            <h1 style="border-bottom: solid 2px #f88000;">Travel from Africa</h1>
+                            <h3 style="font-size: 17px;">The main gateway from Africa are:</h3>
+                            <p style="font-size: 16px; border-bottom: solid 2px #f88000;">
+                                <strong>East Africa:</strong> Nairobi (Kenya) &amp; Dar es Salaam (Tanzania)<br />
+                                <strong>South Africa:</strong> Johannesburg &amp; Cape Town<br />
+                                <strong>West Africa:</strong>  Dakar (Senegal), Accra (Ghana) and Lagos (Nigeria)<br />
+                                <strong>North Africa:</strong> Casablanca (Morocco) &amp; Cairo (Egypt)
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -1535,7 +1221,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -1547,20 +1234,20 @@
     <!-- Start of Visa Advisory -->
     <div data-role="page" id="page22">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-           
+
         </div>
 
         <div data-role="ui-content_fav">
             <div class="riding_history_main">
-                <h2 style="font-size: 18px; margin: 20px 10px; padding-top:2px; text-align:justify; font-family:font-family: 'Roboto', sans-serif;">List of countries with which bilateral agreements on exemption from requirement of visa by diplomatic, official/service and ordinary passport holders are signed/currently in force</h2>
+                <h2 style="font-size: 18px; margin: 20px 10px; padding-top: 2px; text-align: justify; font-family: font-family: 'Roboto', sans-serif;">List of countries with which bilateral agreements on exemption from requirement of visa by diplomatic, official/service and ordinary passport holders are signed/currently in force</h2>
                 <table class="table">
 
-                    <tr style="width: 100%; border:1px solid #f88000; BACKGROUND-COLOR: #f88000; color: #fff;">
+                    <tr style="width: 100%; border: 1px solid #f88000; BACKGROUND-COLOR: #f88000; color: #fff;">
                         <th style="width: 15%">Country</th>
                         <th style="width: 25%">Category of passport exempted</th>
                         <th style="width: 15%">Period of stay</th>
@@ -2013,145 +1700,147 @@
 
 
             </div>
-  </div>
+        </div>
 
-            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
-                <div data-role="footer">
+        <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+            <div data-role="footer">
 
-                    <div class="navbar-header page-scroll">
+                <div class="navbar-header page-scroll">
 
-                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
-                            <img src="images/home_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
-                            <img src="images/agenda.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
+                        <img src="images/home_hover.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                        <img src="images/agenda.png" /></a>
 
-                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
-                            <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
-                            <img src="images/register.png" /></a>
-                    </div>
+                    <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                        <img src="images/media.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                        <div class="circle">12</div>
+                        <img src="images/register.png" /></a>
                 </div>
-            </nav>
-      
+            </div>
+        </nav>
+
     </div>
     <!-- End of Visa Advisory -->
 
 
 
     <!-- Start of City Guide - Delhi -->
-   <div data-role="page" id="page23">
+    <div data-role="page" id="page23">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-            
+
         </div>
         <div data-role="ui-content_fav">
             <div class="riding_history_maining">
-             
-                        <h1 style="padding-left:15px; padding-top:10px;">City Guide - Delhi</h1>
+
+                <h1 style="padding-left: 15px; padding-top: 10px;">City Guide - Delhi</h1>
 
 
-                        <p style=" border-bottom: 2px solid #f88000;">
-                            <strong>Delhi</strong>&nbsp;is&nbsp;India's capital city and the home of executive, legislative, and judiciary branches Government of India. Delhi is a large metropolis with strengths in arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence.
-                        </p>
+                <p style="border-bottom: 2px solid #f88000;">
+                    <strong>Delhi</strong>&nbsp;is&nbsp;India's capital city and the home of executive, legislative, and judiciary branches Government of India. Delhi is a large metropolis with strengths in arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence.
+                </p>
 
-                        <h1 style="padding-left:15px; padding-top:10px;">Districts of Delhi</h1>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Districts of Delhi</h1>
 
-                        <p style=" border-bottom: 2px solid #f88000;">
-                            <strong>South Delhi</strong> — Defence Colony, Hauz Khas, Green Park, Greater Kailash, Vasant Kunj, Lajpat Nagar, Nehru Place, Malviya Nagar and Kalkaji.<br />
-                            <strong>East Delhi</strong> — Gandhi Nagar, Preet Vihar, and Vivek Vihar.<br />
-                            <strong>North Delhi</strong> — Sadar Bazar, University Enclave (Kamla Nagar), Kotwali, and Civil Lines.<br />
-                            <strong>West Delhi</strong> — Patel Nagar, Rajouri Garden, East Sagarpur and Punjabi Bagh.<br />
-                            <strong>Central Delhi</strong> — Connaught Place, Khan Market, Chanakyapuri, Karol Bagh and Paharganj.<br />
-                            <strong>Old Delhi</strong> — Daryaganj, Kashmere Gate, Chandni Chowk, Chawri Bazaar, Lal Quila and Jama Masjid.
-                        </p>
-                        <h1 style="padding-left:15px; padding-top:10px;">Weather</h1>
+                <p style="border-bottom: 2px solid #f88000;">
+                    <strong>South Delhi</strong> — Defence Colony, Hauz Khas, Green Park, Greater Kailash, Vasant Kunj, Lajpat Nagar, Nehru Place, Malviya Nagar and Kalkaji.<br />
+                    <strong>East Delhi</strong> — Gandhi Nagar, Preet Vihar, and Vivek Vihar.<br />
+                    <strong>North Delhi</strong> — Sadar Bazar, University Enclave (Kamla Nagar), Kotwali, and Civil Lines.<br />
+                    <strong>West Delhi</strong> — Patel Nagar, Rajouri Garden, East Sagarpur and Punjabi Bagh.<br />
+                    <strong>Central Delhi</strong> — Connaught Place, Khan Market, Chanakyapuri, Karol Bagh and Paharganj.<br />
+                    <strong>Old Delhi</strong> — Daryaganj, Kashmere Gate, Chandni Chowk, Chawri Bazaar, Lal Quila and Jama Masjid.
+                </p>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Weather</h1>
 
-                        <p style="border-bottom: 2px solid #f88000;">
-                            Best time to visit to Delhi is between October and March. October marks the onset of autumn. During these time you can experience very dry ambiance, warm days and pleasant nights. Maximum temperatures drop below 30°C by late October and there is a gradual fall in average temperature. Minimum temperature drops below 20°C.
-                        </p>
-
-
-                        <h1 style="padding-left:15px; padding-top:10px;">Shopping</h1>
-
-                        <p>
-                            Delhi has a great mix of modern and traditional shopping. From sprawling malls to old bazaars, Delhi has it all.
-                        </p>
-
-                        <h1 style="padding-left:15px; padding-top:10px;">Shopping</h1>
-                        <ul>
-                            <li>DLF Emporio, 4 Nelson Mandela Road, Vasant Kunj</li>
-                            <li>DLF Promenade, 3 Nelson Mandela Road, Vasant Kunj</li>
-                            <li>Ambience Mall, (Near J. Nehru University</li>
-                            <li>Select City Walk, MGF Metropolitan, &amp; DLF Place Malls, A-3m District Centre, Saket</li>
-                            <li>Pacific Mall, Najafgarh Road, Tagore Garden, New Delhi</li>
-                        </ul>
+                <p style="border-bottom: 2px solid #f88000;">
+                    Best time to visit to Delhi is between October and March. October marks the onset of autumn. During these time you can experience very dry ambiance, warm days and pleasant nights. Maximum temperatures drop below 30°C by late October and there is a gradual fall in average temperature. Minimum temperature drops below 20°C.
+                </p>
 
 
-                        <h1 style="padding-left:15px; padding-top:10px;">Bazaars</h1>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Shopping</h1>
 
-                        <ul>
-                            <li>Connaught Place: A unique cross between a European shopping arcade, an Indian bazaar, and an upmarket shopping mall.</li>
-                            <li>Paharganj, (opposite New Delhi Railway Station): This strip of shops sells items such as Indian perfumes, shawls, music instruments, rugs, jewellery, etc.</li>
-                            <li>Rajouri Garden Market - Excellent place to shop for wedding as well as everyday clothing.</li>
-                            <li>Khan Market: An up market shopping spot with a mix of restaurants, garment stores, housewares, jewellery/accessories, and books.</li>
-                            <li>Janpath: Flea Market</li>
-                            <li>Karol Bagh:  traditional Indian Wear, sarees and shawls.</li>
-                            <li>Chandni Chowk: The heart of Old Delhi, this is the place to go for the full-on Indian experience of crowded, twisting alleys and tiny shops.</li>
-                            <li>Dilli Haat: Handicrafts</li>
-                        </ul>
-                        <h1 style="padding-left:15px; padding-top:10px;">Sightseeing</h1>
-                        <ul>
-                            <li>Jama Masjid: India's largest mosque and one of Shah Jahan's masterpieces.</li>
-                            <li>Qutub Minar: World's tallest brick minaret and an excellent example of Afghan Architecture.</li>
-                            <li>Humayun's Tomb: Built by Humayun's widow, Queen Haji Begum in the 16th century.</li>
-                            <li>Red Fort: Built by Shahjahan, The construction lasted from 1639 to 1648.</li>
-                            <li>Akshardham: It is hailed as an eternal place of devotion, purity and peace.</li>
-                            <li>India Gate: India's war memorial located astride the Rajpath, on the eastern edge of the 'ceremonial axis' of New Delhi.</li>
-                            <li>Jantar Mantar: It's located in the modern city of New Delhi. It consists of 13 architectural astronomy instruments.</li>
-                        </ul>
-                        <h1 style="padding-left:15px; padding-top:10px;">Eating Out</h1>
-                        <ul>
-                            <li>Indian Accent, Manor Hotel: &nbsp;inspired modern Indian cuisine</li>
-                            <li>Varq,  Taj Mahal Hotel, New Delhi:  North Indian and Seafood cuisines</li>
-                            <li>Dakshin, Sheraton:  a luxury South Indian restaurant</li>
-                            <li>Bukhara, ITC Maurya: Bukhara is an unrivalled Global Culinary Destination.</li>
-                            <li>Chandni Chowk: Variety of some of the best street food of Delhi</li>
-                            <li>Wengers, Connaught Place: Is the old world charm of English baking and hosts the most delicious varieties of pastries, cakes, cookies &amp; other confectionaries</li>
-                        </ul>
-                        <h1 style="padding-left:15px; padding-top:10px;">Local Travel</h1>
-                        <p>Taxi Services: List of local cab taxi operators in Delhi:</p>
-                        <ul>
-                            <li>Meru cabs: 011 4422 4422</li>
-                            <li>Ola Cabs: 0124 384 5800</li>
-                            <li>Megacabs: 011 4141 4141</li>
-                            <li>Easycabs :011 43434343</li>
-                        </ul>
+                <p>
+                    Delhi has a great mix of modern and traditional shopping. From sprawling malls to old bazaars, Delhi has it all.
+                </p>
+
+                <h1 style="padding-left: 15px; padding-top: 10px;">Shopping</h1>
+                <ul>
+                    <li>DLF Emporio, 4 Nelson Mandela Road, Vasant Kunj</li>
+                    <li>DLF Promenade, 3 Nelson Mandela Road, Vasant Kunj</li>
+                    <li>Ambience Mall, (Near J. Nehru University</li>
+                    <li>Select City Walk, MGF Metropolitan, &amp; DLF Place Malls, A-3m District Centre, Saket</li>
+                    <li>Pacific Mall, Najafgarh Road, Tagore Garden, New Delhi</li>
+                </ul>
 
 
-                        <h1 style="padding-left:15px; padding-top:10px;">Metro services / Routes and lines</h1>
-                        <ul style="border-bottom: 2px solid #f88000;">
-                            <li>Red Line: Connects&nbsp;Rithala&nbsp;in the west to&nbsp;Dilshad Garden&nbsp;in the east</li>
-                            <li>Yellow Line: Connects Jahangirpuri&nbsp;with&nbsp;HUDA City Centre&nbsp;in&nbsp;Gurgaon</li>
-                            <li>Blue Line: Connects&nbsp;Dwarka Sub City&nbsp;in the west with the satellite city of&nbsp;Noida&nbsp;in the east</li>
-                            <li>Green Line: It runs between Inderlok (station on the Red Line) and Mundka with a branch line connecting the lines of Ashok Park Main station with Kirti Nagar station on the Blue Line</li>
-                            <li>Violet Line: Connects&nbsp;Badarpur</li>
-                            <li>Airport Express: The Airport Express line runs from&nbsp;New Delhi Railway Station&nbsp;to&nbsp;Dwarka Sector 21, via Indira Gandhi International Airport &amp; Delhi Aerocity.</li>
-                        </ul>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Bazaars</h1>
 
-                        <h1 style="padding-left:15px; padding-top:10px;">Important Links</h1>
+                <ul>
+                    <li>Connaught Place: A unique cross between a European shopping arcade, an Indian bazaar, and an upmarket shopping mall.</li>
+                    <li>Paharganj, (opposite New Delhi Railway Station): This strip of shops sells items such as Indian perfumes, shawls, music instruments, rugs, jewellery, etc.</li>
+                    <li>Rajouri Garden Market - Excellent place to shop for wedding as well as everyday clothing.</li>
+                    <li>Khan Market: An up market shopping spot with a mix of restaurants, garment stores, housewares, jewellery/accessories, and books.</li>
+                    <li>Janpath: Flea Market</li>
+                    <li>Karol Bagh:  traditional Indian Wear, sarees and shawls.</li>
+                    <li>Chandni Chowk: The heart of Old Delhi, this is the place to go for the full-on Indian experience of crowded, twisting alleys and tiny shops.</li>
+                    <li>Dilli Haat: Handicrafts</li>
+                </ul>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Sightseeing</h1>
+                <ul>
+                    <li>Jama Masjid: India's largest mosque and one of Shah Jahan's masterpieces.</li>
+                    <li>Qutub Minar: World's tallest brick minaret and an excellent example of Afghan Architecture.</li>
+                    <li>Humayun's Tomb: Built by Humayun's widow, Queen Haji Begum in the 16th century.</li>
+                    <li>Red Fort: Built by Shahjahan, The construction lasted from 1639 to 1648.</li>
+                    <li>Akshardham: It is hailed as an eternal place of devotion, purity and peace.</li>
+                    <li>India Gate: India's war memorial located astride the Rajpath, on the eastern edge of the 'ceremonial axis' of New Delhi.</li>
+                    <li>Jantar Mantar: It's located in the modern city of New Delhi. It consists of 13 architectural astronomy instruments.</li>
+                </ul>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Eating Out</h1>
+                <ul>
+                    <li>Indian Accent, Manor Hotel: &nbsp;inspired modern Indian cuisine</li>
+                    <li>Varq,  Taj Mahal Hotel, New Delhi:  North Indian and Seafood cuisines</li>
+                    <li>Dakshin, Sheraton:  a luxury South Indian restaurant</li>
+                    <li>Bukhara, ITC Maurya: Bukhara is an unrivalled Global Culinary Destination.</li>
+                    <li>Chandni Chowk: Variety of some of the best street food of Delhi</li>
+                    <li>Wengers, Connaught Place: Is the old world charm of English baking and hosts the most delicious varieties of pastries, cakes, cookies &amp; other confectionaries</li>
+                </ul>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Local Travel</h1>
+                <p>Taxi Services: List of local cab taxi operators in Delhi:</p>
+                <ul>
+                    <li>Meru cabs: 011 4422 4422</li>
+                    <li>Ola Cabs: 0124 384 5800</li>
+                    <li>Megacabs: 011 4141 4141</li>
+                    <li>Easycabs :011 43434343</li>
+                </ul>
 
-                       <p>
-                            <a style="color: blue;" href="http://www.delhitourism.gov.in/delhitourism/index.jsp" target="_blank">http://www.delhitourism.gov.in/delhitourism/index.jsp</a><br>
 
-                            <a style="color: blue;" href="http://www.incredibleindia.org/en/travel/destination/delhi" target="_blank">http://www.incredibleindia.org/en/travel/destination/delhi</a><br>
+                <h1 style="padding-left: 15px; padding-top: 10px;">Metro services / Routes and lines</h1>
+                <ul style="border-bottom: 2px solid #f88000;">
+                    <li>Red Line: Connects&nbsp;Rithala&nbsp;in the west to&nbsp;Dilshad Garden&nbsp;in the east</li>
+                    <li>Yellow Line: Connects Jahangirpuri&nbsp;with&nbsp;HUDA City Centre&nbsp;in&nbsp;Gurgaon</li>
+                    <li>Blue Line: Connects&nbsp;Dwarka Sub City&nbsp;in the west with the satellite city of&nbsp;Noida&nbsp;in the east</li>
+                    <li>Green Line: It runs between Inderlok (station on the Red Line) and Mundka with a branch line connecting the lines of Ashok Park Main station with Kirti Nagar station on the Blue Line</li>
+                    <li>Violet Line: Connects&nbsp;Badarpur</li>
+                    <li>Airport Express: The Airport Express line runs from&nbsp;New Delhi Railway Station&nbsp;to&nbsp;Dwarka Sector 21, via Indira Gandhi International Airport &amp; Delhi Aerocity.</li>
+                </ul>
 
-                            <a style="color: blue;" href="http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home" target="_blank">http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home</a></p>
-                    
-              
+                <h1 style="padding-left: 15px; padding-top: 10px;">Important Links</h1>
+
+                <p>
+                    <a style="color: blue;" href="http://www.delhitourism.gov.in/delhitourism/index.jsp" target="_blank">http://www.delhitourism.gov.in/delhitourism/index.jsp</a><br>
+
+                    <a style="color: blue;" href="http://www.incredibleindia.org/en/travel/destination/delhi" target="_blank">http://www.incredibleindia.org/en/travel/destination/delhi</a><br>
+
+                    <a style="color: blue;" href="http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home" target="_blank">http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home</a>
+                </p>
+
+
 
             </div>
 
@@ -2168,7 +1857,8 @@
 
                         <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                             <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
                             <img src="images/register.png" /></a>
                     </div>
                 </div>
@@ -2180,25 +1870,25 @@
 
 
     <!-- Start of Form Required -->
-   <div data-role="page" id="page24">
+    <div data-role="page" id="page24">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
-            
+
         </div>
         <div data-role="ui-content_fav">
 
 
             <div class="riding_history_main">
-              <br>
-              <h2 style="font-size:18px; padding-left:15px;">Forms related to airports / vehicles / arms & ammunition etc</h2>
+                <br>
+                <h2 style="font-size: 18px; padding-left: 15px;">Forms related to airports / vehicles / arms & ammunition etc</h2>
 
                 <table border="1" class="table" style="width: 100%;">
 
-                    <tr style="background-color:#f88000; color:#fff;font-family: "Roboto",sans-serif;">
+                    <tr style="background-color: #f88000; color: #fff; font-family: Roboto,sans-serif;">
                         <th style="width: 25%">What<br>
                             (Purpose of Form)</th>
                         <th style="width: 20%" class="text-center">Where<br>
@@ -2268,37 +1958,38 @@
 
 
             </div>
- </div>
+        </div>
 
-            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
-                <div data-role="footer">
+        <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+            <div data-role="footer">
 
-                    <div class="navbar-header page-scroll">
+                <div class="navbar-header page-scroll">
 
-                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
-                            <img src="images/home_hover.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
-                            <img src="images/agenda.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
+                        <img src="images/home_hover.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                        <img src="images/agenda.png" /></a>
 
-                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
-                            <img src="images/media.png" /></a>
-                        <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
-                            <img src="images/register.png" /></a>
-                    </div>
+                    <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                        <img src="images/media.png" /></a>
+                    <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                        <div class="circle">12</div>
+                        <img src="images/register.png" /></a>
                 </div>
-            </nav>
-       
+            </div>
+        </nav>
+
     </div>
     <!-- End of Form Required -->
 
 
     <!-- Start of Yellow Fever -->
-   <div data-role="page" id="page25">
+    <div data-role="page" id="page25">
         <div class="pageh">
-            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
             <div class="pageh_center"></div>
             <div class="pageh_check">
-                <img src="images/logo.png" width="40" height="35" />
+                <img src="images/logo.png" width="35" height="35" />
             </div>
             <!--<img src="logo.png">-->
         </div>
@@ -2306,15 +1997,15 @@
 
 
             <div class="riding_history_main">
-            <h2 style="padding-top:12px; padding-left:15px; font-size:20px;">List of Yellow Fever Endemic Countries</h2>
+                <h2 style="padding-top: 12px; padding-left: 15px; font-size: 20px;">List of Yellow Fever Endemic Countries</h2>
 
                 <br />
-                <div style="float: left; width: 40%; margin: 10px; padding-bottom:100px;">
+                <div style="float: left; width: 40%; margin: 10px; padding-bottom: 100px;">
 
                     <div class="h1countryBlock">
                         Africa
                     </div>
-               
+
                     <div class="countryBlock">
                         <span class="lead-font-country">Angola</span>
                     </div>
@@ -2412,7 +2103,7 @@
                     <div class="h1countryBlock">
                         South America
                     </div>
-                 
+
                     <div class="countryBlock">
                         <span class="lead-font-country">Argentina</span>
                     </div>
@@ -2469,7 +2160,8 @@
 
                             <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
                                 <img src="images/media.png" /></a>
-                            <a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
+                            <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                                <div class="circle">12</div>
                                 <img src="images/register.png" /></a>
                         </div>
                     </div>
@@ -2479,6 +2171,500 @@
         <!-- End of Form Required -->
 
     </div>
+
+
+    <!-- Start of the Notification -->
+    <div data-role="page" id="page26">
+
+        <div class="pageh">
+            <div class="pageh_left"><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Notification - IAFS 2015 </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="35" />
+            </div>
+        </div>
+        <div data-role="ui-content_fav">
+            <div class="riding_history_main">
+
+                <div id="dvNotification">
+                    <p>
+                        <button class="demo-4 btn btn-danger">Notification Title</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register_hover.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of the Notification -->
+
+
+    <!-- Start The The Lalit  -->
+    <div data-role="page" id="page27">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Lalit Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14007.60296659997!2d77.22990424797233!3d28.632736821231692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390cfd32312dee27%3A0xc40680170b85d192!2sThe+Lalit+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.631382!2d77.2270302!5e0!3m2!1sen!2sin!4v1442408306504" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of the Lalit -->
+
+
+    <!-- Start The The Imperial    -->
+    <div data-role="page" id="page28">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Imperial   Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28015.20067520711!2d77.21586793985986!3d28.632756517707364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2c9cb8494fd%3A0x1f64b7c1ecbca4b4!2sThe+Imperial%2C+Janpath+Lane%2C+Connaught+Place%2C+New+Delhi%2C+Delhi!3m2!1d28.6254445!2d77.2181873!5e0!3m2!1sen!2sin!4v1442408330395" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of the Imperial   -->
+
+
+    <!-- Start The The Shangri-La    -->
+    <div data-role="page" id="page29">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Shangri-La   Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28017.444296469064!2d77.21576758984507!3d28.62435077095984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390d1d5c576a8cf3%3A0xd1508b8ec2635b9b!2sShangri+la+New+Delhi+Hotels%2C+Ashoka+Road%2C+Janpath%2C+New+Delhi%2C+Delhi!3m2!1d28.62096!2d77.21816199999999!5e0!3m2!1sen!2sin!4v1442408405169" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of the Shangri-La   -->
+
+
+    <!-- Start Le Meridian -->
+    <div data-role="page" id="page30">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - Le Meridian Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28017.444296469064!2d77.21649513984507!3d28.62435077095984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2ca5c27f3eb%3A0xfd30c43060eccfd2!2sLe+Meridien+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.618681!2d77.2178583!5e0!3m2!1sen!2sin!4v1442408496499" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Le Meridian -->
+
+
+    <!-- Start The Taj Palace
+    -->
+    <div data-role="page" id="page31">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Taj Palace   Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d39622.23360327952!2d77.20760204690382!3d28.625453234330784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390d1d155a398e29%3A0x2108db1d5496ce9f!2sTaj+Palace%2C+New+Delhi%2C+Delhi!3m2!1d28.595422!2d77.17062419999999!5e0!3m2!1sen!2sin!4v1442408160233" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of the Taj Palace  -->
+
+
+
+
+    <!-- Start ITC Maurya
+    -->
+    <div data-role="page" id="page32">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">
+                Hotel - ITC Maurya
+ Hotel Map
+            </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56038.04687602068!2d77.17582055496642!3d28.618433148224373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390d1d402faf44c9%3A0x89c489e861057115!2sITC+Maurya%2C+Sardar+Patel+Marg%2C+Diplomatic+Enclave%2C+New+Delhi%2C+Delhi!3m2!1d28.596996999999998!2d77.173694!5e0!3m2!1sen!2sin!4v1442408534673" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of ITC Maurya-->
+
+
+    <!-- Start The Ashoka   -->
+    <div data-role="page" id="page33">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Ashoka Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28020.6747639701!2d77.20416843982376!3d28.612243825643233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce29fb44a031b%3A0xdf089a5045bdcdcc!2sThe+Ashok%2C+New+Delhi%2C+Delhi!3m2!1d28.596978999999997!2d77.19587!5e0!3m2!1sen!2sin!4v1442408570378" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Ashoka  -->
+
+
+
+
+    <!-- Start The Leela    -->
+    <div data-role="page" id="page34">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Leela Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56045.528911587964!2d77.18353655486698!3d28.60440970985971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390d018900000001%3A0xff8f5df30e8835b2!2sThe+Leela+Palace%2C+New+Delhi%2C+Delhi!3m2!1d28.579977099999997!2d77.1893047!5e0!3m2!1sen!2sin!4v1442408592180" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Leela -->
+
+
+
+    <!-- Start The Oberoi    -->
+    <div data-role="page" id="page35">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - The Oberoi  Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28021.0241529892!2d77.22534328982147!3d28.610934126149786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe+Oberoi%2C+New+Delhi%2C+Doctor+Zakir+Hussain+Marg%2C+New+Delhi%2C+Delhi!3m2!1d28.596239999999998!2d77.239717!5e0!3m2!1sen!2sin!4v1442408629015" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Oberoi  -->
+
+
+
+    <!-- Start Taj Mahal    -->
+    <div data-role="page" id="page36">
+        <div class="pageh">
+            <div class="pageh_left"> <div class="AAlogout"></div><a href="#page15"><i class="fa fa-arrow-left" style="padding-right: 0px; color: #FFF; font-size: 25px; float: right; padding-top: 4px;"></i></a></div>
+            <div class="pageh_center">Hotel - Taj Mahal Hotel Map </div>
+            <div class="pageh_check">
+                <img src="images/logo.png" width="40" height="40" />
+            </div>
+            <!--<img src="logo.png">-->
+        </div>
+        <br />
+        <div data-role="ui-content_fav">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28018.086716672333!2d77.21964993984082!3d28.62194352189116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2c5c87762fd%3A0x1aaa2da2f8dc6d96!2sThe+Taj+Mahal+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.6049142!2d77.2233427!5e0!3m2!1sen!2sin!4v1442408677135" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+
+            <div class="press-release-contact">
+
+                <!--<h1 style="font-size: 16px !important; line-height: 22px; font-weight: 400; margin-top: 30px; text-align: justify;">Indira Gandhi Stadium Complex, New Delhi India </h1>-->
+            </div>
+
+            <nav class="navbar navbar-default navbar-fixed-bottom" style="background-color: #000;">
+                <div data-role="footer">
+
+                    <div class="navbar-header page-scroll">
+
+                        <a class="navbar-brand page-scroll" href="#page15" style="margin-left: auto; margin-right: auto">
+                            <img src="images/home_hover.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
+                            <img src="images/agenda.png" /></a>
+
+                        <a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
+                            <img src="images/media.png" /></a>
+                        <a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
+                            <div class="circle">12</div>
+                            <img src="images/register.png" /></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End of Taj Mahal  -->
+
+
 
     <!--<script type="text/javascript" src="js/script.js"></script>-->
     <link href="css/owl.carousel.css" rel="stylesheet">
@@ -2641,31 +2827,95 @@
 
     <script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
-    
-    <script>
-	var cc=1;
-	var startHieght=0;
-	$('#more').click(function() {
-    var reducedHeight = $('.about_profile').height();
-	
-    $('.about_profile').css('height', 'auto');
-    var fullHeight = $('.about_profile').height();
-	
-    $('.about_profile').height(reducedHeight);
-if(cc==1)
-{
-    $('.about_profile').animate({height: fullHeight}, 500);
-	startHieght=reducedHeight;
-	cc=2;
-}
-	else
-{
-	 $('.about_profile').animate({height: startHieght}, 500);
 
-cc=1;
-}
-	
-});
-	</script>
+    <script>
+        var cc = 1;
+        var startHieght = 0;
+        $('#more').click(function () {
+            var reducedHeight = $('.about_profile').height();
+
+            $('.about_profile').css('height', 'auto');
+            var fullHeight = $('.about_profile').height();
+
+            $('.about_profile').height(reducedHeight);
+            if (cc == 1) {
+                $('.about_profile').animate({ height: fullHeight }, 500);
+                startHieght = reducedHeight;
+                $('#more').text('Read Less...');
+                cc = 2;
+            }
+            else {
+                $('.about_profile').animate({ height: startHieght }, 500);
+                $('#more').text('Read More...');
+                cc = 1;
+            }
+
+        });
+    </script>
+
+    <!--Notification-->
+    <link href="css/notifier.css" rel="stylesheet" type="text/css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/notifier.js"></script>
+    <script>
+        (function ($) {
+            //$('.demo-1').click(function (event) {
+            //    $.notifier({
+            //        "type": "error",
+            //        "positionY": "bottom",
+            //        "positionX": "left"
+            //    });
+            //});
+
+            //$('.demo-2').click(function (event) {
+            //    $.notifier({
+            //        "type": "success",
+            //        "positionY": "bottom",
+            //        "animationIn": 'bounce',
+            //        "animationOut": 'drop',
+            //        "positionX": "left"
+            //    });
+            //});
+
+            //$('.demo-3').click(function (event) {
+            //    $.notifier({
+            //        "type": "warning",
+            //        "positionY": "bottom",
+
+            //        "positionX": "left",
+            //        "animationIn": 'highlight',
+            //        "animationOut": 'blind'
+            //    });
+            //});
+
+            $('.demo-4').click(function (event) {
+                $.notifier({
+                    "type": "info",
+                    "positionY": "bottom",
+                    "animationIn": 'slide',
+                    "animationOut": 'fade',
+                    "positionX": "left"
+                });
+            });
+        })(jQuery);
+
+        //function myFunc() {
+
+        //    $.notifier({
+        //        "type": "info",
+        //        "positionY": "bottom",
+        //        "animationIn": 'slide',
+        //        "animationOut": 'fade',
+        //        "positionX": "left"
+        //    });
+
+        //}
+
+        //$(document).ready(function () {
+
+        //});
+    </script>
 </body>
 </html>
