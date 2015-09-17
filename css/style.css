@@ -28,7 +28,7 @@ z-index:9999;
 {
 
 margin:0px auto 0px auto;
-padding:5px 0px 0px 0px;
+padding:5px 0px 0px 23px;
 width:10%;
 text-align:center;
 float:left;
@@ -42,6 +42,30 @@ padding:4px 0px 0px 0px;
 width:75%;
 text-align:center;
 float:left;
+color:#fff;
+font-size:20px;
+font-family: 'Roboto', sans-serif;
+height:45px;
+}
+.pageh_logout
+{
+     margin: 3px -13px 0px auto;
+    padding: 1px 0px 0px 0px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    height: 45px;
+}
+.pageh_noty
+{
+
+margin:1px auto 0px auto;
+padding:4px 0px 0px 0px;
+width:12%;
+text-align:center;
+float:right;
 color:#fff;
 font-size:20px;
 font-family: 'Roboto', sans-serif;
@@ -1751,11 +1775,11 @@ color: #FFFFFF;
   float: left;
   padding-top:5px;
   padding-bottom: 15px;
-  padding-right:7px;
+  padding-right: 10px;
   font-size: 18px;
   line-height: 20px;
   color: #777777;
-  padding-left:7px;
+  padding-left:10px;
 }
 }
 
@@ -2645,14 +2669,21 @@ height:50px !important;
     cursor:default;
 }
 .circle {
-position: relative;
-
-    line-height: 4;
+    position: relative;
+    /* line-height: 4; */
     vertical-align: top;
-    left:22px;
-	color:red
-
-}
+    /* left: 22px; */
+    color: red;
+    width: 24px;
+    height: 24px;
+    float: right;
+    right:40px;
+    /* position: absolute; */
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 15px;
+}}
 
 
 /*Hitesh 160915*/

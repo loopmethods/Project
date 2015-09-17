@@ -9,7 +9,7 @@ $(document).ready(function () {
             if (res == true) {
                 aLogout = "0";
                 debugger;
-                window.location.href = "#dvLogin";
+                window.location.href = "#page1";
                 $(".AAlogout").text('').hide();
 
             } else {
@@ -154,7 +154,7 @@ function LoginFunc() {
                         debugger;
                         //e.preventDefault();
                         aLogout = "1";
-                        $(".AAlogout").text('Logout').show();
+                        $(".AAlogout").html('<i class="fa fa-sign-out" style="font-size:30px;"></i>').show();
                         sJsonData = res.data;
                         var sStatus = sJsonData[0].status;
                         debugger;
