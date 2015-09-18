@@ -930,6 +930,7 @@ border-top-color: #acacac;
     z-index: 1030;
 	bottom:0px;
 	display:none;
+	background-color:#000;
 }
 .wrong_password{
 	color:#fff;
@@ -2794,14 +2795,14 @@ height:50px !important;
     /* line-height: 4; */
     vertical-align: top;
     /* left: 22px; */
-    color: red;
+    color: #fff;
     width: 24px;
     height: 24px;
     float: right;
     right:40px;
     /* position: absolute; */
     z-index: 9999;
-    background-color: #fff;
+    background-color:orange;
     border-radius: 25px;
     font-size: 15px;
 }
