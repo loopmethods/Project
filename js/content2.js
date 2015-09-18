@@ -1,6 +1,6 @@
 //Check Internet connection Start
 var connectionStatus = false;
-function checkInternetconnection() {
+function checkInternetconnection(){
     var networkState = navigator.connection.type;
     if (networkState == Connection.NONE) {
         alert('No Internet Connection');
@@ -36,23 +36,23 @@ $(document).ready(function () {
 
 var aLogout = "0";
 $(document).ready(function () {
+   
+        $('.AAlogout').click(function () {
+            var res = confirm("Are you sure you want to logout ?");
+            
+            if (res == true) {
+                aLogout = "0";
+                
+                window.location.href = "#page1";
+                $(".AAlogout").text('').hide();
 
-    $('.AAlogout').click(function () {
-        var res = confirm("Are you sure you want to logout ?");
+            } else {
+                aLogout = aLogout;
+                
+            }
 
-        if (res == true) {
-            aLogout = "0";
-
-            window.location.href = "#page1";
-            $(".AAlogout").text('').hide();
-
-        } else {
-            aLogout = aLogout;
-
-        }
-
-        //alert(aLogout);
-    });
+            //alert(aLogout);
+        });
 });
 
 //logout function End
@@ -79,156 +79,156 @@ catch (ex) { }
 
 function GetDashboard(sUserId) {
     //alert(sUserId);
+   
 
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "http://constantdesign.com/samples/indian-african/api/getDashboard.php",
+            data: 'user_id=' + sUserId + '',
+            success: function (res) {
 
-    $.ajax({
-        type: "post",
-        dataType: "json",
-        url: "http://constantdesign.com/samples/indian-african/api/getDashboard.php",
-        data: 'user_id=' + sUserId + '',
-        success: function (res) {
+                //e.preventDefault();
+                var sJsonData1 = res.data
+              
+                var a22 = sJsonData1[0].title;
+                var aa = sJsonData1.length;
+               
+                if (aa > 0) {
+                   
+                    //$.each(sJsonData1, function (parindex1, paritem1) {                                            
+                    //alert(sJsonData1[0].title);
 
-            //e.preventDefault();
-            var sJsonData1 = res.data
+                    //var row = "<div  class='press-release'><a href='" + paritem1.url + "'><p class='lead-font'>" + paritem1.title + "</p></a></div>";
+                    $("#P1").html(sJsonData1[0].title);
+                    $("#dba1").attr("href", sJsonData1[0].url);
+                    $("#P2").html(sJsonData1[1].title);
+                    $("#dba2").attr("href", sJsonData1[1].url);
+                    $("#P3").html(sJsonData1[2].title);
+                    $("#P4").html(sJsonData1[3].title);
+                    $("#P5").html(sJsonData1[4].title);
+                    $("#P6").html(sJsonData1[5].title);
+                    $("#P7").html(sJsonData1[6].title);
+                    $("#P8").html(sJsonData1[7].title);
+                    $('#dvDashboardd').show().removeAttr('display', 'block');
+                    window.location.href = "#page15";
+                   
 
-            var a22 = sJsonData1[0].title;
-            var aa = sJsonData1.length;
+                }
+                else {
+                    
+                    //$('#dvResult').text("You are not a valid user. Try again.");
+                    $('#dvDashboarddd').text("Data is not available.").removeAttr('display', 'block');;
+                    alert('Data is not available.');
+                    window.location.href = "#dvLogin";
+                    $("#txtUserId").focus();
+                    
 
-            if (aa > 0) {
-
-                //$.each(sJsonData1, function (parindex1, paritem1) {                                            
-                //alert(sJsonData1[0].title);
-
-                //var row = "<div  class='press-release'><a href='" + paritem1.url + "'><p class='lead-font'>" + paritem1.title + "</p></a></div>";
-                $("#P1").html(sJsonData1[0].title);
-                $("#dba1").attr("href", sJsonData1[0].url);
-                $("#P2").html(sJsonData1[1].title);
-                $("#dba2").attr("href", sJsonData1[1].url);
-                $("#P3").html(sJsonData1[2].title);
-                $("#P4").html(sJsonData1[3].title);
-                $("#P5").html(sJsonData1[4].title);
-                $("#P6").html(sJsonData1[5].title);
-                $("#P7").html(sJsonData1[6].title);
-                $("#P8").html(sJsonData1[7].title);
-                $('#dvDashboardd').show().removeAttr('display', 'block');
-                window.location.href = "#page15";
-
-
-            }
-            else {
-
-                //$('#dvResult').text("You are not a valid user. Try again.");
-                $('#dvDashboarddd').text("Data is not available.").removeAttr('display', 'block');;
-                alert('Data is not available.');
-                window.location.href = "#dvLogin";
+                }
+            },
+            error: function (xhr, textStatus, error) {
+                
+                //Show error message(if occured)
+                //$('#dvResult').text("Error: " + error);
+                //alert("Error: " + error);
+                alert('You are not a valid user. Try again.');
                 $("#txtUserId").focus();
-
+                
 
             }
-        },
-        error: function (xhr, textStatus, error) {
-
-            //Show error message(if occured)
-            //$('#dvResult').text("Error: " + error);
-            //alert("Error: " + error);
-            alert('You are not a valid user. Try again.');
-            $("#txtUserId").focus();
-
-
-        }
-    });
+        });
 
 }
 
 function LoginFunc() {
-
-    if (aLogout == "1") {
-        window.location.href = "#page15";
-    }
-    else {
-        var sJsonData = "[]";
-        //e.preventDefault();
-        //e.stopPropagation();
-        //Get control's values
-        var sUserId = $("#txtUserId").val();
-        var sPwd = $("#txtPassword").val();
-
-        var msg = "";
-        //check for validation
-        if (sUserId == '') {
-            msg = "Please enter User-Id.";
-            alert(msg);
-            $("#txtUserId").focus();
-            return false;
-        }
-        if (sPwd == '') {
-            msg = "Please enter password";
-            alert(msg);
-            $("#txtPassword").focus();
-            return false;
-        }
-
-        if (msg.length == 0) {
-            //Jquery ajax call to server side method
-            $.ajax({
-                type: "post",
-                dataType: "json",
-                url: "http://constantdesign.com/samples/indian-african/api/getLogin.php",
-                data: 'user_name=' + sUserId + '&password=' + sPwd,
-                //data: '{"user_name":' + sUserId + ', "password":' + sPwd + '}',
-                //data: '{"country":"India"}',
-
-                success: function (res) {
-
-                    //e.preventDefault();
-                    aLogout = "1";
-                    //$(".AAlogout").text('Logout').show();
-                    $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
-                    sJsonData = res.data;
-                    var sStatus = sJsonData[0].status;
-
-                    var aa = sJsonData.length;
-                    //console.log(aa);
-
-
-                    if (sStatus == 1) {
-
-                        //Set message
-                        //$('#dvResult').text("Your are successfully login.");
-                        //Reset controls                          
-                        $('#txtUserId').val('');
-                        $('#txtPassword').val('');
-                        alert('You are successfully logged in.');
-                        var uid = sJsonData[0].user_id;
-                        GetDashboard(uid);
-
-                        //window.location.href = "#page15";
-
-                    }
-                    else {
-                        //$('#dvResult').text("You are not a valid user. Try again.");
-                        alert('You are not a valid user. Try again.');
-                        $("#txtUserId").focus();
-                    }
-                    //Fade Out to disappear message after 6 seconds
-                    //$('#dvResult').fadeOut(6000);
-                },
-                error: function (xhr, textStatus, error) {
-                    //Show error message(if occured)
-                    //$('#dvResult').text("Error: " + error);
-                    alert('You are not a valid user. Try again.');
-                    $("#txtUserId").focus();
-
-                }
-            });
+   
+        if (aLogout == "1") {
+            window.location.href = "#page15";
         }
         else {
-            //Validation failure message
-            $('#dvResult').html('');
-            $('#dvResult').html(msg);
+            var sJsonData = "[]";
+            //e.preventDefault();
+            //e.stopPropagation();
+            //Get control's values
+            var sUserId = $("#txtUserId").val();
+            var sPwd = $("#txtPassword").val();
+           
+            var msg = "";
+            //check for validation
+            if (sUserId == '') {
+                msg = "Please enter User-Id.";
+                alert(msg);
+                $("#txtUserId").focus();
+                return false;
+            }
+            if (sPwd == '') {
+                msg = "Please enter password";
+                alert(msg);
+                $("#txtPassword").focus();
+                return false;
+            }
+
+            if (msg.length == 0) {
+                //Jquery ajax call to server side method
+                $.ajax({
+                    type: "post",
+                    dataType: "json",
+                    url: "http://constantdesign.com/samples/indian-african/api/getLogin.php",
+                    data: 'user_name=' + sUserId + '&password=' + sPwd,
+                    //data: '{"user_name":' + sUserId + ', "password":' + sPwd + '}',
+                    //data: '{"country":"India"}',
+
+                    success: function (res) {
+                       
+                        //e.preventDefault();
+                        aLogout = "1";
+                        //$(".AAlogout").text('Logout').show();
+                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
+                        sJsonData = res.data;
+                        var sStatus = sJsonData[0].status;
+                       
+                        var aa = sJsonData.length;
+                        //console.log(aa);
+
+                       
+                        if (sStatus == 1) {
+
+                            //Set message
+                            //$('#dvResult').text("Your are successfully login.");
+                            //Reset controls                          
+                            $('#txtUserId').val('');
+                            $('#txtPassword').val('');
+                            alert('You are successfully logged in.');
+                            var uid = sJsonData[0].user_id;
+                            GetDashboard(uid);
+
+                            //window.location.href = "#page15";
+
+                        }
+                        else {
+                            //$('#dvResult').text("You are not a valid user. Try again.");
+                            alert('You are not a valid user. Try again.');
+                            $("#txtUserId").focus();
+                        }
+                        //Fade Out to disappear message after 6 seconds
+                        //$('#dvResult').fadeOut(6000);
+                    },
+                    error: function (xhr, textStatus, error) {
+                        //Show error message(if occured)
+                        //$('#dvResult').text("Error: " + error);
+                        alert('You are not a valid user. Try again.');
+                        $("#txtUserId").focus();
+                       
+                    }
+                });
+            }
+            else {
+                //Validation failure message
+                $('#dvResult').html('');
+                $('#dvResult').html(msg);
+            }
+            $('#dvResult').fadeIn();
         }
-        $('#dvResult').fadeIn();
-    }
 }
 
 //login function End
@@ -518,7 +518,7 @@ function myNotify(sType, sTitle, sMessage) {
     notify({
         type: sType, //alert | success | error | warning | info
         title: sTitle,
-        theme: "Orange-theme",//Orange-theme  |  default
+        theme: "default",//Orange-theme  |  default
         //autoHide: true, //true | false
         //delay: 30000, //number ms
         position: {
@@ -551,9 +551,7 @@ function myFunctionCalling1(sType, sTitle, sMessage) {
     });
 }
 $(document).ready(function () {
-    $(".callNotification").click(function () {
-        //alert("JSK");
-
+   
         var xJsonNotification = "[]";
         var sNotificationid = "";
         var sTitle = "";
@@ -561,74 +559,73 @@ $(document).ready(function () {
         var sisdisplay = "";
         //$("#btnClick").click(function () {
         //$(window).load(function () {
-        //$(window).load(function () {
-        //alert('hiii');
-        //function GetJson() {
-        //var jsonList = "mediaCovrage.json";
-        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-        //var jsonList = "Noti.json";
-        var json = $.getJSON(jsonList, function (data) {
-            //alert($.now());
-            xJsonNotification = data.data;
+        $(window).load(function () {
+            //alert('hiii');
+            //function GetJson() {
+            //var jsonList = "mediaCovrage.json";
+            var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+            //var jsonList = "Noti.json";
+            var json = $.getJSON(jsonList, function (data) {
+                //alert($.now());
+                xJsonNotification = data.data;
+             
+                //alert(xJsonNotification[0].title);
+                var sLength = xJsonNotification.length;
+                if (sLength > 0) {
+                    $(".circle").text(sLength);
+                }
+               
+                if (sLength > 0) {
 
-            //alert(xJsonNotification[0].title);
-            var sLength = xJsonNotification.length;
-            if (sLength > 0) {
-                $(".circle").text(sLength);
-            }
+                    //for (var i = 0; i < data.data.length; i++) {
 
-            if (sLength > 0) {
+                    //sNotificationid = data.data[i].notification_id;
+                    //sTitle = data.data[i].title;
+                    //sNotification = data.data[i].notification;
+                    //sisdisplay = data.data[i].is_display;
 
-                //for (var i = 0; i < data.data.length; i++) {
+                    //if (sisdisplay == "1") {
+                    //    myFunctionCalling1("info", sTitle, sNotification);
+                    //}
+                    //    debugger;
+                    //}
 
-                //sNotificationid = data.data[i].notification_id;
-                //sTitle = data.data[i].title;
-                //sNotification = data.data[i].notification;
-                //sisdisplay = data.data[i].is_display;
+                    $("#dvNotification").html("");
+                    var block = "<div>";
+                    $.each(xJsonNotification, function (index, item) {
 
-                //if (sisdisplay == "1") {
-                //    myFunctionCalling1("info", sTitle, sNotification);
-                //}
-                //    debugger;
-                //}
+                        sNotificationid = item.notification_id;
+                        sTitle = item.title;
+                        sNotification = item.notification;
+                        sisdisplay = item.is_display;
 
-                $("#dvNotification").html("");
-                var block = "<div>";
-                $.each(xJsonNotification, function (index, item) {
+                        if (sisdisplay == "1") {
+                            myFunctionCalling1("alert", sTitle, sNotification);
+                        }
 
-                    sNotificationid = item.notification_id;
-                    sTitle = item.title;
-                    sNotification = item.notification;
-                    sisdisplay = item.is_display;
+                        var row = "<div class='press-release'>";
+                        row += "<h2>" + item.title + "</h2>";
+                        row += "<p class='lead-font'>" + item.notification + "</p>";
+                        row += "</div>";
+                        block += row;
+                        
+                    });
+                    block += '</div>';
+                    $('#dvNotification').html(block);
+                    $("#dvNotification").slideDown("slow");
+                    
 
-                    if (sisdisplay == "1") {
-                        myFunctionCalling1("alert", sTitle, sNotification);
-                    }
-
-                    var row = "<div class='press-release'>";
-                    row += "<h2>" + item.title + "</h2>";
-                    row += "<p class='lead-font'>" + item.notification + "</p>";
-                    row += "</div>";
-                    block += row;
-
-                });
-                block += '</div>';
-                $('#dvNotification').html(block);
-                $("#dvNotification").slideDown("slow");
-
-
-            }
+                }
+            });
         });
-    });
 });
-
 
 //Notification
 
 
 //Loading Page
 $(window).load(function () {
-    try {
+    try {        
         //$("#pageloaddiv").fadeOut(5000);
         $(".loader").fadeOut("slow");
     }

@@ -28,7 +28,7 @@ z-index:9999;
 {
 
 margin:0px auto 0px auto;
-padding:5px 0px 0px 23px;
+padding:5px 0px 0px 10px;
 width:25%;
 text-align:center;
 float:left;
@@ -2804,7 +2804,18 @@ height:50px !important;
     background-color: #fff;
     border-radius: 25px;
     font-size: 15px;
-}}
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;  
+	/*background: url('../images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);*/
+    background: url('../images/logo.png') 50% 50% no-repeat rgb(249,249,249);
+}
 
 
 /*Hitesh 160915*/
