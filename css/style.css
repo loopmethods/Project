@@ -927,7 +927,6 @@ border-top-color: #acacac;
     left: 0;
     position: fixed;
     right: 0;
-    z-index: 1030;
 	bottom:0px;
 	display:none;
 	background-color:#000;
@@ -1002,6 +1001,7 @@ border-top-color: #acacac;
     right: 0;
     z-index: 1030;
 	bottom:0px;
+	background-color:#000;
 }
 .navbar-brand {
     float: left;
@@ -2820,3 +2820,15 @@ height:50px !important;
 
 
 /*Hitesh 160915*/
+.notifyOrange{
+    background: #f88000;
+    color: #fff;
+    border-color: #f88000;
+    box-shadow: #E58432 0px 2px 4px;
+     border-color: rgba(44,46,47,1);
+     margin:10px; padding:5px;
+     border-radius: 15px;
+}
+.notifyOrange:hover {
+    background-color: #f88000;
+}

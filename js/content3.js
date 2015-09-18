@@ -518,7 +518,7 @@ function myNotify(sType, sTitle, sMessage) {
     notify({
         type: sType, //alert | success | error | warning | info
         title: sTitle,
-        theme: "default",//Orange-theme  |  default
+        theme: "Orange-theme",//Orange-theme  |  default
         //autoHide: true, //true | false
         //delay: 30000, //number ms
         position: {
@@ -551,20 +551,32 @@ function myFunctionCalling1(sType, sTitle, sMessage) {
     });
 }
 $(document).ready(function () {
-    //$(".callNotification").click(function () {
+    $(".callNotification").click(function () {
+        //alert("JSK");
+
         var xJsonNotification = "[]";
         var sNotificationid = "";
         var sTitle = "";
         var sNotification = "";
         var sisdisplay = "";
-     
+        //$("#btnClick").click(function () {
+        //$(window).load(function () {
+        //$(window).load(function () {
+        //alert('hiii');
+        //function GetJson() {
+        //var jsonList = "mediaCovrage.json";
         var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
         //var jsonList = "Noti.json";
         var json = $.getJSON(jsonList, function (data) {
             //alert($.now());
             xJsonNotification = data.data;
+
+            //alert(xJsonNotification[0].title);
             var sLength = xJsonNotification.length;
-          
+            if (sLength > 0) {
+                $(".circle").text(sLength);
+            }
+
             if (sLength > 0) {
 
                 //for (var i = 0; i < data.data.length; i++) {
@@ -589,12 +601,12 @@ $(document).ready(function () {
                     sNotification = item.notification;
                     sisdisplay = item.is_display;
 
-                    //if (sisdisplay == "1") {
-                    //    myFunctionCalling1("alert", sTitle, sNotification);
-                    //}
+                    if (sisdisplay == "1") {
+                        myFunctionCalling1("alert", sTitle, sNotification);
+                    }
 
-                    var row = "<div class='notifyOrange'>";
-                    row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
+                    var row = "<div class='press-release'>";
+                    row += "<h2>" + item.title + "</h2>";
                     row += "<p class='lead-font'>" + item.notification + "</p>";
                     row += "</div>";
                     block += row;
@@ -605,24 +617,6 @@ $(document).ready(function () {
                 $("#dvNotification").slideDown("slow");
 
 
-            }
-        //});
-    });
-});
-
-
-$(document).ready(function () {
-    $(window).load(function () {       
-        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-      
-        var json = $.getJSON(jsonList, function (data) {
-            //alert($.now());
-            xJsonNotification = data.data;
-
-            //alert(xJsonNotification[0].title);
-            var sLength = xJsonNotification.length;
-            if (sLength > 0) {
-                $(".circle").text(sLength);
             }
         });
     });
