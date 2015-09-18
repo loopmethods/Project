@@ -78,7 +78,7 @@ function GetDashboard(sUserId) {
                     $("#P4").text(sJsonData1[3].title);
                     $("#P5").text(sJsonData1[4].title);
                     $("#P6").text(sJsonData1[5].title);
-                    $("#P7").text(sJsonData1[6].title);
+                    $("#P7").html(sJsonData1[6].title);
                     $("#P8").text(sJsonData1[7].title);
                     $('#dvDashboardd').show().removeAttr('display', 'block');
                     window.location.href = "#page15";
@@ -154,7 +154,7 @@ function LoginFunc() {
                         debugger;
                         //e.preventDefault();
                         aLogout = "1";
-                        $(".AAlogout").html('<i class="fa fa-sign-out" style="font-size:30px;"></i>').show();
+                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
                         sJsonData = res.data;
                         var sStatus = sJsonData[0].status;
                         debugger;
