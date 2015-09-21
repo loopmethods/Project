@@ -591,7 +591,7 @@ $(document).ready(function () {
         $("#page33").removeClass('showdv').addClass('hidedv');
         $("#page34").removeClass('showdv').addClass('hidedv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
        
     });
