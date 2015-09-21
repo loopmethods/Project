@@ -212,7 +212,7 @@
     font-size: 18px;
     height: 90px;
     line-height: 20px;
-    padding: 5px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 .mob_radio {
@@ -2773,8 +2773,9 @@ div#fixedfooter {
     color: #CCC;
     background: #000;
     padding: 10px;
-    height:100px;
+    height:60px;
     z-index: 999;
+	padding-top:4px;
 }
 
 .sizee {
