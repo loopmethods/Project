@@ -39,11 +39,12 @@ $(document).ready(function () {
 
     $('.AAlogout').click(function () {
         var res = confirm("Are you sure you want to logout ?");
-
         if (res == true) {
             aLogout = "0";
-
-            window.location.href = "#page1";
+            //window.location.href = "#page1";
+            $("#dvHome").removeClass('hidedv').addClass('showdv');
+            $("#imgHome").attr("src", "images/home_hover.png");
+            $("#imgMedi").attr("src", "images/media.png");
             $(".AAlogout").text('').hide();
 
         } else {
@@ -65,10 +66,46 @@ try {
 
             //alert('fsdfsdfsd');
             if (aLogout == "1") {
-                window.location.href = "#page15";
+                //window.location.href = "#page15";
+                $("#imgNoti").attr("src", "images/register.png");
+                $("#imgMedi").attr("src", "images/media.png");
+                $("#imgAgenda").attr("src", "images/agenda.png");
+                $("#imgHome").attr("src", "images/home_hover.png");
+                $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvNoti").removeClass('showdv').addClass('hidedv');
+                $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                $("#dvHome").removeClass('showdv').addClass('hidedv');
+                $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                $("#dvImageList").removeClass('showdv').addClass('hidedv');
+                $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
             }
             else {
-                window.location.href = "#dvLogin";
+                //window.location.href = "#dvLogin";
+                $("#imgNoti").attr("src", "images/register.png");
+                $("#imgMedi").attr("src", "images/media.png");
+                $("#imgAgenda").attr("src", "images/agenda.png");
+                $("#imgHome").attr("src", "images/home_hover.png");
+                $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvNoti").removeClass('showdv').addClass('hidedv');
+                $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                $("#dvHome").removeClass('showdv').addClass('hidedv');
+                $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                $("#dvImageList").removeClass('showdv').addClass('hidedv');
+                $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                $("#dvvLogin").removeClass('hidedv').addClass('showdv');
+                $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                 aLogout = "0"
             }
 
@@ -100,19 +137,36 @@ function GetDashboard(sUserId) {
                 //alert(sJsonData1[0].title);
 
                 //var row = "<div  class='press-release'><a href='" + paritem1.url + "'><p class='lead-font'>" + paritem1.title + "</p></a></div>";
-                $("#P1").html(sJsonData1[0].title);
-                $("#dba1").attr("href", sJsonData1[0].url);
-                $("#P2").html(sJsonData1[1].title);
-                $("#dba2").attr("href", sJsonData1[1].url);
-                $("#P3").html(sJsonData1[2].title);
-                $("#P4").html(sJsonData1[3].title);
-                $("#P5").html(sJsonData1[4].title);
-                $("#P6").html(sJsonData1[5].title);
-                $("#P7").html(sJsonData1[6].title);
-                $("#P8").html(sJsonData1[7].title);
-                $('#dvDashboardd').show().removeAttr('display', 'block');
-                window.location.href = "#page15";
-
+                //$("#P1").html(sJsonData1[0].title);
+                //$("#dba1").attr("href", sJsonData1[0].url);
+                //$("#P2").html(sJsonData1[1].title);
+                //$("#dba2").attr("href", sJsonData1[1].url);
+                //$("#P3").html(sJsonData1[2].title);
+                //$("#P4").html(sJsonData1[3].title);
+                //$("#P5").html(sJsonData1[4].title);
+                //$("#P6").html(sJsonData1[5].title);
+                //$("#P7").html(sJsonData1[6].title);
+                //$("#P8").html(sJsonData1[7].title);
+                //$('#dvDashboardd').show().removeAttr('display', 'block');
+                //window.location.href = "#page15";
+                $("#imgNoti").attr("src", "images/register.png");
+                $("#imgMedi").attr("src", "images/media.png");
+                $("#imgAgenda").attr("src", "images/agenda.png");
+                $("#imgHome").attr("src", "images/home_hover.png");
+                $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvNoti").removeClass('showdv').addClass('hidedv');
+                $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                $("#dvHome").removeClass('showdv').addClass('hidedv');
+                $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                $("#dvImageList").removeClass('showdv').addClass('hidedv');
+                $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
 
             }
             else {
@@ -120,7 +174,25 @@ function GetDashboard(sUserId) {
                 //$('#dvResult').text("You are not a valid user. Try again.");
                 $('#dvDashboarddd').text("Data is not available.").removeAttr('display', 'block');;
                 alert('Data is not available.');
-                window.location.href = "#dvLogin";
+                //window.location.href = "#dvLogin";
+                $("#imgNoti").attr("src", "images/register.png");
+                $("#imgMedi").attr("src", "images/media.png");
+                $("#imgAgenda").attr("src", "images/agenda.png");
+                $("#imgHome").attr("src", "images/home_hover.png");
+                $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvNoti").removeClass('showdv').addClass('hidedv');
+                $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                $("#dvHome").removeClass('showdv').addClass('hidedv');
+                $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                $("#dvImageList").removeClass('showdv').addClass('hidedv');
+                $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+                $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                $("#dvvLogin").removeClass('hidedv').addClass('showdv');
+                $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                 $("#txtUserId").focus();
 
 
@@ -143,7 +215,27 @@ function GetDashboard(sUserId) {
 function LoginFunc() {
 
     if (aLogout == "1") {
-        window.location.href = "#page15";
+        //window.location.href = "#page15";
+
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home_hover.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
+
     }
     else {
         var sJsonData = "[]";
@@ -321,7 +413,7 @@ $(document).ready(function () {
     var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaArchive.php";
     var json = $.getJSON(jsonList, function (data) {
         //alert(data.data[0].title1);
-        var block = "<div>";
+        var block = "<div class='sizee'>";
 
         for (var i = 0; i < data.data.length; i++) {
             //alert(data.data[i].archive_id);
@@ -379,7 +471,7 @@ $(document).ready(function () {
         xJsonData = r.data;
         console.log(r.data);
         var items = [];
-        var block = "<div>";
+        var block = "<div class='sizee'>";
         $.each(xJsonData, function (index, item) {
             var scheduleidd = item.schedule_id;
             //if (scheduleidd === 1) {
@@ -461,53 +553,72 @@ $(document).ready(function () {
 
 
 //End Photo Gallary
-var xJsonData = "[]";
-$(function () {
-    var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
-    //var jsonListPhotoGallery = "ImageGallary.json";
-    $.getJSON(jsonListPhotoGallery, function (r) {
-        xJsonData = r.data;
-        console.log(r.data);
-        var items = [];
-        var block = "<div id='owl-demo' class='ocarouselwl-'>";
-        $.each(xJsonData, function (index, item) {
-            //alert(item.gallery_id);
-            var row = "<a href='#dvImageList'>";
-            row += "<div class='item'>";
-            row += "<img class='img' data-id=" + item.gallery_id + " src='" + item.thumb + "' alt='Owl Image'/>";
-            row += "<p>" + item.title1 + "</p>";
-            row += "</div>";
-            row += "</a>";
-            block += row;
+try{
+    var xJsonData = "[]";
+    $(function () {
+        var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
+        //var jsonListPhotoGallery = "ImageGallary.json";
+        $.getJSON(jsonListPhotoGallery, function (r) {
+            xJsonData = r.data;
+            console.log(r.data);
+            var items = [];
+            var block = "<div id='owl-demo' class='ocarouselwl-'>";
+            $.each(xJsonData, function (index, item) {
+                //alert(item.gallery_id);
+                var row = "<a href='#dvImageList'>";
+                row += "<div class='item'>";
+                row += "<img class='img' data-id=" + item.gallery_id + " src='" + item.thumb + "' alt='Owl Image'/>";
+                row += "<p>" + item.title1 + "</p>";
+                row += "</div>";
+                row += "</a>";
+                block += row;
+            });
+            block += '</div>';
+            $('#myImgGallary').html(block);
         });
-        block += '</div>';
-        $('#myImgGallary').html(block);
-    });
 
-    $("#myImgGallary").on("click", "img.img", function () {
-        var xParID = $(this).attr("data-id");
-        $("#dvPhotoList").html("");
-        var block = "<div id='owl-demo' class='ocarouselwl-'>";
-        $.each(xJsonData, function (parindex, paritem) {
-            if (paritem.gallery_id === xParID) {
-                console.log(paritem.images);
-                //alert(paritem.images);
-                $.each(paritem.images, function (childindex, childitem) {
-                    var row = "<div class='item'>";
-                    row += "<img class='img' title=" + childitem.gallery_media_id + " src='http://iafs.in/images/gallery/" + childitem.url + "' alt='Owl Image'/>";
-                    row += "<p>" + childitem.caption + "</p>";
-                    row += "</div>";
-                    block += row;
+    
+        $("#myImgGallary").on("click", "img.img", function () {
+            
+            var xParID = $(this).attr("data-id");
+            $("#dvPhotoList").html("");
+            var block = "<div id='owl-demo' class='ocarouselwl-'>";
+            debugger;
+            $.each(xJsonData, function (parindex, paritem) {
+                if (paritem.gallery_id === xParID) {
+                    console.log(paritem.images);
+                    //alert(paritem.images);
+                    $.each(paritem.images, function (childindex, childitem) {
+                        var row = "<div class='item'>";
+                        row += "<img class='img' title=" + childitem.gallery_media_id + " src='http://iafs.in/images/gallery/" + childitem.url + "' alt='Owl Image'/>";
+                        row += "<p>" + childitem.caption + "</p>";
+                        row += "</div>";
+                        block += row;
 
-                    //$("#dvPhotoList").append("<img class='img' data-id='" + childitem.gallery_media_id + "' tite='" + childitem.gallery_media_id + "' src='http://iafs.in/images/gallery/" + childitem.url + "' />");
-                });
-                block += '</div>';
-                $('#dvPhotoList').html(block);
-                $("#dvPhotoList").slideDown("slow");
-            }
+                        //$("#dvPhotoList").append("<img class='img' data-id='" + childitem.gallery_media_id + "' tite='" + childitem.gallery_media_id + "' src='http://iafs.in/images/gallery/" + childitem.url + "' />");
+                    });
+                    block += '</div>';
+                    $('#dvPhotoList').html(block);
+                    $("#dvPhotoList").slideDown("slow");
+                    debugger;
+                    $("#imgNoti").attr("src", "images/register.png");
+                    $("#imgMedi").attr("src", "images/media_hover.png");
+                    $("#imgAgenda").attr("src", "images/agenda.png");
+                    $("#imgHome").attr("src", "images/home.png");
+                    $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                    $("#dvNoti").removeClass('showdv').addClass('hidedv');
+                    $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                    $("#dvHome").removeClass('showdv').addClass('hidedv');
+                    $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                    $("#dvImageList").removeClass('hidedv').addClass('showdv');
+                    $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+                    debugger;
+                }
+            });
         });
     });
-});
+}
+catch (ex) { ex.message;}
 //End Photo Gallary
 
 
@@ -558,8 +669,8 @@ $(document).ready(function () {
         var sNotification = "";
         var sisdisplay = "";
      
-        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-        //var jsonList = "Noti.json";
+        //var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+        var jsonList = "Noti.json";
         var json = $.getJSON(jsonList, function (data) {
             //alert($.now());
             xJsonNotification = data.data;
@@ -583,7 +694,7 @@ $(document).ready(function () {
                 $("#dvNotification").html("");
                 var block = "<div>";
                 $.each(xJsonNotification, function (index, item) {
-
+                    
                     sNotificationid = item.notification_id;
                     sTitle = item.title;
                     sNotification = item.notification;
@@ -592,12 +703,13 @@ $(document).ready(function () {
                     //if (sisdisplay == "1") {
                     //    myFunctionCalling1("alert", sTitle, sNotification);
                     //}
-
+                    if (sisdisplay == "1") {
                     var row = "<div class='notifyOrange'>";
                     row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
                     row += "<p class='lead-font'>" + item.notification + "</p>";
                     row += "</div>";
                     block += row;
+                    }
 
                 });
                 block += '</div>';

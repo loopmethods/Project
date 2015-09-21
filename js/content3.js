@@ -615,8 +615,6 @@ $(document).ready(function () {
                 block += '</div>';
                 $('#dvNotification').html(block);
                 $("#dvNotification").slideDown("slow");
-
-
             }
         });
     });
