@@ -4,3 +4,13 @@
 
 
 .ui-btn-up-d{border:1px solid #fed136;font-weight:normal;color:#ff1206;}.ui-btn-up-d a.ui-link-inherit{color:#2f3e46}.ui-btn-hover-d{border:1px solid #fed136; background-color:#ffcc00;}.ui-btn-hover-d a.ui-link-inherit{color:#2f3e46}.ui-btn-down-d{border:1px solid #808080;}
+
+
+/*kill the transitions on any descendant elements of .notransition*/
+.notransition * { 
+  -webkit-transition: none !important; 
+  -moz-transition: none !important; 
+  -o-transition: none !important; 
+  -ms-transition: none !important; 
+  transition: none !important; 
+} 
