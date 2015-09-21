@@ -939,7 +939,7 @@ border-top-color: #acacac;
     right: 0px;
 	bottom:0px;
 	display:none;
-	background-color:#000;position:fixed;z-index:10;bottom:0;}
+	background-color:#000;position:fixed;z-index:9999;;bottom:0;
 }
 .wrong_password{
 	color:#fff;
