@@ -64,8 +64,10 @@ try {
     $(document).ready(function () {
         $("#aaLogin").click(function () {
 
-            //alert('fsdfsdfsd');
+           // LoginFunc();
+		  // alert(aLogout);
             if (aLogout == "1") {
+				debugger;
                 //window.location.href = "#page15";
                 $("#imgNoti").attr("src", "images/register.png");
                 $("#imgMedi").attr("src", "images/media.png");
@@ -83,10 +85,13 @@ try {
                 $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
                 $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
                 $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-                $("#dvvLogin").removeClass('showdv').addClass('hidedv');
                 $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
+              <!--  $("#dvvDashboard").removeClass('showdv').addClass('hidedv');-->
+                $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+
             }
-            else {
+            if (aLogout == "0") {
+				debugger; 
                 //window.location.href = "#dvLogin";
                 $("#imgNoti").attr("src", "images/register.png");
                 $("#imgMedi").attr("src", "images/media.png");
@@ -131,7 +136,7 @@ function GetDashboard(sUserId) {
             var a22 = sJsonData1[0].title;
             var aa = sJsonData1.length;
 
-            if (aa > 0) {
+            if (aa > 1) {
 
                 //$.each(sJsonData1, function (parindex1, paritem1) {                                            
                 //alert(sJsonData1[0].title);
@@ -175,24 +180,24 @@ function GetDashboard(sUserId) {
                 $('#dvDashboarddd').text("Data is not available.").removeAttr('display', 'block');;
                 alert('Data is not available.');
                 //window.location.href = "#dvLogin";
-                $("#imgNoti").attr("src", "images/register.png");
-                $("#imgMedi").attr("src", "images/media.png");
-                $("#imgAgenda").attr("src", "images/agenda.png");
-                $("#imgHome").attr("src", "images/home_hover.png");
-                $("#dvMediaList").removeClass('showdv').addClass('hidedv');
-                $("#dvNoti").removeClass('showdv').addClass('hidedv');
-                $("#dvAgenda").removeClass('showdv').addClass('hidedv');
-                $("#dvHome").removeClass('showdv').addClass('hidedv');
-                $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
-                $("#dvImageList").removeClass('showdv').addClass('hidedv');
-                $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
-                $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
-                $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
-                $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
-                $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
-                $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-                $("#dvvLogin").removeClass('hidedv').addClass('showdv');
-                $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+                //$("#imgNoti").attr("src", "images/register.png");
+                //$("#imgMedi").attr("src", "images/media.png");
+                //$("#imgAgenda").attr("src", "images/agenda.png");
+                //$("#imgHome").attr("src", "images/home_hover.png");
+                //$("#dvMediaList").removeClass('showdv').addClass('hidedv');
+                //$("#dvNoti").removeClass('showdv').addClass('hidedv');
+                //$("#dvAgenda").removeClass('showdv').addClass('hidedv');
+                //$("#dvHome").removeClass('showdv').addClass('hidedv');
+                //$("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+                //$("#dvImageList").removeClass('showdv').addClass('hidedv');
+                //$("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                //$("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                //$("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                //$("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+                //$("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                //$("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                //$("#dvvLogin").removeClass('hidedv').addClass('showdv');
+                //$("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                 $("#txtUserId").focus();
 
 
@@ -203,6 +208,7 @@ function GetDashboard(sUserId) {
             //Show error message(if occured)
             //$('#dvResult').text("Error: " + error);
             //alert("Error: " + error);
+            aLogout = "0";
             alert('You are not a valid user. Try again.');
             $("#txtUserId").focus();
 
@@ -213,7 +219,7 @@ function GetDashboard(sUserId) {
 }
 
 function LoginFunc() {
-
+    debugger;
     if (aLogout == "1") {
         //window.location.href = "#page15";
 
@@ -259,7 +265,7 @@ function LoginFunc() {
             $("#txtPassword").focus();
             return false;
         }
-
+        debugger;
         if (msg.length == 0) {
             //Jquery ajax call to server side method
             $.ajax({
@@ -273,18 +279,19 @@ function LoginFunc() {
                 success: function (res) {
 
                     //e.preventDefault();
-                    aLogout = "1";
+                  
                     //$(".AAlogout").text('Logout').show();
-                    $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
+                  
                     sJsonData = res.data;
                     var sStatus = sJsonData[0].status;
 
                     var aa = sJsonData.length;
                     //console.log(aa);
-
+                    debugger;
 
                     if (sStatus == 1) {
-
+                        aLogout = "1";
+                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
                         //Set message
                         //$('#dvResult').text("Your are successfully login.");
                         //Reset controls                          
@@ -298,6 +305,8 @@ function LoginFunc() {
 
                     }
                     else {
+                        aLogout = "0";
+                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').hide();
                         //$('#dvResult').text("You are not a valid user. Try again.");
                         alert('You are not a valid user. Try again.');
                         $("#txtUserId").focus();
@@ -352,7 +361,7 @@ $(document).ready(function () {
 
     });
 
-    $("#page5").on("click", "a.PRDesc", function () {
+    $("#dvpressRelease").on("click", "a.PRDesc", function () {
 
         var sArchiveId = $(this).attr("data-id");
         $("#dvPressReleaseDrp").html("");
@@ -375,6 +384,44 @@ $(document).ready(function () {
         $('#dvPressReleaseDrp').html(block);
         $("#dvPressReleaseDrp").slideDown("slow");
 
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media_hover.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+
+        //Hide all
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page30").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+
+        $("#dvPRDescription").removeClass('hidedv').addClass('showdv');
+        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 });
 //PressReleases End
@@ -524,7 +571,7 @@ $(document).ready(function () {
 
     });
 
-    $("#page13").on("click", "a.DDesc", function () {
+    $("#dvDocument").on("click", "a.DDesc", function () {
 
         var sArchiveId = $(this).attr("data-id");
         $("#dvDocumentDesc").html("");
@@ -546,6 +593,48 @@ $(document).ready(function () {
         block += '</div>';
         $('#dvDocumentDesc').html(block);
         $("#dvDocumentDesc").slideDown("slow");
+
+
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media_hover.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+
+        //Hide all
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page30").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+
+        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+
+        $("#dvDocumentDescription").removeClass('hidedv').addClass('showdv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
 
     });
 });
@@ -601,6 +690,7 @@ try{
                     $('#dvPhotoList').html(block);
                     $("#dvPhotoList").slideDown("slow");
                     debugger;
+                  
                     $("#imgNoti").attr("src", "images/register.png");
                     $("#imgMedi").attr("src", "images/media_hover.png");
                     $("#imgAgenda").attr("src", "images/agenda.png");
@@ -610,8 +700,37 @@ try{
                     $("#dvAgenda").removeClass('showdv').addClass('hidedv');
                     $("#dvHome").removeClass('showdv').addClass('hidedv');
                     $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
-                    $("#dvImageList").removeClass('hidedv').addClass('showdv');
+                    $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+                    $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+                    $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+                    $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+                    $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+                    $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+                    $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+                    $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+                    $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+                    $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+                    $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+                    $("#page19").removeClass('showdv').addClass('hidedv');
+
+                    //Hide all
+                    $("#page27").removeClass('showdv').addClass('hidedv');
+                    $("#page28").removeClass('showdv').addClass('hidedv');
+                    $("#page29").removeClass('showdv').addClass('hidedv');
+                    $("#page30").removeClass('showdv').addClass('hidedv');
+                    $("#page31").removeClass('showdv').addClass('hidedv');
+                    $("#page32").removeClass('showdv').addClass('hidedv');
+                    $("#page33").removeClass('showdv').addClass('hidedv');
+                    $("#page34").removeClass('showdv').addClass('hidedv');
+
+                    $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+
+                    $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+                    $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
                     $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+
+                    $("#dvImageList").removeClass('hidedv').addClass('showdv');
+                    $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
                     debugger;
                 }
             });
@@ -669,8 +788,8 @@ $(document).ready(function () {
         var sNotification = "";
         var sisdisplay = "";
      
-        //var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-        var jsonList = "Noti.json";
+        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+      
         var json = $.getJSON(jsonList, function (data) {
             //alert($.now());
             xJsonNotification = data.data;
@@ -757,12 +876,12 @@ $(window).load(function () {
 
 //Read more End
 
-function closeMore() {
-    //alert('calling foucs.');
-    $('.about_profile').animate({ height: startHieght }, 500);
-    $('#more').text('Read More...');
-    cc = 1;
-}
+//function closeMore() {
+//    //alert('calling foucs.');
+//    $('.about_profile').animate({ height: startHieght }, 500);
+//    $('#more').text('Read More...');
+//    cc = 1;
+//}
 //Read more End
 
 

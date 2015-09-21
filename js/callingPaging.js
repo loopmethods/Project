@@ -16,6 +16,7 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -43,6 +44,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
     //Media List
     $("#imgMedi").click(function () {
@@ -57,6 +59,7 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -84,6 +87,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -100,6 +104,7 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -128,6 +133,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
     //About us
@@ -143,6 +149,7 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -170,6 +177,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
     //Image Gallry
     $("#AnchorPhotoGallary").click(function () {
@@ -184,6 +192,7 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('hidedv').addClass('showdv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -211,6 +220,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
     //Back Link
@@ -226,6 +236,8 @@ $(document).ready(function () {
         $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+
         $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
         $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
         $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
@@ -253,7 +265,8 @@ $(document).ready(function () {
         $("#page34").removeClass('showdv').addClass('hidedv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
     //Press Release
     $("#AnchorPresssRelease").click(function () {
@@ -295,6 +308,9 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Media Coverage
@@ -338,6 +354,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
     //Media Advisory
@@ -381,6 +399,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Speeches Statements
@@ -423,6 +443,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Document
@@ -466,91 +488,57 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Login
-    $("#aaLogin").click(function () {
-        $("#imgNoti").attr("src", "images/register.png");
-        $("#imgMedi").attr("src", "images/media.png");
-        $("#imgAgenda").attr("src", "images/agenda.png");
-        $("#imgHome").attr("src", "images/home_hover.png");
-        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
-        $("#dvNoti").removeClass('showdv').addClass('hidedv');
-        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
-        $("#dvHome").removeClass('showdv').addClass('hidedv');
-        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
-        $("#dvImageList").removeClass('showdv').addClass('hidedv');
-        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
-        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
-        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
-        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
-        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-        $("#dvvLogin").removeClass('hidedv').addClass('showdv');
-        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
-        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
-        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
-        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
-        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
-        $("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
-        $("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
-        $("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
-        $("#page19").removeClass('showdv').addClass('hidedv');
-
-        //Hide all
-        $("#page27").removeClass('showdv').addClass('hidedv');
-        $("#page28").removeClass('showdv').addClass('hidedv');
-        $("#page29").removeClass('showdv').addClass('hidedv');
-        $("#page30").removeClass('showdv').addClass('hidedv');
-        $("#page31").removeClass('showdv').addClass('hidedv');
-        $("#page32").removeClass('showdv').addClass('hidedv');
-        $("#page33").removeClass('showdv').addClass('hidedv');
-        $("#page34").removeClass('showdv').addClass('hidedv');
-        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
-    });
+   
 
     //Dashboard
     $("#btnSubmit").click(function () {
-        $("#imgNoti").attr("src", "images/register.png");
-        $("#imgMedi").attr("src", "images/media.png");
-        $("#imgAgenda").attr("src", "images/agenda.png");
-        $("#imgHome").attr("src", "images/home_hover.png");
-        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
-        $("#dvNoti").removeClass('showdv').addClass('hidedv');
-        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
-        $("#dvHome").removeClass('showdv').addClass('hidedv');
-        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
-        $("#dvImageList").removeClass('showdv').addClass('hidedv');
-        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
-        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
-        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+		// GetDashboard(uid);
+        //$("#imgNoti").attr("src", "images/register.png");
+        //$("#imgMedi").attr("src", "images/media.png");
+        //$("#imgAgenda").attr("src", "images/agenda.png");
+        //$("#imgHome").attr("src", "images/home_hover.png");
+        //$("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        //$("#dvNoti").removeClass('showdv').addClass('hidedv');
+        //$("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        //$("#dvHome").removeClass('showdv').addClass('hidedv');
+        //$("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        //$("#dvImageList").removeClass('showdv').addClass('hidedv');
+        //$("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        //$("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        //$("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
       
-        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
-        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
-        $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
-        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
-        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
-        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
-        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
-        $("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
-        $("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
-        $("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
-        $("#page19").removeClass('showdv').addClass('hidedv');
+        //$("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        //$("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        //$("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        //$("#dvvDashboard").removeClass('hidedv').addClass('showdv');
+        //$("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        //$("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        //$("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        //$("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        //$("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
+        //$("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
+        //$("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
+        //$("#page19").removeClass('showdv').addClass('hidedv');
 
-        //Hide all
-        $("#page27").removeClass('showdv').addClass('hidedv');
-        $("#page28").removeClass('showdv').addClass('hidedv');
-        $("#page29").removeClass('showdv').addClass('hidedv');
-        $("#page30").removeClass('showdv').addClass('hidedv');
-        $("#page31").removeClass('showdv').addClass('hidedv');
-        $("#page32").removeClass('showdv').addClass('hidedv');
-        $("#page33").removeClass('showdv').addClass('hidedv');
-        $("#page34").removeClass('showdv').addClass('hidedv');
-        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        ////Hide all
+        //$("#page27").removeClass('showdv').addClass('hidedv');
+        //$("#page28").removeClass('showdv').addClass('hidedv');
+        //$("#page29").removeClass('showdv').addClass('hidedv');
+        //$("#page30").removeClass('showdv').addClass('hidedv');
+        //$("#page31").removeClass('showdv').addClass('hidedv');
+        //$("#page32").removeClass('showdv').addClass('hidedv');
+        //$("#page33").removeClass('showdv').addClass('hidedv');
+        //$("#page34").removeClass('showdv').addClass('hidedv');
+        //$("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        //$("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        //$("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        //$("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        //$("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Venue
@@ -593,6 +581,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
        
     });
 
@@ -636,6 +626,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Travel Africa
@@ -678,6 +670,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Visa Advisory
@@ -721,6 +715,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -765,6 +761,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -809,6 +807,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -854,6 +854,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -897,6 +899,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -938,6 +942,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -979,6 +985,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     //Hotel List
@@ -1018,6 +1026,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -1055,6 +1065,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor28").click(function () {
@@ -1093,6 +1105,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -1130,6 +1144,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor30").click(function () {
@@ -1167,6 +1183,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor31").click(function () {
@@ -1204,6 +1222,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor32").click(function () {
@@ -1241,6 +1261,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -1279,6 +1301,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor34").click(function () {
@@ -1316,6 +1340,7 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
     
 
@@ -1360,6 +1385,8 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -1402,7 +1429,9 @@ $(document).ready(function () {
         $("#page33").removeClass('showdv').addClass('hidedv');
         $("#page34").removeClass('showdv').addClass('hidedv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     });
 });
