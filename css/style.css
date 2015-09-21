@@ -935,12 +935,11 @@ border-top-color: #acacac;
   
 }
 .taxisecu_footer {
-    left: 0;
-    position: fixed;
-    right: 0;
+    left: 0px;
+    right: 0px;
 	bottom:0px;
 	display:none;
-	background-color:#000;
+	background-color:#000;position:fixed;z-index:10;bottom:0;}
 }
 .wrong_password{
 	color:#fff;
@@ -2705,7 +2704,8 @@ height:50px !important;
 	line-height:22px;
 	text-align:justify;
 	 overflow:auto;
-	
+	 position:absolute;
+    z-index:1;
     top:0px;
 	
 	
