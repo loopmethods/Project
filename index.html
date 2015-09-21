@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css" />
     <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-    <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+ <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
     <link href="bootstrap.css" rel="stylesheet" media="screen">
     <script src="jquery-mobile/jquery.min.js"></script>
     <script src="jquery-mobile/bootstrap.min.js"></script>
@@ -1321,7 +1321,7 @@
 
                     <div class="navbar-header page-scroll">
 
-                        <a class="navbar-brand page-scroll" href="#page2" style="margin-left: auto; margin-right: auto">
+                        <a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
                             <img src="images/home_hover.png" />
                         </a>
                         <a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
@@ -1351,7 +1351,7 @@
             </div>-->
             <div class="pageh_center">
             
-            <div class="pageh_logout"><a href="#page26"><div class="circle"></div><i class="fa fa-bell" style="font-size:25px; color:#F00;"></i></div></a>
+            <div class="pageh_logout"><a href="#page26"><div class="circle"></div><i class="fa fa-bell" style="font-size:25px; color:#F00;"></i></a></div>
              
             </div>
             <div class="pageh_check">
@@ -3221,6 +3221,11 @@
     <!--Notification Start-->
       <link href="css/jquery.notify.css" type="text/css" rel="stylesheet" />
         <script type="text/javascript" src="js/jquery.notify.min.js"></script>
+        
+        <script type="text/javascript">
+$(document).bind("mobileinit", function ()
+ {  $.mobile.defaultPageTransition = "none"; });
+ </script>
         
      <!--Notification End-->
 </body>
