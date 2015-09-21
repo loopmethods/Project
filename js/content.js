@@ -43,6 +43,7 @@ $(document).ready(function () {
             aLogout = "0";
             //window.location.href = "#page1";
             $("#dvHome").removeClass('hidedv').addClass('showdv');
+            $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
             $("#imgHome").attr("src", "images/home_hover.png");
             $("#imgMedi").attr("src", "images/media.png");
             $(".AAlogout").text('').hide();
@@ -85,9 +86,9 @@ try {
                 $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
                 $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
                 $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
-              <!--  $("#dvvDashboard").removeClass('showdv').addClass('hidedv');-->
+                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');             
                 $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+                $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
             }
             if (aLogout == "0") {
@@ -111,6 +112,7 @@ try {
                 $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
                 $("#dvvLogin").removeClass('hidedv').addClass('showdv');
                 $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+                $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
                 aLogout = "0"
             }
 
@@ -241,6 +243,8 @@ function LoginFunc() {
         $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
         $("#dvvLogin").removeClass('showdv').addClass('hidedv');
         $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     }
     else {
@@ -420,8 +424,10 @@ $(document).ready(function () {
         $("#dvPRDescription").removeClass('hidedv').addClass('showdv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 });
 //PressReleases End
@@ -631,10 +637,12 @@ $(document).ready(function () {
 
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDocument").removeClass('hidedv').addClass('showdv');
 
         $("#dvDocumentDescription").removeClass('hidedv').addClass('showdv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
 
     });
 });
@@ -731,6 +739,8 @@ try{
 
                     $("#dvImageList").removeClass('hidedv').addClass('showdv');
                     $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+                    $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+                    $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
                     debugger;
                 }
             });
@@ -744,42 +754,42 @@ catch (ex) { ex.message;}
 
 //Notification      
 
-function myNotify(sType, sTitle, sMessage) {
-    notify({
-        type: sType, //alert | success | error | warning | info
-        title: sTitle,
-        theme: "default",//Orange-theme  |  default
-        //autoHide: true, //true | false
-        //delay: 30000, //number ms
-        position: {
-            x: "right", //right | left | center
-            y: "top" //top | bottom | center
-        },
-        spacing: 10, //number px
-        //icon: '<img src="images/info.png" />',
-        message: sMessage
-    });
-}
+//function myNotify(sType, sTitle, sMessage) {
+//    notify({
+//        type: sType, //alert | success | error | warning | info
+//        title: sTitle,
+//        theme: "default",//Orange-theme  |  default
+//        //autoHide: true, //true | false
+//        //delay: 30000, //number ms
+//        position: {
+//            x: "right", //right | left | center
+//            y: "top" //top | bottom | center
+//        },
+//        spacing: 10, //number px
+//        //icon: '<img src="images/info.png" />',
+//        message: sMessage
+//    });
+//}
 
-//$(document).ready(function () {
-//    setInterval(function () {
-//        myNotify3('info', 'Notice', 'Hare Krishna');
-//    }, 7000);
-//});
+////$(document).ready(function () {
+////    setInterval(function () {
+////        myNotify3('info', 'Notice', 'Hare Krishna');
+////    }, 7000);
+////});
 
-function myFunctionCalling(sType, sTitle, sMessage) {
-    $(document).ready(function () {
-        setInterval(function () {
-            //myNotify3('info', 'Notice', 'Hare Krishna');
-            myNotify(sType, sTitle, sMessage);
-        }, 2000);
-    });
-}
-function myFunctionCalling1(sType, sTitle, sMessage) {
-    $(document).ready(function () {
-        myNotify(sType, sTitle, sMessage);
-    });
-}
+//function myFunctionCalling(sType, sTitle, sMessage) {
+//    $(document).ready(function () {
+//        setInterval(function () {
+//            //myNotify3('info', 'Notice', 'Hare Krishna');
+//            myNotify(sType, sTitle, sMessage);
+//        }, 2000);
+//    });
+//}
+//function myFunctionCalling1(sType, sTitle, sMessage) {
+//    $(document).ready(function () {
+//        myNotify(sType, sTitle, sMessage);
+//    });
+//}
 $(document).ready(function () {
     //$(".callNotification").click(function () {
         var xJsonNotification = "[]";
@@ -834,8 +844,6 @@ $(document).ready(function () {
                 block += '</div>';
                 $('#dvNotification').html(block);
                 $("#dvNotification").slideDown("slow");
-
-
             }
         //});
     });
@@ -876,13 +884,14 @@ $(window).load(function () {
 
 //Read more End
 
-//function closeMore() {
-//    //alert('calling foucs.');
-//    $('.about_profile').animate({ height: startHieght }, 500);
-//    $('#more').text('Read More...');
-//    cc = 1;
-//}
+function closeMore() {
+    //alert('calling foucs.');
+    $('.about_profile').animate({ height: startHieght }, 500);
+    $('#more').text('Read More...');
+    cc = 1;
+}
 //Read more End
+
 
 
 

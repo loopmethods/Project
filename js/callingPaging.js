@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#dvHome").removeClass('hidedv').addClass('showdv');
     $("#imgHome").attr("src", "images/home_hover.png");
     $("#imgMedi").attr("src", "images/media.png");
+    $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
     $("#imgNoti").click(function () {
         $("#imgNoti").attr("src", "images/register_hover.png");
         $("#imgMedi").attr("src", "images/media.png");
@@ -45,6 +46,10 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
     //Media List
     $("#imgMedi").click(function () {
@@ -88,6 +93,10 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -134,6 +143,11 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+		 $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
 
     });
     //About us
@@ -178,6 +192,10 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
     //Image Gallry
     $("#AnchorPhotoGallary").click(function () {
@@ -221,6 +239,10 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     });
     //Back Link
@@ -267,6 +289,10 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
     //Press Release
     $("#AnchorPresssRelease").click(function () {
@@ -307,10 +333,14 @@ $(document).ready(function () {
         $("#page34").removeClass('showdv').addClass('hidedv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackPressRelease").removeClass('hidedv').addClass('showdv');
 
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Media Coverage
@@ -356,6 +386,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     });
     //Media Advisory
@@ -393,14 +427,17 @@ $(document).ready(function () {
         $("#page30").removeClass('showdv').addClass('hidedv');
         $("#page31").removeClass('showdv').addClass('hidedv');
         $("#page32").removeClass('showdv').addClass('hidedv');
-        $("#page33").removeClass('showdv').addClass('hidedv');
-        $("#page34").removeClass('showdv').addClass('hidedv');
+       
 
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Speeches Statements
@@ -445,6 +482,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Document
@@ -490,6 +531,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Login
@@ -583,10 +628,62 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
        
     });
-	
-	
+
+    //For Venue from Home
+    $("#loc").click(function () {
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home_hover.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('hidedv').addClass('showdv');
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
+        $("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
+        $("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+
+        //Hide all
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page30").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+
+    });
+
 
     //Travel India
     $("#P3").click(function () {
@@ -630,6 +727,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Travel Africa
@@ -674,6 +775,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Visa Advisory
@@ -719,6 +824,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -765,6 +874,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -811,6 +924,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
 
     });
@@ -858,6 +975,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -903,6 +1024,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -946,6 +1071,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -989,6 +1118,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     //Hotel List
@@ -1030,6 +1163,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -1069,6 +1206,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor28").click(function () {
@@ -1109,6 +1250,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -1148,6 +1293,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor30").click(function () {
@@ -1187,6 +1336,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor31").click(function () {
@@ -1226,6 +1379,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor32").click(function () {
@@ -1265,6 +1422,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
 
@@ -1305,6 +1466,10 @@ $(document).ready(function () {
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 
     $("#Anchor34").click(function () {
@@ -1343,8 +1508,94 @@ $(document).ready(function () {
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+    });
+
+
+    $("#Anchor35").click(function () {
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home_hover.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page35").removeClass('hidedv').addClass('showdv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
     
+
+    $("#Anchor36").click(function () {
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home_hover.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page36").removeClass('hidedv').addClass('showdv');
+        $("#page35").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#linkBackHotelList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+    });
 
     //Back Link Dashboard
     $("#linkBackDashboardList").click(function () {
@@ -1386,9 +1637,11 @@ $(document).ready(function () {
         $("#page34").removeClass('showdv').addClass('hidedv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 
     });
 
@@ -1430,10 +1683,112 @@ $(document).ready(function () {
         $("#page32").removeClass('showdv').addClass('hidedv');
         $("#page33").removeClass('showdv').addClass('hidedv');
         $("#page34").removeClass('showdv').addClass('hidedv');
+        $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDashboardList").removeClass('hidedv').addClass('showdv');
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
-        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
-        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+    });
+
+
+
+    //Back Link Press Release
+    $("#linkBackPressRelease").click(function () {
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media_hover.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
+        $("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
+        $("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+        //Hide all
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page30").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+
+        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('hidedv').addClass('showdv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+    });
+
+
+
+    //Back Link Document
+    $("#linkBackDocument").click(function () {
+        $("#imgNoti").attr("src", "images/register.png");
+        $("#imgMedi").attr("src", "images/media_hover.png");
+        $("#imgAgenda").attr("src", "images/agenda.png");
+        $("#imgHome").attr("src", "images/home.png");
+        $("#dvMediaList").removeClass('showdv').addClass('hidedv');
+        $("#dvNoti").removeClass('showdv').addClass('hidedv');
+        $("#dvAgenda").removeClass('showdv').addClass('hidedv');
+        $("#dvHome").removeClass('showdv').addClass('hidedv');
+        $("#dvPhotoGallary").removeClass('showdv').addClass('hidedv');
+        $("#dvImageList").removeClass('showdv').addClass('hidedv');
+        $("#dvPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaCovrage").removeClass('showdv').addClass('hidedv');
+        $("#dvvVenue").removeClass('showdv').addClass('hidedv');
+        $("#dvvMediaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
+        $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
+        $("#dvvLogin").removeClass('showdv').addClass('hidedv');
+        $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
+
+        $("#dvvTravelIndia").removeClass('showdv').addClass('hidedv');
+        $("#dvTravelAfrica").removeClass('showdv').addClass('hidedv');
+        $("#dvvVisaAdvisory").removeClass('showdv').addClass('hidedv');
+        $("#dvvCityGuide").removeClass('showdv').addClass('hidedv');
+        $("#dvvYelllowFever").removeClass('showdv').addClass('hidedv');
+        $("#dvvFormRequired").removeClass('showdv').addClass('hidedv');
+        $("#page19").removeClass('showdv').addClass('hidedv');
+        //Hide all
+        $("#page27").removeClass('showdv').addClass('hidedv');
+        $("#page28").removeClass('showdv').addClass('hidedv');
+        $("#page29").removeClass('showdv').addClass('hidedv');
+        $("#page30").removeClass('showdv').addClass('hidedv');
+        $("#page31").removeClass('showdv').addClass('hidedv');
+        $("#page32").removeClass('showdv').addClass('hidedv');
+        $("#page33").removeClass('showdv').addClass('hidedv');
+        $("#page34").removeClass('showdv').addClass('hidedv');
+
+        $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
+        $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
+        $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
+        $("#dvPRDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
+        $("#dvDocument").removeClass('hidedv').addClass('showdv');
+        $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
+        $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
     });
 });
