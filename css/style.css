@@ -345,14 +345,14 @@ clear:both;
 		
 
 }
-.ui-content_fav{border-width:0;overflow-y:hidden;padding:0px;position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
+.ui-content_fav{border-width:0;padding:0px;position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
     bottom: 0;
-    margin: auto;
+    margin:0px;
     width: 100%;
-    height: 100%;
+
 
 }
 .default-contact
