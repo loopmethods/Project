@@ -460,7 +460,7 @@ $(document).ready(function () {
     var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaArchive.php";
     var json = $.getJSON(jsonList, function (data) {
         //alert(data.data[0].title1);
-        var block = "<div class='sizee'>";
+        var block = "<div>";
 
         for (var i = 0; i < data.data.length; i++) {
             //alert(data.data[i].archive_id);
