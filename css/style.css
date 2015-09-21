@@ -2703,9 +2703,11 @@ height:50px !important;
 	font-family: "Roboto",sans-serif;
 	line-height:22px;
 	text-align:justify;
-	overflow:scroll;
+overflow-y: scroll;
+	 position:absolute;
     z-index:1;
     top:0px;
+
 	
 	
 }
