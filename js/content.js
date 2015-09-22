@@ -664,13 +664,13 @@ try {
             xJsonData = r.data;
             console.log(r.data);
             var items = [];
-            var block = "<div id='owl-demo' class='ocarouselwl-'>";
+            var block = "<div class='ocarouselwl-'>";
             $.each(xJsonData, function (index, item) {
                 //alert(item.gallery_id);
                 var row = "<a href='#dvImageList'>";
                 row += "<div class='item'>";
                 row += "<img class='img' data-id=" + item.gallery_id + " src='" + item.thumb + "' alt='Owl Image'/>";
-                row += "<p>" + item.title1 + "</p>";
+                row += "<p style='font-size:14px; line-height:18px; margin:10px 5px'>" + item.title1 + "</p>";
                 row += "</div>";
                 row += "</a>";
                 block += row;
@@ -693,7 +693,7 @@ try {
                     $.each(paritem.images, function (childindex, childitem) {
                         var row = "<div class='item'>";
                         row += "<img class='img' title=" + childitem.gallery_media_id + " src='http://iafs.in/images/gallery/" + childitem.url + "' alt='Owl Image'/>";
-                        row += "<p>" + childitem.caption + "</p>";
+                        row += "<p style='font-size:14px; line-height:18px; margin:10px 5px'>" + childitem.caption + "</p>";
                         row += "</div>";
                         block += row;
 
@@ -881,7 +881,7 @@ $(document).ready(function () {
 $(window).load(function () {
     try {
         //$("#pageloaddiv").fadeOut(5000);
-        $(".loader").fadeOut("slow");
+        $(".loader").fadeOut(100);
     }
     catch (ex) { ex.message; }
 });

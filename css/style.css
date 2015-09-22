@@ -206,10 +206,12 @@
 }
 
 .navbar-brand {
-    float: left;
+    /*float: left;
+	padding: 5px 30px 0px 30px;
+	*/
     font-size: 18px;
     line-height: 20px;
-    padding: 5px 30px 0px 30px;
+    
 }
 
 .mob_radio {
@@ -734,7 +736,7 @@
 .riding_history_Coverage {
     width: 100%;
     background-color: #FFF;
-    margin: 34px auto 12px auto;
+    margin: 34px auto 50px auto;
     height: auto;
     z-index: 99;
     top: 12px;
@@ -904,11 +906,12 @@
     }
 
     .navbar-brand {
-        float: left;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         height: 90px;
         line-height: 20px;
-        padding: 5px 25px 0px 25px;
     }
 }
 
@@ -969,11 +972,12 @@
     }
 
     .navbar-brand {
-        float: left;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         height: 90px;
         line-height: 20px;
-        padding: 5px 9px 5px 6px;
     }
 
     .wrong_password {
@@ -1186,11 +1190,12 @@
     }
 
     .navbar-brand {
-        float: left;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         height: 90px;
         line-height: 20px;
-        padding: 5px 25px 5px 25px;
     }
 }
 
@@ -1215,11 +1220,12 @@
 @media (max-width:360px) {
 
     .navbar-brand {
-        float: left;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         height: 90px;
         line-height: 20px;
-        padding: 5px 9px 5px 15px;
     }
 
     .slider-iafs {
@@ -1232,11 +1238,12 @@
 @media (max-width:349px) {
 
     .navbar-brand {
-        float: left;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         height: 90px;
         line-height: 20px;
-        padding: 5px 9px 5px 8px;
     }
 
     .default_phonebook_lt {
@@ -1617,14 +1624,13 @@
 @media only screen and (max-width: 320px) {
 
     .navbar-brand {
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         float: left;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 5px !important;
         font-size: 18px;
         line-height: 20px;
         color: #777777;
-        padding-left: 3px !important;
     }
 
     .favourate_bg {
@@ -1664,28 +1670,24 @@
 @media only screen and (max-width: 330px) {
 
     .navbar-brand {
-        float: left;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 5px !important;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         line-height: 20px;
         color: #777777;
-        padding-left: 5px !important;
     }
 }
 
 @media only screen and (max-width: 400px) {
 
     .navbar-brand {
-        float: left;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        padding-right: 23px;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         line-height: 20px;
         color: #777777;
-        padding-left: 23px;
     }
 }
 
@@ -1726,14 +1728,12 @@
     }
 
     .navbar-brand {
-        float: left;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-right: 0px !important;
+		/*float: left;
+		padding: 5px 30px 0px 30px;
+		*/
         font-size: 18px;
         line-height: 20px;
         color: #777777;
-        padding-left: 1px !important;
     }
 }
 
@@ -2739,7 +2739,7 @@ table tr {
     height: 100%;
     z-index: 9999;
     /*background: url('../images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);*/
-    background: url('../images/logo_one.png') 50% 50% no-repeat rgb(249,249,249);
+    background: url('../images/logo_one.jpg') 50% 50% no-repeat rgb(249,249,249);
 }
 
 .notifyOrange {

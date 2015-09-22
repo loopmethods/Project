@@ -19,7 +19,7 @@
 </head>
 <body>
      <div class="loader">
-        <h1 style="font-size:22px; text-align:center;margin-top:30%;">Loading, Please wait...</h1>
+      
     </div>
 
     <!--Hitesh-->
@@ -46,12 +46,12 @@
     </div>
     <div>
           <div class="loader">
-        <h1 style="font-size:22px; text-align:center;margin-top:30%;">Loading, Please wait...</h1>
+        
     </div>
         <!-- Start of the about About Us -->
         <div id="dvHome" class="hidedv">
             <div class="slider-iafs">
-                <div id="slider1_container" style="position: relative; margin: 10px auto; top: 0px; left: 0px; width: 1300px; height: 300px; max-height:360px; overflow:hidden;">
+                <div id="slider1_container" style="position: relative; margin: 10px auto; top: 0px; left: 0px; width: 1300px; height: 300px; max-height: 360px; overflow: hidden;">
                     <!-- Loading Screen -->
                     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                         <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <!-- Slides Container -->
-                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 300x; overflow: hidden;">
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 300px; overflow: hidden;">
                         <div>
                             <img u="image" src="1920/slider1.jpg" />
 
@@ -243,10 +243,6 @@
                             </div>
                         </div>
                     </div>
-                     <div class="gallery_back"> 
-                     <div style="float:left; padding:10px;"><i class="fa fa-arrow-left" style="font-size:25px; opacity:0.2; padding-left:10px;"></i></div>
-                      <div style="float:right; padding:10px;""><i class="fa fa-arrow-right" style="font-size:25px; opacity:0.2; padding-right:10px;"></i></div>
-                     </div>
                 </div>
                
             </div>
@@ -479,7 +475,7 @@
             <div data-role="ui-content_fav">
                 Indira Gandhi Stadium Complex, New Delhi India
       
-                <iframe frameboader="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" src="http://maps.google.com/maps?hl=en&q=India Gandhi Stadium Complex, New Delhi India &ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <div class="press-release-contact">
                 </div>
             </div>
@@ -1855,6 +1851,7 @@
     </div>
 <div id="fixedfooter">
 	<div class="col-xs-3 text-center">
+    <div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page1" style="margin-left: auto; margin-right: auto">
              
                <i id="imgHome" class="fa fa-home" style="font-size:37px; color:#fff;">
@@ -1862,30 +1859,38 @@
                </i>
 
             </a>
+            </div>
     </div>
     <div class="col-xs-3 text-center">
+    	<div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
            
                <i class="fa fa-question" style="font-size:35px; color:#fff;"> <p style="margin-top:-1px; font-family: 'Roboto', sans-serif; font-size:13px;  margin-left:-2px;">Quiz</p></i>
 
             </a>
+            </div>
     </div>
     <div class="col-xs-3 text-center">
+    	<div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page3" style="margin-left: auto; margin-right: auto">
             <i id="imgMedi" class="fa fa-share-alt" style="font-size:37px; color:#fff;">
             <p style="margin-top:-3px; font-family: 'Roboto', sans-serif; font-size:13px;">Media</p>
             </i>
 
             </a>
+            </div>
     </div>
     <div class="col-xs-3 text-center">
+    	<div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
                 <i  id="imgNoti"class="fa fa-bell" style="font-size:37px; color:#fff;">
                  <p style="margin-top:-3px; font-family: 'Roboto', sans-serif; font-size:13px;">Alerts</p>
                </i>
-               <div class="circle" style="position:absolute; margin:-50px 0px 0 20px"></div>
+               
 
             </a>
+           </div>
+           <div class="circle" style="position:relative; left:50%; margin-top:-50px; float:none"></div>
     </div>
     </div>
     <!--<script type="text/javascript" src="js/script.js"></script>-->
@@ -1895,10 +1900,27 @@
 
     <!-- Demo -->
     <style>
+		.ocarouselwl- .item {
+			margin: 10px;
+            display: block;
+            margin-top: 30px;
+            padding: 4px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            z-index: 9999;
+            margin-bottom: 0px;
+		}
+		.ocarouselwl- .item > img {
+			max-width:100%;
+		}
         #owl-demo .item {
             margin: 10px;
             display: block;
-            margin-top: 50px;
+            margin-top: 30px;
             padding: 4px;
             line-height: 1.42857143;
             background-color: #fff;
@@ -1971,8 +1993,7 @@
 
         });
     </script>
-
-    <script>
+ <script>
         jQuery(document).ready(function ($) {
 
             var _CaptionTransitions = [];
@@ -2052,43 +2073,10 @@
             //responsive code end
         });
     </script>
-
-    <script type="text/javascript" src="js/jssor.js"></script>
+    
+      <script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
-     
-    <script>
-        var cc = 1;
-        var startHieght = 0;
-        $('#more1').click(function () {
-           // alert("JSK");
-            var reducedHeight = $('.about_profile').height();
 
-            $('.about_profile').css('height', 'auto');
-            var fullHeight = $('.about_profile').height();
-
-            $('.about_profile').height(reducedHeight);
-            if (cc == 1) {
-                $('.about_profile').animate({ height: fullHeight }, 500);
-                startHieght = reducedHeight;
-                $('#more1').text('Read Less...');
-                cc = 2;
-
-                //if (cc == 2) {
-                //    setInterval(function () {
-                //        closeMore();
-                //    }, 7000);
-                //}
-                return;
-            }
-            if (cc==2) {
-                $('.about_profile').animate({ height: startHieght }, 500);
-                $('#more1').text('Read More...');
-                cc = 1;
-                return;
-            }
-        });
-
-    </script>
     <!--Notification Start-->
    <!-- <link href="css/jquery.notify.css" type="text/css" rel="stylesheet" />
 
