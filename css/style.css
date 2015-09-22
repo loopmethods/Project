@@ -35,7 +35,7 @@
 .pageh_left {
     margin: 0px auto 0px auto;
     padding: 5px 0px 0px 10px;
-    width: 25%;
+    width: 20%;
     text-align: center;
     float: left;
     height: 40px;
@@ -65,15 +65,15 @@
 }
 
 .pageh_noty {
-    margin: 1px auto 0px auto;
-    padding: 1px 0px 0px 0px;
-    width: 12%;
-    text-align: center;
-    float: right;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    height: 45px;
+	margin: 1px auto 0px auto;
+	padding: 1px 0px 0px 0px;
+	/* [disabled]width: 0%; */
+	text-align: center;
+	float: right;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	height: 45px;
 }
 
 .pageh_check {
@@ -133,10 +133,10 @@
 
     .aboutprofile1 p {
         margin-top: 0px;
-        font-size: 16px;
+        font-size: 15px;
         width: 99%;
         font-family: 'Roboto', sans-serif;
-        line-height: 25px;
+        line-height: 20px;
         text-align: justify;
         color: #333;
     }
@@ -2495,13 +2495,13 @@
     font-size: 16px;
     color: #f88000;
     text-align: left;
-    padding: 0px 10px 0px 0px;
-    margin: 10px auto 0px auto;
+    padding: 15px 10px 0px 0px;
+    margin: 16px auto 0px auto;
 }
 
 
 .venu_address p {
-    margin-top: 10px;
+    margin-top: 3px;
     padding: 0px 10px 0px 0px;
     color: #FFF;
     font-size: 15px;
@@ -2693,10 +2693,10 @@ table tr {
 
     .about-contact p {
         margin-top: 0px;
-        font-size: 14px;
+        font-size: 15px;
         width: 99%;
         font-family: 'Roboto', sans-serif;
-        line-height: 25px;
+        line-height: 20px;
         text-align: justify;
         padding: 10px;
         color: #333;
@@ -2717,20 +2717,18 @@ table tr {
     }
 
 .circle {
-	position: relative;
-	/* line-height: 4; */
-	vertical-align: top;
-	/* left: 22px; */
-    /* [disabled]color: red; */
-	width: 24px;
-	height: 24px;
-	float: right;
-	right: 40px;
-	/* position: absolute; */
-	z-index: 9999;
-	background-color:orange;
-	border-radius: 25px;
-	font-size: 15px;
+  background-color: orange;
+    border-radius: 25px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    padding-top: 2px;
+    position: relative;
+    right: 15px;
+    vertical-align: top;
+    width: 24px;
+    z-index: 9999;
 }
 
 .loader {
@@ -2778,7 +2776,7 @@ div#fixedfooter {
     width: 100%;
     color: #CCC;
     background: #000;
-    padding: 10px;
+    padding:0px;
     height:62px;
     z-index: 999;
 	padding-top:0px;

@@ -298,7 +298,7 @@ function LoginFunc() {
 
                     if (sStatus == 1) {
                         aLogout = "1";
-                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32" style="cursor:pointer;">').show();
+                        $(".AAlogout").html('<img src="images/logout.png" width="25" height="25" style="cursor:pointer;">').show();
                         //Set message
                         //$('#dvResult').text("Your are successfully login.");
                         //Reset controls                          
@@ -313,7 +313,7 @@ function LoginFunc() {
                     }
                     else {
                         aLogout = "0";
-                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').hide();
+                        $(".AAlogout").html('<img src="images/logout.png" width="25" height="25">').hide();
                         //$('#dvResult').text("You are not a valid user. Try again.");
                         alert('You are not a valid user. Try again.');
                         $("#txtUserId").focus();
