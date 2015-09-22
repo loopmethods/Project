@@ -65,10 +65,10 @@ try {
     $(document).ready(function () {
         $("#aaLogin").click(function () {
 
-           // LoginFunc();
-		  // alert(aLogout);
+            // LoginFunc();
+            // alert(aLogout);
             if (aLogout == "1") {
-				debugger;
+               
                 //window.location.href = "#page15";
                 $("#imgNoti").attr("src", "images/register.png");
                 $("#imgMedi").attr("src", "images/media.png");
@@ -86,13 +86,14 @@ try {
                 $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
                 $("#dvvSpeechesStatements").removeClass('showdv').addClass('hidedv');
                 $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
-                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');             
+                $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
                 $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
                 $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+				
 
             }
             if (aLogout == "0") {
-				debugger; 
+               
                 //window.location.href = "#dvLogin";
                 $("#imgNoti").attr("src", "images/register.png");
                 $("#imgMedi").attr("src", "images/media.png");
@@ -113,6 +114,7 @@ try {
                 $("#dvvLogin").removeClass('hidedv').addClass('showdv');
                 $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                 $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+				 $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
                 aLogout = "0"
             }
 
@@ -174,6 +176,7 @@ function GetDashboard(sUserId) {
                 $("#dvvDocuments").removeClass('showdv').addClass('hidedv');
                 $("#dvvLogin").removeClass('showdv').addClass('hidedv');
                 $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
+				 $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
 
             }
             else {
@@ -221,7 +224,7 @@ function GetDashboard(sUserId) {
 }
 
 function LoginFunc() {
-    debugger;
+  
     if (aLogout == "1") {
         //window.location.href = "#page15";
 
@@ -245,7 +248,7 @@ function LoginFunc() {
         $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
         $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
         $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
-
+		 $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
     }
     else {
         var sJsonData = "[]";
@@ -269,7 +272,7 @@ function LoginFunc() {
             $("#txtPassword").focus();
             return false;
         }
-        debugger;
+       
         if (msg.length == 0) {
             //Jquery ajax call to server side method
             $.ajax({
@@ -283,19 +286,19 @@ function LoginFunc() {
                 success: function (res) {
 
                     //e.preventDefault();
-                  
+
                     //$(".AAlogout").text('Logout').show();
-                  
+
                     sJsonData = res.data;
                     var sStatus = sJsonData[0].status;
 
                     var aa = sJsonData.length;
                     //console.log(aa);
-                    debugger;
+                   
 
                     if (sStatus == 1) {
                         aLogout = "1";
-                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32">').show();
+                        $(".AAlogout").html('<img src="images/logout.png" width="32" height="32" style="cursor:pointer;">').show();
                         //Set message
                         //$('#dvResult').text("Your are successfully login.");
                         //Reset controls                          
@@ -428,6 +431,7 @@ $(document).ready(function () {
         $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
         $("#linkBackPressRelease").removeClass('hidedv').addClass('showdv');
         $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
+		 $("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
     });
 });
 //PressReleases End
@@ -638,11 +642,12 @@ $(document).ready(function () {
         $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
         $("#linkBackDocument").removeClass('hidedv').addClass('showdv');
-
         $("#dvDocumentDescription").removeClass('hidedv').addClass('showdv');
         $("#dvImageList").removeClass('showdv').addClass('hidedv');
         $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
         $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+		$("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
+		 
 
     });
 });
@@ -650,7 +655,7 @@ $(document).ready(function () {
 
 
 //End Photo Gallary
-try{
+try {
     var xJsonData = "[]";
     $(function () {
         var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
@@ -674,13 +679,13 @@ try{
             $('#myImgGallary').html(block);
         });
 
-    
+
         $("#myImgGallary").on("click", "img.img", function () {
-            
+
             var xParID = $(this).attr("data-id");
             $("#dvPhotoList").html("");
             var block = "<div id='owl-demo' class='ocarouselwl-'>";
-            debugger;
+           
             $.each(xJsonData, function (parindex, paritem) {
                 if (paritem.gallery_id === xParID) {
                     console.log(paritem.images);
@@ -697,8 +702,8 @@ try{
                     block += '</div>';
                     $('#dvPhotoList').html(block);
                     $("#dvPhotoList").slideDown("slow");
-                    debugger;
                   
+
                     $("#imgNoti").attr("src", "images/register.png");
                     $("#imgMedi").attr("src", "images/media_hover.png");
                     $("#imgAgenda").attr("src", "images/agenda.png");
@@ -735,19 +740,20 @@ try{
 
                     $("#linkBackHotelList").removeClass('showdv').addClass('hidedv');
                     $("#linkBackDashboardList").removeClass('showdv').addClass('hidedv');
-                    $("#linkBackMediaList").removeClass('hidedv').addClass('showdv');
-
+                    $("#linkBackMediaList").removeClass('showdv').addClass('hidedv');
+					 $("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
                     $("#dvImageList").removeClass('hidedv').addClass('showdv');
+					 $("#linkBackImgGallry").removeClass('hidedv').addClass('showdv');
                     $("#dvDocumentDescription").removeClass('showdv').addClass('hidedv');
                     $("#linkBackPressRelease").removeClass('showdv').addClass('hidedv');
                     $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
-                    debugger;
+                    
                 }
             });
         });
     });
 }
-catch (ex) { ex.message;}
+catch (ex) { ex.message; }
 //End Photo Gallary
 
 
@@ -792,68 +798,68 @@ catch (ex) { ex.message;}
 //}
 $(document).ready(function () {
     //$(".callNotification").click(function () {
-        var xJsonNotification = "[]";
-        var sNotificationid = "";
-        var sTitle = "";
-        var sNotification = "";
-        var sisdisplay = "";
-     
-        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-      
-        var json = $.getJSON(jsonList, function (data) {
-            //alert($.now());
-            xJsonNotification = data.data;
-            var sLength = xJsonNotification.length;
-          
-            if (sLength > 0) {
+    var xJsonNotification = "[]";
+    var sNotificationid = "";
+    var sTitle = "";
+    var sNotification = "";
+    var sisdisplay = "";
 
-                //for (var i = 0; i < data.data.length; i++) {
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
 
-                //sNotificationid = data.data[i].notification_id;
-                //sTitle = data.data[i].title;
-                //sNotification = data.data[i].notification;
-                //sisdisplay = data.data[i].is_display;
+    var json = $.getJSON(jsonList, function (data) {
+        //alert($.now());
+        xJsonNotification = data.data;
+        var sLength = xJsonNotification.length;
+
+        if (sLength > 0) {
+
+            //for (var i = 0; i < data.data.length; i++) {
+
+            //sNotificationid = data.data[i].notification_id;
+            //sTitle = data.data[i].title;
+            //sNotification = data.data[i].notification;
+            //sisdisplay = data.data[i].is_display;
+
+            //if (sisdisplay == "1") {
+            //    myFunctionCalling1("info", sTitle, sNotification);
+            //}
+            //    debugger;
+            //}
+
+            $("#dvNotification").html("");
+            var block = "<div>";
+            $.each(xJsonNotification, function (index, item) {
+
+                sNotificationid = item.notification_id;
+                sTitle = item.title;
+                sNotification = item.notification;
+                sisdisplay = item.is_display;
 
                 //if (sisdisplay == "1") {
-                //    myFunctionCalling1("info", sTitle, sNotification);
+                //    myFunctionCalling1("alert", sTitle, sNotification);
                 //}
-                //    debugger;
-                //}
-
-                $("#dvNotification").html("");
-                var block = "<div>";
-                $.each(xJsonNotification, function (index, item) {
-                    
-                    sNotificationid = item.notification_id;
-                    sTitle = item.title;
-                    sNotification = item.notification;
-                    sisdisplay = item.is_display;
-
-                    //if (sisdisplay == "1") {
-                    //    myFunctionCalling1("alert", sTitle, sNotification);
-                    //}
-                    if (sisdisplay == "1") {
+                if (sisdisplay == "1") {
                     var row = "<div class='notifyOrange'>";
                     row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
                     row += "<p class='lead-font'>" + item.notification + "</p>";
                     row += "</div>";
                     block += row;
-                    }
+                }
 
-                });
-                block += '</div>';
-                $('#dvNotification').html(block);
-                $("#dvNotification").slideDown("slow");
-            }
+            });
+            block += '</div>';
+            $('#dvNotification').html(block);
+            $("#dvNotification").slideDown("slow");
+        }
         //});
     });
 });
 
 
 $(document).ready(function () {
-    $(window).load(function () {       
+    $(window).load(function () {
         var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-      
+
         var json = $.getJSON(jsonList, function (data) {
             //alert($.now());
             xJsonNotification = data.data;
@@ -922,3 +928,43 @@ function closeMore() {
 //    { ex.message;}
 //});
 //end logo-concept
+
+//About us Start
+
+
+$(document).ready(function () {
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getAboutUs.php";
+    var json = $.getJSON(jsonList, function (data) {
+
+        $("#h1Aboutus").text(data.data[0].title);
+
+        //var aa = (data.data[0].paragraph1.toString().substring(5, 40).css('font-weight', 'bold'));
+
+        $("#pAboutus").html(data.data[0].paragraph1.substring(0, 272)) + "...";
+        var aa = data.data[0].paragraph1.length;
+        //alert(aa);
+        $("#p1Aboutus").html(data.data[0].paragraph1.substring(271, aa - 1) + "<br><br>");
+        $("#p2Aboutus").html(data.data[0].paragraph2 + "<br><br>");
+        $("#p3Aboutus").html(data.data[0].paragraph3 + "<br><br>");
+
+
+    });
+});
+
+$(document).ready(function () {
+    $("#anchorReadmore").click(function () {
+        $(this).hide(100);
+        $("#dvAboutusBlock").slideDown().removeAttr('inherit');
+        $("#a1CloseAbout").show(function () {
+            $("#anchorReadmore").hide();
+        });
+    });
+    $("#a1CloseAbout").click(function () {
+        $(this).hide();
+        $("#anchorReadmore").show();
+        $("#dvAboutusBlock").slideUp().Attr('display', 'none');
+        
+    });
+});
+
+//About us End

@@ -30,10 +30,13 @@
              <i id="linkBackHotelList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
             <i id="linkBackPressRelease" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
             <i id="linkBackDocument" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
-            <img src="images/logo.png" width="35" height="35" />
+            
+            <i id="linkBackImgGallry" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
+            <a href="#" id="IAFS_logo"> <img src="images/logo.png" width="35" height="35" /></a>
         </div>
         <div class="pageh_center">
-            <div class="pageh_logout">
+        IAFS 2015
+            <div class="pageh_logout" id="notipage" style="cursor:pointer;">
                 <div class="circle"></div>
                 <i class="fa fa-bell" style="font-size: 25px; color: #F00;"></i>
             </div>
@@ -82,7 +85,28 @@
                     </div>
                 </div>
             </div>
-             <div class="about_profile">
+            <div class="aboutprofile1">
+            
+            
+                 <h1 id="h1Aboutus">Welcome to the IAFS 2015</h1>
+                    <p id="pAboutus"></p>
+                    <a id="anchorReadmore" href="#" class="readmoree" style="font-size:13px !important; ">Read More...</a>
+
+
+                    <div id="dvAboutusBlock" style="display: none;">
+                        <p id="p1Aboutus">
+                            <!--<strong>The India-Africa Forum Summit (IAFS)</strong> is a celebration of the close partnership between Africa and India. It is an acknowledgement of our shared history as well as our future prospects.-->
+                        </p>
+                        <p id="p2Aboutus">
+                        </p>
+
+                        <p id="p3Aboutus">
+                        </p>
+                        <a id="a1CloseAbout" href="#" class="readmoree" style="font-size:13px !important;">Read Less...</a>
+
+                    </div>
+            </div>
+            <!-- <div class="about_profile">
                     <h1>Welcome to the IAFS 2015</h1>
 
                     <p class="lead-font" style="border-top: 3px solid #f9c400;"><br>
@@ -97,7 +121,7 @@
 
                 </div>
                 <p id="more1" style="float: right !important; padding: 2px; padding-right: 12px; color: #06C; font-weight: bold; font-size: 13px; cursor: pointer;">Read More...</p>
-
+-->
 
             <div class="main_pages">
                 <div class="calender_home">
@@ -212,7 +236,9 @@
         <!-- Start of the Photo Gallery -->
         <div id="dvPhotoGallary" class="hidedv">
             <div data-role="ui-content_fav">
+          
                 <div class="settings_photo">
+                 
                     <div id="demo">
                         <div class="container">
                             <div class="row">
@@ -222,7 +248,12 @@
                             </div>
                         </div>
                     </div>
+                     <div class="gallery_back"> 
+                     <div style="float:left; padding:10px;"><i class="fa fa-arrow-left" style="font-size:25px; opacity:0.2; padding-left:10px;"></i></div>
+                      <div style="float:right; padding:10px;""><i class="fa fa-arrow-right" style="font-size:25px; opacity:0.2; padding-right:10px;"></i></div>
+                     </div>
                 </div>
+               
             </div>
         </div>
         <!-- End of the Photo Gallery -->
@@ -325,7 +356,6 @@
             <div data-role="ui-content_fav">
                 <div id="dvDocumentDesc" class="riding_history_Coverage" style="margin-bottom: 50px;">
                 </div>
-
             </div>
         </div>
         <!-- End of the Press Releases Description-->
@@ -1881,7 +1911,7 @@
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
             z-index: 9999;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 		
 		#owl-demo .item p {
