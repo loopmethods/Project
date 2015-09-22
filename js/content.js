@@ -664,7 +664,7 @@ try {
             xJsonData = r.data;
             console.log(r.data);
             var items = [];
-            var block = "<div class='ocarouselwl-'>";
+            var block = "<div class='ocarouselwl-' style='padding-bottom:80px'>";
             $.each(xJsonData, function (index, item) {
                 //alert(item.gallery_id);
                 var row = "<a href='#dvImageList'>";
@@ -684,7 +684,7 @@ try {
 
             var xParID = $(this).attr("data-id");
             $("#dvPhotoList").html("");
-            var block = "<div id='owl-demo' class='ocarouselwl-'>";
+            var block = "<div id='owl-demo' class='ocarouselwl-' style='padding-bottom:80px'>";
            
             $.each(xJsonData, function (parindex, paritem) {
                 if (paritem.gallery_id === xParID) {

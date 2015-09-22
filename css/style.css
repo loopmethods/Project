@@ -518,13 +518,13 @@
     width: 100%;
     height: auto;
     padding: 0px 0px 50px 0px;
-    margin: 0 auto 0 auto;
+    margin: 30px auto 0 auto;
     overflow: auto;
     padding-right: 0px;
     background-color: #fff;
 }
 
-.settings_taxisecu_lt {
+.settings_iafs_lt {
     width: 17%;
     height: 45px;
     padding: 7px 0px 10px 15px;
@@ -535,7 +535,7 @@
     color: #333;
 }
 
-.settings_taxisecu_rt {
+.settings_iafs_rt {
     width: 83%;
     height: 45px;
     padding: 10px 0px 10px 5px;
@@ -548,7 +548,7 @@
     color: #fff;
 }
 
-.dashboard_taxisecu_lt {
+.dashboard_iafs_lt {
     width: 17%;
     height: 60px;
     padding: 10px 0px 10px 15px;
@@ -559,7 +559,7 @@
     color: #333;
 }
 
-.dashboard_taxisecu_rt {
+.dashboard_iafs_rt {
     width: 83%;
     height: 60px;
     padding: 11px 0px 10px 5px;
@@ -2295,7 +2295,7 @@
         }
 
     .slider-iafs {
-        margin: 30px auto 0px auto;
+        margin:45px auto 0px auto;
         padding: 0px 0px 0px 0px;
         width: 100%;
         height: auto;

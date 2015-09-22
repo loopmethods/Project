@@ -12,6 +12,12 @@
     <icon gap:platform="android" gap:qualifier="mdpi" src="images/logo.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="images/logo.png" />
     <icon gap:platform="android" gap:qualifier="xhdpi" src="images/logo.png" />
+	
+	<icon gap:platform="ios" height="57" src="images/logo.png" width="57" />
+<icon gap:platform="ios" height="72" src="images/logo.png" width="72" />
+<icon gap:platform="ios" height="114" src="images/logo.png" width="114" />
+<icon gap:platform="ios" height="144" src="images/logo.png" width="144" />
+
 <description>
 First IAFS
 </description>
