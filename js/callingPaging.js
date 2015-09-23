@@ -1,3 +1,5 @@
+var notiVal = 0;
+
 $(document).ready(function () {
 	
 	$("a").click(function(){
@@ -1890,15 +1892,24 @@ $(document).ready(function () {
 	});
 	//Notification Link
 	
-	 $("#imgNoti").click(function () {	
-		
-		 if(aLogout=="0"){
-		     alert('You are not logged in, Please log on first');
-			 showPage("dvvLogin");
-		 }
-		 if (aLogout == "1") {
-		     showPage("dvNoti");
-		 }
+	$("#imgNoti").click(function () {
+	    try {
+	        //alert('notifi calling click event.');
+	        //debugger;
+	        notiVal = "1";
+	        if (aLogout == "0") {
+	            //debugger;
+	            alert('You are not logged in, Please log on first.');
+	            showPage("dvvLogin");
+	            //debugger;
+	        }
+	        if (aLogout == "1") {
+	            //debugger;
+	            showPage("dvNoti");
+	            //debugger;
+	        }
+	    }
+	    catch (ex) { ex.message }
 		 
     });
 	

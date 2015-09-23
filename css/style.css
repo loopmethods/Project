@@ -1664,6 +1664,27 @@
         width: 100%;
         font-family: "Palatino Linotype";
     }
+	.circle {
+  background-color: orange;
+    border-radius: 25px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding-top: 2px;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+    z-index: 9999;
+	text-align:center;
+	color:#fff;
+	top:26px;
+	
+}
+
+		
+	
+		
 }
 
 
@@ -1701,6 +1722,7 @@
         margin-left: 0px;
         float: left;
     }
+	
 
     .mob_txtr {
         color: #FFFFFF;
@@ -1906,7 +1928,8 @@
         width: 100%;
         float: left;
     }
-
+	
+	
     header {
         float: left;
         width: 100%;
@@ -2732,6 +2755,8 @@ table tr {
     z-index: 9999;
 	text-align:center;
 	color:#fff;
+	
+	
 }
 
 .loader {
