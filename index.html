@@ -15,29 +15,7 @@
     <script src="js/content.js"></script>
     <script src="js/callingPaging.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript">
 
-function Location()
-{
-	var option={enableHighAccuracy:true}
-	navigator.geolocation.getCurrentPosition(onsuccess,onerror,option);
-	function onsuccess(position)
-	{var lat=position.coords.latitude;
-	var long=position.coords.longitude;
-		alert(lat+" : "+long);
-		}
-		
-		function onerror(error)
-		{
-			alert(error.message);
-			}
-	
-	}
-	$(document).ready(function(e) {
-        Location();
-    });
-
-</script>
 
 </head>
 <body>
