@@ -12,11 +12,7 @@
     <icon gap:platform="android" gap:qualifier="mdpi" src="images/logo.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="images/logo.png" />
     <icon gap:platform="android" gap:qualifier="xhdpi" src="images/logo.png" />
-	
-	<gap:splash src="images/200X320.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="images/320X480APK.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="images/480X800APK.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="images/720X1280.png" gap:platform="android" gap:density="xhdpi" />
+
 	
 	<icon gap:platform="ios" height="57" src="images/logo.png" width="57" />
 <icon gap:platform="ios" height="72" src="images/logo.png" width="72" />

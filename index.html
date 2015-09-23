@@ -496,7 +496,12 @@
             <div data-role="ui-content_fav">
                 Indira Gandhi Stadium Complex, New Delhi India
       
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="512" frameborder="0" style="border:0" allowfullscreen></iframe>
+     <!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="512" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+     
+     <div class="jsk"  style="width:100%;height:512px;">
+</div>
+
+
                 <div class="press-release-contact">
                 </div>
             </div>
@@ -1733,17 +1738,9 @@
 
             </div>
         </div>
-        <!-- End of Le Meridian -->
-
-
-        <!-- Start The Taj Palace
-    -->
         <div class="hidedv" id="page31">
-
-
             <div data-role="ui-content_fav">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.7752945525!2d77.13285020521103!3d28.614046561025667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d155a398e29%3A0x2108db1d5496ce9f!2sTaj+Palace+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.595422!2d77.17062419999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577480937" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.7752945525!2d77.13285020521103!3d28.614046561025667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d155a398e29%3A0x2108db1d5496ce9f!2sTaj+Palace+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.595422!2d77.17062419999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577480937" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
                 <div class="press-release-contact">
 
@@ -1752,16 +1749,7 @@
 
             </div>
         </div>
-        <!-- End of the Taj Palace  -->
-
-
-
-
-        <!-- Start ITC Maurya
-    -->
         <div class="hidedv" id="page32">
-
-
             <div data-role="ui-content_fav">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.23215732917!2d77.13414775522588!3d28.614555510066694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d402faf44c9%3A0x89c489e861057115!2sITC+Maurya%2C+Sardar+Patel+Marg%2C+Diplomatic+Enclave%2C+New+Delhi%2C+Delhi!3m2!1d28.596996999999998!2d77.173694!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577525731" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
@@ -2096,11 +2084,48 @@
 .carousel-control .icon-next::before {
     content: "›";
 }
+.jsk{
+	  background-color:#fff;
+	  }
   </style>
-    <!--Notification Start-->
-   <!-- <link href="css/jquery.notify.css" type="text/css" rel="stylesheet" />
+    
+     <script type="text/javascript">
 
-    <script type="text/javascript" src="js/jquery.notify.min.js"></script>-->
-    <!--Notification End-->
+function Location()
+{
+	var option={enableHighAccuracy:true}
+	navigator.geolocation.getCurrentPosition(onsuccess,onerror,option);
+	function onsuccess(position)
+	{var slat=position.coords.latitude;
+	var slong=position.coords.longitude;
+	var elat="28.631143";
+	var elong="77.248942";
+	debugger;
+		//alert(slat+" : "+slong);
+	var str="https://maps.google.com/maps?saddr="+slat+","+slong+"&daddr="+elat+","+elong+"&output=embed";
+		
+		//$("#mapp5").html('<iframe id="#mapp" src="'+str+'" style="width:100%;height:450px;"  frameborder="0" style="border:0" allowfullscreen></iframe>');
+		//document.getElementById("mapp5").innerHTML("gfgg");
+		$(".jsk").html('<iframe id="#mapp" src="'+str+'" style="width:100%;height:512px;"  frameborder="0" style="border:0" allowfullscreen></iframe>');
+		//alert(str);
+
+		}
+		
+		function onerror(error)
+		{
+			debugger;
+			//alert(error.message);
+			}
+	
+	}
+	$(document).ready(function() {
+        Location();
+		
+		//document.getElementById('mapp5').style.backgroundColor = '#DD00DD';
+		//$("#mapp5").html("<p>dsdasddass</p>");
+    });
+
+</script>
+
 </body>
 </html>
