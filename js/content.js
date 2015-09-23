@@ -42,6 +42,7 @@ $(document).ready(function () {
         if (res == true) {
             aLogout = "0";
             notiVal = "0";
+			
             //window.location.href = "#page1";
             //$("#dvHome").removeClass('hidedv').addClass('showdv');
             //$("#dvvDashboard").removeClass('showdv').addClass('hidedv');
@@ -49,10 +50,13 @@ $(document).ready(function () {
             //$("#imgMedi").attr("src", "images/media.png");
             showPage("dvHome");
             $(".AAlogout").text('').hide();
+			$("#dvLoginnnn").html('Login');
+			
 
         } else {
             aLogout = aLogout;
             notiVal = notiVal;
+			$("#dvLoginnnn").html('<i class="fa fa-user"></i> My Account');
 
         }
 
@@ -72,10 +76,12 @@ try {
             // alert(aLogout);
             if (aLogout == "1") {
                 showPage("dvvDashboard");
+				$("#dvLoginnnn").html('<i class="fa fa-user"></i> My Account');
             }
             if (aLogout == "0") {
                 showPage("dvvLogin");
                 aLogout = "0"
+				$("#dvLoginnnn").html('Login');
             }
 
         });
@@ -219,12 +225,13 @@ function LoginFunc() {
                     if (sStatus == 1) {
                         aLogout = "1";
                         $(".AAlogout").html('<img src="images/logout.png" width="25" height="25" style="cursor:pointer;">').show();
+						$("#dvLoginnnn").html(' <i class="fa fa-user"></i> My Account');
                         //Set message
                         //$('#dvResult').text("Your are successfully login.");
                         //Reset controls                          
                         $('#txtUserId').val('');
                         $('#txtPassword').val('');
-                        alert('You are successfully logged in.');
+                        //alert('You are successfully logged in.');
                         var uid = sJsonData[0].user_id;
                         if (uid.length > 0) {
                             GetDashboard(uid);
@@ -237,6 +244,7 @@ function LoginFunc() {
                     else {
                         aLogout = "0";
                         $(".AAlogout").html('<img src="images/logout.png" width="25" height="25">').hide();
+						$("#dvLoginnnn").html('Login');
                         //$('#dvResult').text("You are not a valid user. Try again.");
                         alert('You are not a valid user. Try again.');
                         $("#txtUserId").focus();
