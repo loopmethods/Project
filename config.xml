@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>IAFS 2015</name>
+<!--<preference name="orientation" value="portrait" />
+<preference name="LoadingDialog" value="IAFS"/>-->
+ <icon src="icon.png" />
+    <icon gap:platform="android" gap:qualifier="ldpi" src="images/logo.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi" src="images/logo.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi" src="images/logo.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="images/logo.png" />
+
+	
+	<icon gap:platform="ios" height="57" src="images/logo.png" width="57" />
+<icon gap:platform="ios" height="72" src="images/logo.png" width="72" />
+<icon gap:platform="ios" height="114" src="images/logo.png" width="114" />
+<icon gap:platform="ios" height="144" src="images/logo.png" width="144" />
+
+<gap:splash gap:platform="ios" height="480" src="images/320X480.png" width="320" />
+<gap:splash gap:platform="ios" height="320" src="images/480X320.png" width="480" />
+<gap:splash gap:platform="ios" height="1024" src="images/768X1024.png" width="768" />
+<gap:splash gap:platform="ios" height="768" src="images/1024X768.png" width="1024" />
+
+
+<description>
+First IAFS
+</description>
+
+<author href="https://example.com" email="you@example.com">
+IAFS
+</author>
+
+</widget>
