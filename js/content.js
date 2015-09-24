@@ -40,8 +40,6 @@ $(document).ready(function () {
     $('.AAlogout').click(function () {
         var res = confirm("Are you sure you want to logout ?");
         if (res == true) {
-			$(".circle").hide();
-			$(".circle").text("0");
             aLogout = "0";
             notiVal = "0";
 			
@@ -78,14 +76,11 @@ try {
             // alert(aLogout);
             if (aLogout == "1") {
                 showPage("dvvDashboard");
-				$(".circle").show();
 				$("#dvLoginnnn").html('<i class="fa fa-user"></i> My Account');
             }
             if (aLogout == "0") {
                 showPage("dvvLogin");
                 aLogout = "0"
-				$(".circle").hide();
-				$(".circle").text("");
 				$("#dvLoginnnn").html('Login');
             }
 
@@ -93,79 +88,7 @@ try {
     });
 }
 catch (ex) { }
-function GetNotification(){
-	 var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
 
-        var json = $.getJSON(jsonList, function (data) {
-            //alert($.now());
-            xJsonNotification = data.data;
-
-            //alert(xJsonNotification[0].title);
-            var sLength = xJsonNotification.length;
-            if (sLength > 0) {
-                $(".circle").text(sLength);
-				
-            }
-			$(".circle").show();
-        });
-                        showPage("dvvDashboard");
-						
-						var xJsonNotification = "[]";
-    var sNotificationid = "";
-    var sTitle = "";
-    var sNotification = "";
-    var sisdisplay = "";
-
-    var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-
-    var json = $.getJSON(jsonList, function (data) {
-        //alert($.now());
-        xJsonNotification = data.data;
-        var sLength = xJsonNotification.length;
-
-        if (sLength > 0) {
-
-            //for (var i = 0; i < data.data.length; i++) {
-
-            //sNotificationid = data.data[i].notification_id;
-            //sTitle = data.data[i].title;
-            //sNotification = data.data[i].notification;
-            //sisdisplay = data.data[i].is_display;
-
-            //if (sisdisplay == "1") {
-            //    myFunctionCalling1("info", sTitle, sNotification);
-            //}
-            //    debugger;
-            //}
-
-            $("#dvNotification").html("");
-            var block = "<div>";
-            $.each(xJsonNotification, function (index, item) {
-
-                sNotificationid = item.notification_id;
-                sTitle = item.title;
-                sNotification = item.notification;
-                sisdisplay = item.is_display;
-
-                //if (sisdisplay == "1") {
-                //    myFunctionCalling1("alert", sTitle, sNotification);
-                //}
-                if (sisdisplay == "1") {
-                    var row = "<div class='notifyOrange'>";
-                    row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
-                    row += "<p class='lead-font'>" + item.notification + "</p>";
-                    row += "</div>";
-                    block += row;
-                }
-
-            });
-            block += '</div>';
-            $('#dvNotification').html(block);
-            $("#dvNotification").slideDown("slow");
-        }
-        //});
-    });
-	}
 function GetDashboard(sUserId) {
     try{
         //alert(sUserId);
@@ -206,7 +129,7 @@ function GetDashboard(sUserId) {
                     if (notiVal == "1") {
                         //alert('Calling deashboard1');
                         //debugger;
-						 GetNotification(); 
+                        showPage("dvvDashboard");
                         $("#dvNoti").removeClass('hidedv').addClass('showdv');
                         $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                         //alert('Calling deashboard 12');
@@ -214,7 +137,6 @@ function GetDashboard(sUserId) {
                     else if (notiVal == "0") {
                         //alert('Calling deashboard1');
                         //debugger;
-						
                         showPage("dvvDashboard");
                         $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
                         $("#dvNoti").removeClass('showdv').addClass('hidedv');
@@ -302,8 +224,6 @@ function LoginFunc() {
 
                     if (sStatus == 1) {
                         aLogout = "1";
-						GetNotification();
-						$(".circle").show();
                         $(".AAlogout").html('<img src="images/logout.png" width="25" height="25" style="cursor:pointer;">').show();
 						$("#dvLoginnnn").html(' <i class="fa fa-user"></i> My Account');
                         //Set message
@@ -359,7 +279,6 @@ function LoginFunc() {
 $(document).ready(function () {
 	$("#AnchorPresssRelease").bind("click",function(){
 		 var xJsonData = "[]";
-		 //http://constantdesign.com/samples/indian-african/api/getNotification.php
     //var jsonList = "PressReleases.json";
     var jsonList = "http://iafs.in/api/getPressReleases.php";
     $.getJSON(jsonList, function (r) {
@@ -369,13 +288,11 @@ $(document).ready(function () {
         $("#dvpressRelease").html("");
         var block = "<div>";
         $.each(xJsonData, function (index, item) {
-			debugger;
             var row = "<div class='press-release'>";
             row += "<a class='PRDesc' href='#dvPRDescription' data-id=" + item.archive_id + ">";
             row += "<p class='lead-font'>" + item.title1 + "</p></a>";
             row += "</div>";
             block += row;
-			
         });
         block += '</div>';
         $('#dvpressRelease').html(block);
@@ -383,8 +300,12 @@ $(document).ready(function () {
 
     });
 		
-		$("#dvpressRelease").on("click", "a.PRDesc", function () {
+		});
+	
+   
 
+    $("#dvpressRelease").on("click", "a.PRDesc", function () {
+alert("jsk");
         var sArchiveId = $(this).attr("data-id");
         $("#dvPressReleaseDrp").html("");
         var block = "<div>";
@@ -449,11 +370,6 @@ $(document).ready(function () {
 		$("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
 		$("#dvContactus").removeClass('showdv').addClass('hidedv');
     });
-		});
-	
-   
-
-    
 });
 //PressReleases End
 
@@ -596,7 +512,7 @@ $(document).ready(function () {
 //Start Documents
 $(document).ready(function () {
 	$("#imgNoti").bind("click",function () {
-		
+		//alert("jsk");
 	    try {
 	        //alert('notifi calling click event.');
 	        //debugger;
@@ -638,7 +554,11 @@ $(document).ready(function () {
         $("#dvDocument").slideDown("slow");
 
     });
-		 $("#dvDocument").on("click", "a.DDesc", function () {
+		});
+	
+    
+
+    $("#dvDocument").on("click", "a.DDesc", function () {
 
         var sArchiveId = $(this).attr("data-id");
         $("#dvDocumentDesc").html("");
@@ -708,13 +628,8 @@ $(document).ready(function () {
 		 
 
     });
-		});
-	
-    
-
-   
 	$("#AnchorPhotoGallary").bind("click",function(){
-	
+	//alert("jsk")
 			var xJsonData = "[]";
 			var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
         //var jsonListPhotoGallery = "ImageGallary.json";
@@ -745,7 +660,7 @@ $(document).ready(function () {
 
 
         $("#myImgGallary").on("click", "img.img", function () {
-
+//alert("jsk");
             var xParID = $(this).attr("data-id");
             $("#dvPhotoList").html("");
             var block = "<div id='owl-demo' class='ocarouselwl-' style='padding-bottom:80px'>";
@@ -871,13 +786,78 @@ catch (ex) { ex.message; }
 //}
 $(document).ready(function () {
     //$(".callNotification").click(function () {
-    
+    var xJsonNotification = "[]";
+    var sNotificationid = "";
+    var sTitle = "";
+    var sNotification = "";
+    var sisdisplay = "";
+
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+
+    var json = $.getJSON(jsonList, function (data) {
+        //alert($.now());
+        xJsonNotification = data.data;
+        var sLength = xJsonNotification.length;
+
+        if (sLength > 0) {
+
+            //for (var i = 0; i < data.data.length; i++) {
+
+            //sNotificationid = data.data[i].notification_id;
+            //sTitle = data.data[i].title;
+            //sNotification = data.data[i].notification;
+            //sisdisplay = data.data[i].is_display;
+
+            //if (sisdisplay == "1") {
+            //    myFunctionCalling1("info", sTitle, sNotification);
+            //}
+            //    debugger;
+            //}
+
+            $("#dvNotification").html("");
+            var block = "<div>";
+            $.each(xJsonNotification, function (index, item) {
+
+                sNotificationid = item.notification_id;
+                sTitle = item.title;
+                sNotification = item.notification;
+                sisdisplay = item.is_display;
+
+                //if (sisdisplay == "1") {
+                //    myFunctionCalling1("alert", sTitle, sNotification);
+                //}
+                if (sisdisplay == "1") {
+                    var row = "<div class='notifyOrange'>";
+                    row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
+                    row += "<p class='lead-font'>" + item.notification + "</p>";
+                    row += "</div>";
+                    block += row;
+                }
+
+            });
+            block += '</div>';
+            $('#dvNotification').html(block);
+            $("#dvNotification").slideDown("slow");
+        }
+        //});
+    });
 });
 
 
 $(document).ready(function () {
     $(window).load(function () {
-     
+        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+
+        var json = $.getJSON(jsonList, function (data) {
+            //alert($.now());
+            xJsonNotification = data.data;
+
+            //alert(xJsonNotification[0].title);
+            var sLength = xJsonNotification.length;
+            if (sLength > 0) {
+                $(".circle").text(sLength);
+            }
+        });
     });
 });
 
@@ -941,53 +921,22 @@ function closeMore() {
 
 
 $(document).ready(function () {
-	
-	$.ajax({
-                type: "get",
-                dataType: "json",
-                url: "http://iafs.in/api/getAboutUs.php",
-                
-                //data: '{"user_name":' + sUserId + ', "password":' + sPwd + '}',
-                //data: '{"country":"India"}',
-
-                success: function (res) {
-
-        $("#h1Aboutus").text(res.data[0].title);
-
-        //var aa = (data.data[0].paragraph1.toString().substring(5, 40).css('font-weight', 'bold'));
-
-        $("#pAboutus").html(res.data[0].paragraph1.substring(0, 104)) + "...";
-        var aa = res.data[0].paragraph1.length;
-        //alert(aa);
-        $("#p1Aboutus").html(res.data[0].paragraph1.substring(104, aa - 1) + "<br><br>");
-        $("#p2Aboutus").html(res.data[0].paragraph2 + "<br><br>");
-        $("#p3Aboutus").html(res.data[0].paragraph3 + "");
-                },
-                error: function (xhr, textStatus, error) {
-                    //Show error message(if occured)
-                    //$('#dvResult').text("Error: " + error);
-                    alert(error);
-                  //  $("#txtUserId").focus();
-
-                }
-            });
-/*	
-   var jsonList = "http://constantdesign.com/samples/indian-african/api/getAboutUs.php";
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getAboutUs.php";
     var json = $.getJSON(jsonList, function (data) {
 
         $("#h1Aboutus").text(data.data[0].title);
 
         //var aa = (data.data[0].paragraph1.toString().substring(5, 40).css('font-weight', 'bold'));
 
-        $("#pAboutus").html(data.data[0].paragraph1.substring(0, 104)) + "...";
+        $("#pAboutus").html(data.data[0].paragraph1.substring(0, 94)) + "...";
         var aa = data.data[0].paragraph1.length;
         //alert(aa);
-        $("#p1Aboutus").html(data.data[0].paragraph1.substring(104, aa - 1) + "<br><br>");
+        $("#p1Aboutus").html(data.data[0].paragraph1.substring(94, aa - 1) + "<br><br>");
         $("#p2Aboutus").html(data.data[0].paragraph2 + "<br><br>");
         $("#p3Aboutus").html(data.data[0].paragraph3 + "");
 
 
-    });*/
+    });
 });
 
 $(document).ready(function () {

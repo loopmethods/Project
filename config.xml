@@ -7,7 +7,6 @@
 <name>IAFS 2015</name>
 <!--<preference name="orientation" value="portrait" />
 <preference name="LoadingDialog" value="IAFS"/>-->
-<preference name="permissions" value="none" />
  <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="images/logo.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="images/logo.png" />
