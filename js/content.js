@@ -78,11 +78,14 @@ try {
             // alert(aLogout);
             if (aLogout == "1") {
                 showPage("dvvDashboard");
+				$(".circle").show();
 				$("#dvLoginnnn").html('<i class="fa fa-user"></i> My Account');
             }
             if (aLogout == "0") {
                 showPage("dvvLogin");
                 aLogout = "0"
+				$(".circle").hide();
+				$(".circle").text("");
 				$("#dvLoginnnn").html('Login');
             }
 
@@ -90,48 +93,8 @@ try {
     });
 }
 catch (ex) { }
-
-function GetDashboard(sUserId) {
-    try{
-        //alert(sUserId);
-
-
-        $.ajax({
-            type: "post",
-            dataType: "json",
-            url: "http://constantdesign.com/samples/indian-african/api/getDashboard.php",
-            data: 'user_id=' + sUserId + '',
-            success: function (res) {
-
-                //e.preventDefault();
-                var sJsonData1 = res.data
-
-                var a22 = sJsonData1[0].title;
-                var aa = sJsonData1.length;
-                debugger;
-                if (aa > 1) {
-                    debugger;
-                    //$.each(sJsonData1, function (parindex1, paritem1) {                                            
-                    //alert(sJsonData1[0].title);
-
-                    //var row = "<div  class='press-release'><a href='" + paritem1.url + "'><p class='lead-font'>" + paritem1.title + "</p></a></div>";
-                    //$("#P1").html(sJsonData1[0].title);
-                    //$("#dba1").attr("href", sJsonData1[0].url);
-                    //$("#P2").html(sJsonData1[1].title);
-                    //$("#dba2").attr("href", sJsonData1[1].url);
-                    //$("#P3").html(sJsonData1[2].title);
-                    //$("#P4").html(sJsonData1[3].title);
-                    //$("#P5").html(sJsonData1[4].title);
-                    //$("#P6").html(sJsonData1[5].title);
-                    //$("#P7").html(sJsonData1[6].title);
-                    //$("#P8").html(sJsonData1[7].title);
-                    //$('#dvDashboardd').show().removeAttr('display', 'block');
-                    //window.location.href = "#page15";
-
-                    if (notiVal == "1") {
-                        //alert('Calling deashboard1');
-                        //debugger;
-						   var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+function GetNotification(){
+	 var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
 
         var json = $.getJSON(jsonList, function (data) {
             //alert($.now());
@@ -202,6 +165,48 @@ function GetDashboard(sUserId) {
         }
         //});
     });
+	}
+function GetDashboard(sUserId) {
+    try{
+        //alert(sUserId);
+
+
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: "http://constantdesign.com/samples/indian-african/api/getDashboard.php",
+            data: 'user_id=' + sUserId + '',
+            success: function (res) {
+
+                //e.preventDefault();
+                var sJsonData1 = res.data
+
+                var a22 = sJsonData1[0].title;
+                var aa = sJsonData1.length;
+                debugger;
+                if (aa > 1) {
+                    debugger;
+                    //$.each(sJsonData1, function (parindex1, paritem1) {                                            
+                    //alert(sJsonData1[0].title);
+
+                    //var row = "<div  class='press-release'><a href='" + paritem1.url + "'><p class='lead-font'>" + paritem1.title + "</p></a></div>";
+                    //$("#P1").html(sJsonData1[0].title);
+                    //$("#dba1").attr("href", sJsonData1[0].url);
+                    //$("#P2").html(sJsonData1[1].title);
+                    //$("#dba2").attr("href", sJsonData1[1].url);
+                    //$("#P3").html(sJsonData1[2].title);
+                    //$("#P4").html(sJsonData1[3].title);
+                    //$("#P5").html(sJsonData1[4].title);
+                    //$("#P6").html(sJsonData1[5].title);
+                    //$("#P7").html(sJsonData1[6].title);
+                    //$("#P8").html(sJsonData1[7].title);
+                    //$('#dvDashboardd').show().removeAttr('display', 'block');
+                    //window.location.href = "#page15";
+
+                    if (notiVal == "1") {
+                        //alert('Calling deashboard1');
+                        //debugger;
+						 GetNotification(); 
                         $("#dvNoti").removeClass('hidedv').addClass('showdv');
                         $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                         //alert('Calling deashboard 12');
@@ -209,8 +214,7 @@ function GetDashboard(sUserId) {
                     else if (notiVal == "0") {
                         //alert('Calling deashboard1');
                         //debugger;
-						$(".circle").hide();
-						$(".circle").text("0");
+						
                         showPage("dvvDashboard");
                         $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
                         $("#dvNoti").removeClass('showdv').addClass('hidedv');
@@ -298,6 +302,8 @@ function LoginFunc() {
 
                     if (sStatus == 1) {
                         aLogout = "1";
+						GetNotification();
+						$(".circle").show();
                         $(".AAlogout").html('<img src="images/logout.png" width="25" height="25" style="cursor:pointer;">').show();
 						$("#dvLoginnnn").html(' <i class="fa fa-user"></i> My Account');
                         //Set message
@@ -632,11 +638,7 @@ $(document).ready(function () {
         $("#dvDocument").slideDown("slow");
 
     });
-		});
-	
-    
-
-    $("#dvDocument").on("click", "a.DDesc", function () {
+		 $("#dvDocument").on("click", "a.DDesc", function () {
 
         var sArchiveId = $(this).attr("data-id");
         $("#dvDocumentDesc").html("");
@@ -706,6 +708,11 @@ $(document).ready(function () {
 		 
 
     });
+		});
+	
+    
+
+   
 	$("#AnchorPhotoGallary").bind("click",function(){
 	
 			var xJsonData = "[]";
