@@ -34,27 +34,23 @@
             
             <i id="linkBackImgGallry" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top:10px;  cursor:pointer;"></i>
         </div>
-        <div class="col-xs-6 text-center">
+        <div class="col-xs-8 text-center">
         	<div style="margin-top:5px">
         		<a href="#" id="IAFS_logo"> <img src="images/logo.png" width="35" height="35" /></a> IAFS 2015
             </div>
         </div>
         
-        <div class="col-xs-2 text-right">
-        	<div style="margin-top:9px;">
-    	<a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
-                <i  id="imgNoti"class="fa fa-bell" style="font-size:25px; color:#fff; left:13px; position:relative;">
-               </i>
-               
-
-            </a>
-            
-           </div>
-           <div class="circle" style="position:relative; left:100%; margin-top:-25px; float:none"></div>
+        <div style="padding:0 0" class="col-xs-1 text-center">
+        	<div style="margin-top: 9px; text-align: center;">
+                <a style="margin-left: auto; margin-right: auto" href="#page26" class="navbar-brand page-scroll ui-link">
+                        <i style="font-size: 25px; color: rgb(255, 255, 255); position: relative; left: 0px;" class="fa fa-bell" id="imgNoti" src="images/register.png">
+                       </i>
+               </a>
+			</div>
+            <div style="position: relative; margin-top: -25px; float: none; left: 50%; margin-left: -3px;" class="circle">1</div>
         </div>
-        
-                <div class="col-xs-2 text-right">
-        	<div class="pageh_noty" style="margin:5px 0 0">
+        <div style="padding:0 0" class="col-xs-1 text-center">
+			<div style="margin:5px 0 0" class="pageh_noty">
                 <div class="AAlogout"></div>
             </div>
         </div>
@@ -133,18 +129,29 @@
             
             <div class="main_pages">
                 <div class="calender_home">
-                    <div class="calender_home_left">
-                        <div class="calender_icon"><i class="fa fa-calendar" style="color: #fff; font-size: 35px;"></i></div>
-                        <br>
-                        <div class="location_icon"><i id="loc" class="fa fa-map-marker" style="color: #fff; font-size: 35px;"></i></div>
+                	<div class="row">
+                    	<div class="col-xs-2 text-center">
+                    		<div class="calender_icon">
+                            	<i class="fa fa-calendar" style="color: #fff; font-size: 25px; margin-top:5px"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 text-left">
+                        	<div class="venu_location">
+                                <h1>WHEN</h1>
+                                <p>
+                                    26th - 29th October, 2015
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="calender_home_right">
-                        <div class="venu_address">
-                            <h1>WHEN</h1>
-                            <p>
-                                26th - 29th October, 2015
-                            </p>
-                            <div class="venu_location">
+                    <div class="row" style="margin-top:20px">
+                    	<div class="col-xs-2 text-center">
+                    		<div class="location_icon">
+                            	<i id="loc" class="fa fa-map-marker" style="color: #fff; font-size: 25px; margin-top:5px"></i>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 text-left">
+                        	<div class="venu_location">
                                 <h1>WHERE</h1>
                                 <p>
                                     Indira Gandhi Stadium Complex, New Delhi
@@ -152,13 +159,16 @@
                                 </p>
                             </div>
                         </div>
-
-                        <a id="aaLogin" href="#" style="color: #fff; font-weight: bold; font-size: 18px !important;">
-                            <div id="dvLoginnnn" class="regitered_button">LOGIN</div>
-                        </a>
                     </div>
-
-
+                    
+                    <div class="row">
+                    	<div class="col-xs-2"></div>
+                    	<div class="col-xs-10">
+                        	<a id="aaLogin" href="#" style="color: #fff">
+                                <div id="dvLoginnnn" class="regitered_button">LOGIN</div>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -492,20 +502,14 @@
         <!-- End of the Dashboard-->
 
        <!-- Start Venue -->
+       <div style="margin-top:45px;">
+       
         <div id="dvvVenue" class="hidedv">
-            <div data-role="ui-content_fav">
-                Indira Gandhi Stadium Complex, New Delhi India
-      
-     <!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="512" frameborder="0" style="border:0" allowfullscreen></iframe>-->
      
-     <div class="jsk"  style="width:100%;height:512px;">
-</div>
+     <div class="jsk"  style="width:100%;height:100%; position:fixed">
 
-
-                <div class="press-release-contact">
-                </div>
             </div>
-        </div>
+        </div></div>
         <!-- End of the Venue -->
 
 
@@ -2106,7 +2110,7 @@ function Location()
 		
 		//$("#mapp5").html('<iframe id="#mapp" src="'+str+'" style="width:100%;height:450px;"  frameborder="0" style="border:0" allowfullscreen></iframe>');
 		//document.getElementById("mapp5").innerHTML("gfgg");
-		$(".jsk").html('<iframe id="#mapp" src="'+str+'" style="width:100%;height:512px;"  frameborder="0" style="border:0" allowfullscreen></iframe>');
+		$(".jsk").html('<iframe id="#mapp" src="'+str+'" style="width:100%;height:100%; padding:0px 0 100px"  frameborder="0" style="border:0" allowfullscreen></iframe>');
 		//alert(str);
 
 		}
