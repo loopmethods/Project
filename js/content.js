@@ -40,6 +40,8 @@ $(document).ready(function () {
     $('.AAlogout').click(function () {
         var res = confirm("Are you sure you want to logout ?");
         if (res == true) {
+			$(".circle").hide();
+			$(".circle").text("0");
             aLogout = "0";
             notiVal = "0";
 			
@@ -129,7 +131,77 @@ function GetDashboard(sUserId) {
                     if (notiVal == "1") {
                         //alert('Calling deashboard1');
                         //debugger;
+						   var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+
+        var json = $.getJSON(jsonList, function (data) {
+            //alert($.now());
+            xJsonNotification = data.data;
+
+            //alert(xJsonNotification[0].title);
+            var sLength = xJsonNotification.length;
+            if (sLength > 0) {
+                $(".circle").text(sLength);
+				
+            }
+			$(".circle").show();
+        });
                         showPage("dvvDashboard");
+						
+						var xJsonNotification = "[]";
+    var sNotificationid = "";
+    var sTitle = "";
+    var sNotification = "";
+    var sisdisplay = "";
+
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
+
+    var json = $.getJSON(jsonList, function (data) {
+        //alert($.now());
+        xJsonNotification = data.data;
+        var sLength = xJsonNotification.length;
+
+        if (sLength > 0) {
+
+            //for (var i = 0; i < data.data.length; i++) {
+
+            //sNotificationid = data.data[i].notification_id;
+            //sTitle = data.data[i].title;
+            //sNotification = data.data[i].notification;
+            //sisdisplay = data.data[i].is_display;
+
+            //if (sisdisplay == "1") {
+            //    myFunctionCalling1("info", sTitle, sNotification);
+            //}
+            //    debugger;
+            //}
+
+            $("#dvNotification").html("");
+            var block = "<div>";
+            $.each(xJsonNotification, function (index, item) {
+
+                sNotificationid = item.notification_id;
+                sTitle = item.title;
+                sNotification = item.notification;
+                sisdisplay = item.is_display;
+
+                //if (sisdisplay == "1") {
+                //    myFunctionCalling1("alert", sTitle, sNotification);
+                //}
+                if (sisdisplay == "1") {
+                    var row = "<div class='notifyOrange'>";
+                    row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
+                    row += "<p class='lead-font'>" + item.notification + "</p>";
+                    row += "</div>";
+                    block += row;
+                }
+
+            });
+            block += '</div>';
+            $('#dvNotification').html(block);
+            $("#dvNotification").slideDown("slow");
+        }
+        //});
+    });
                         $("#dvNoti").removeClass('hidedv').addClass('showdv');
                         $("#dvvDashboard").removeClass('showdv').addClass('hidedv');
                         //alert('Calling deashboard 12');
@@ -137,6 +209,8 @@ function GetDashboard(sUserId) {
                     else if (notiVal == "0") {
                         //alert('Calling deashboard1');
                         //debugger;
+						$(".circle").hide();
+						$(".circle").text("0");
                         showPage("dvvDashboard");
                         $("#dvvDashboard").removeClass('hidedv').addClass('showdv');
                         $("#dvNoti").removeClass('showdv').addClass('hidedv');
@@ -790,78 +864,13 @@ catch (ex) { ex.message; }
 //}
 $(document).ready(function () {
     //$(".callNotification").click(function () {
-    var xJsonNotification = "[]";
-    var sNotificationid = "";
-    var sTitle = "";
-    var sNotification = "";
-    var sisdisplay = "";
-
-    var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-
-    var json = $.getJSON(jsonList, function (data) {
-        //alert($.now());
-        xJsonNotification = data.data;
-        var sLength = xJsonNotification.length;
-
-        if (sLength > 0) {
-
-            //for (var i = 0; i < data.data.length; i++) {
-
-            //sNotificationid = data.data[i].notification_id;
-            //sTitle = data.data[i].title;
-            //sNotification = data.data[i].notification;
-            //sisdisplay = data.data[i].is_display;
-
-            //if (sisdisplay == "1") {
-            //    myFunctionCalling1("info", sTitle, sNotification);
-            //}
-            //    debugger;
-            //}
-
-            $("#dvNotification").html("");
-            var block = "<div>";
-            $.each(xJsonNotification, function (index, item) {
-
-                sNotificationid = item.notification_id;
-                sTitle = item.title;
-                sNotification = item.notification;
-                sisdisplay = item.is_display;
-
-                //if (sisdisplay == "1") {
-                //    myFunctionCalling1("alert", sTitle, sNotification);
-                //}
-                if (sisdisplay == "1") {
-                    var row = "<div class='notifyOrange'>";
-                    row += "<h1 style='color:#fff;'>" + item.title + "</h1>";
-                    row += "<p class='lead-font'>" + item.notification + "</p>";
-                    row += "</div>";
-                    block += row;
-                }
-
-            });
-            block += '</div>';
-            $('#dvNotification').html(block);
-            $("#dvNotification").slideDown("slow");
-        }
-        //});
-    });
+    
 });
 
 
 $(document).ready(function () {
     $(window).load(function () {
-        var jsonList = "http://constantdesign.com/samples/indian-african/api/getNotification.php";
-
-        var json = $.getJSON(jsonList, function (data) {
-            //alert($.now());
-            xJsonNotification = data.data;
-
-            //alert(xJsonNotification[0].title);
-            var sLength = xJsonNotification.length;
-            if (sLength > 0) {
-                $(".circle").text(sLength);
-            }
-        });
+     
     });
 });
 
