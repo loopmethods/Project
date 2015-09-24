@@ -277,8 +277,7 @@ function LoginFunc() {
 
 
 $(document).ready(function () {
-	$("#AnchorPresssRelease").bind("click",function(){
-		 var xJsonData = "[]";
+    var xJsonData = "[]";
     //var jsonList = "PressReleases.json";
     var jsonList = "http://iafs.in/api/getPressReleases.php";
     $.getJSON(jsonList, function (r) {
@@ -299,13 +298,9 @@ $(document).ready(function () {
         $("#dvpressRelease").slideDown("slow");
 
     });
-		
-		});
-	
-   
 
     $("#dvpressRelease").on("click", "a.PRDesc", function () {
-alert("jsk");
+
         var sArchiveId = $(this).attr("data-id");
         $("#dvPressReleaseDrp").html("");
         var block = "<div>";
@@ -378,8 +373,7 @@ alert("jsk");
 //START Media Coverage
 $(document).ready(function () {
     //var jsonList = "mediaCovrage.json";
-	$("#AnchorMediaCoverage").bind("click",function(){
-		 var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaCoverage.php";
+    var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaCoverage.php";
     var json = $.getJSON(jsonList, function (data) {
         //alert(data.data[0].title1);
         var block = "<div>";
@@ -399,17 +393,12 @@ $(document).ready(function () {
         $("#dvMediaCovrage").slideDown("slow");
 
     });
-		});
-	
-   
     //alert(json);
 });
 //end Media Coverage
 
 //end Media Archive
 $(document).ready(function () {
-	$("#AnchorMediaAdvisory").bind("click",function(){
-		
     var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaArchive.php";
     var json = $.getJSON(jsonList, function (data) {
         //alert(data.data[0].title1);
@@ -429,8 +418,6 @@ $(document).ready(function () {
         $('#dvMediaAdvisory').html(block);
         $("#dvMediaAdvisory").slideDown("slow");
     });
-		});
-	
     //alert(json);
 });
 //end Media Archive
@@ -438,8 +425,7 @@ $(document).ready(function () {
 
 //Start Speeches & Statements
 $(document).ready(function () {
-	$("#AnchorSpeechStatement").bind("click",function(){
-		 //var jsonList = "mediaCovrage.json";
+    //var jsonList = "mediaCovrage.json";
     var jsonList = "http://constantdesign.com/samples/indian-african/api/getSpeeches.php";
     var json = $.getJSON(jsonList, function (data) {
         //alert(data.data[0].title1);
@@ -461,16 +447,13 @@ $(document).ready(function () {
         $("#dvSpeeches").slideDown("slow");
 
     });
-		});
-   
     //alert(json);
 });
 //End Speeches & Statements
 
 //End getProgramme
 $(document).ready(function () {
-	$("#imgAgenda").bind("click",function(){
-		var xJsonData = "[]";
+    var xJsonData = "[]";
     //var jsonList = "Aganda.json";
     var jsonListAganda = "http://constantdesign.com/samples/indian-african/api/getProgramme.php";
     $.getJSON(jsonListAganda, function (r) {
@@ -501,8 +484,6 @@ $(document).ready(function () {
         $("#dvSummitAgenda").slideDown("slow");
 
     });
-		});
-    
 });
 
 //End getProgramme
@@ -511,30 +492,7 @@ $(document).ready(function () {
 
 //Start Documents
 $(document).ready(function () {
-	$("#imgNoti").bind("click",function () {
-		//alert("jsk");
-	    try {
-	        //alert('notifi calling click event.');
-	        //debugger;
-	        notiVal = "1";
-	        if (aLogout == "0") {
-	            //debugger;
-	            alert('You are not logged in, Please log on first.');
-	            showPage("dvvLogin");
-	            //debugger;
-	        }
-	        if (aLogout == "1") {
-	            //debugger;
-	            showPage("dvNoti");
-	            //debugger;
-	        }
-	    }
-	    catch (ex) { ex.message }
-		 
-    });
-	
-	$("#AnchorDocument").bind("click",function(){
-		var xJsonData = "[]";
+    var xJsonData = "[]";
     var jsonList = "http://constantdesign.com/samples/indian-african/api/getMediaArchive.php";
     $.getJSON(jsonList, function (r) {
         xJsonData = r.data;
@@ -554,9 +512,6 @@ $(document).ready(function () {
         $("#dvDocument").slideDown("slow");
 
     });
-		});
-	
-    
 
     $("#dvDocument").on("click", "a.DDesc", function () {
 
@@ -628,10 +583,15 @@ $(document).ready(function () {
 		 
 
     });
-	$("#AnchorPhotoGallary").bind("click",function(){
-	//alert("jsk")
-			var xJsonData = "[]";
-			var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
+});
+//End Documents
+
+
+//End Photo Gallary
+try {
+    var xJsonData = "[]";
+    $(function () {
+        var jsonListPhotoGallery = "http://constantdesign.com/samples/indian-african/api/getImageGallery.php";
         //var jsonListPhotoGallery = "ImageGallary.json";
         $.getJSON(jsonListPhotoGallery, function (r) {
             xJsonData = r.data;
@@ -651,16 +611,10 @@ $(document).ready(function () {
             block += '</div>';
             $('#myImgGallary').html(block);
         });
-	
-	
-	try {
- 
-		
-        
 
 
         $("#myImgGallary").on("click", "img.img", function () {
-//alert("jsk");
+
             var xParID = $(this).attr("data-id");
             $("#dvPhotoList").html("");
             var block = "<div id='owl-demo' class='ocarouselwl-' style='padding-bottom:80px'>";
@@ -731,17 +685,9 @@ $(document).ready(function () {
                 }
             });
         });
-    
+    });
 }
 catch (ex) { ex.message; }
-});
-});
-//End Documents
-
-
-//End Photo Gallary
-
-
 //End Photo Gallary
 
 
@@ -869,7 +815,7 @@ $(document).ready(function () {
 $(window).load(function () {
     try {
         //$("#pageloaddiv").fadeOut(5000);
-        $(".loader").fadeOut(10);
+        $(".loader").fadeOut(100);
     }
     catch (ex) { ex.message; }
 });

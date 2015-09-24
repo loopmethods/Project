@@ -2485,20 +2485,20 @@
 }
 
 .calender_icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: #f78000;
-	text-align:center;
-	line-height:40px;
+    margin: 10px auto 0px auto;
+    padding: 10px 0px 0px 12px;
     border-radius: 5px;
 }
 
 .location_icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: #f78000;
-    text-align:center;
-	line-height:40px;
+    margin: 0px auto 0px auto;
+    padding: 12px 0px 0px 20px;
     border-radius: 5px;
 }
 
@@ -2520,7 +2520,8 @@
     font-size: 16px;
     color: #f88000;
     text-align: left;
-	margin:0;
+    padding: 15px 10px 0px 0px;
+    margin: 16px auto 0px auto;
 }
 
 
@@ -2540,14 +2541,16 @@
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    float: left;
     font-family: "Roboto",sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 5px 15px;
-	margin-top:15px;
+    height: 42px;
+    margin: 15px 10px 10px 19px;
+    padding: 8px 0 0;
     text-align: center;
     text-shadow: none;
-    width: 50%;
+    width: 80%;
 }
 
 

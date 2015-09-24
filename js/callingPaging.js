@@ -575,7 +575,6 @@ $(document).ready(function () {
 
     //Venue
     $("#P9").click(function () {
-		Location();
         $("#imgNoti").attr("src", "images/register.png");
         $("#imgMedi").attr("src", "images/media.png");
         $("#imgAgenda").attr("src", "images/agenda.png");
@@ -626,10 +625,7 @@ $(document).ready(function () {
     });
 
     //For Venue from Home
-	
-	function VenuMap()
-	{
-		 Location();
+    $("#loc").click(function () {
         $("#imgNoti").attr("src", "images/register.png");
         $("#imgMedi").attr("src", "images/media.png");
         $("#imgAgenda").attr("src", "images/agenda.png");
@@ -676,16 +672,9 @@ $(document).ready(function () {
         $("#linkBackDocument").removeClass('showdv').addClass('hidedv');
 		 $("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
 		  $("#dvContactus").removeClass('showdv').addClass('hidedv');
-		}
-	
-    $(".location_icon").click(function () {
-		VenuMap();
 
     });
-$(".venu_location").click(function () {
-		VenuMap();
 
-    });
 
     //Travel India
     $("#P3").click(function () {
@@ -1903,7 +1892,26 @@ $(".venu_location").click(function () {
 	});
 	//Notification Link
 	
-	
+	$("#imgNoti").click(function () {
+	    try {
+	        //alert('notifi calling click event.');
+	        //debugger;
+	        notiVal = "1";
+	        if (aLogout == "0") {
+	            //debugger;
+	            alert('You are not logged in, Please log on first.');
+	            showPage("dvvLogin");
+	            //debugger;
+	        }
+	        if (aLogout == "1") {
+	            //debugger;
+	            showPage("dvNoti");
+	            //debugger;
+	        }
+	    }
+	    catch (ex) { ex.message }
+		 
+    });
 	
 	
 	//Back Link ImgGallry
@@ -2163,6 +2171,5 @@ function showPage(val) {
         $("#linkBackImgGallry").removeClass('showdv').addClass('hidedv');
         $("#dvContactus").removeClass('showdv').addClass('hidedv');
     }
-	
 
 }
