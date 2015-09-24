@@ -16,7 +16,6 @@
     <script src="js/callingPaging.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
 </head>
 <body>
      <div class="loader">
@@ -25,46 +24,34 @@
 
     <!--Hitesh-->
     <div id="fixedheader">
-    	<div class="col-xs-2 text-left">
-        	<i id="linkBackMediaList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #fff; font-size: 25px; float: left; padding-top: 10px; cursor:pointer;"></i>
-            <i id="linkBackDashboardList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top:10px;  cursor:pointer;"></i>
-             <i id="linkBackHotelList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 10px;  cursor:pointer;"></i>
-            <i id="linkBackPressRelease" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top:10px;  cursor:pointer;"></i>
-            <i id="linkBackDocument" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top:10px;  cursor:pointer;"></i>
+    	<div class="col-xs-3 text-left">
+        	<i id="linkBackMediaList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #fff; font-size: 25px; float: left; padding-top: 4px; cursor:pointer;"></i>
+            <i id="linkBackDashboardList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
+             <i id="linkBackHotelList" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
+            <i id="linkBackPressRelease" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
+            <i id="linkBackDocument" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
             
-            <i id="linkBackImgGallry" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top:10px;  cursor:pointer;"></i>
+            <i id="linkBackImgGallry" class="fa fa-arrow-left hidedv" style="padding-right: 0px; color: #FFF; font-size: 25px; float: left; padding-top: 4px;  cursor:pointer;"></i>
         </div>
         <div class="col-xs-6 text-center">
         	<div style="margin-top:5px">
         		<a href="#" id="IAFS_logo"> <img src="images/logo.png" width="35" height="35" /></a> IAFS 2015
             </div>
         </div>
-        
-        <div class="col-xs-2 text-right">
-        	<div style="margin-top:9px;">
-    	<a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
-                <i  id="imgNoti"class="fa fa-bell" style="font-size:25px; color:#fff; left:13px; position:relative;">
-               </i>
-               
-
-            </a>
-            
-           </div>
-           <div class="circle" style="position:relative; left:100%; margin-top:-25px; float:none"></div>
-        </div>
-        
-                <div class="col-xs-2 text-right">
+        <div class="col-xs-3 text-right">
         	<div class="pageh_noty" style="margin:5px 0 0">
                 <div class="AAlogout"></div>
             </div>
         </div>
     </div>
     <div>
-         
+          <div class="loader">
+        
+    </div>
         <!-- Start of the about About Us -->
         <div id="dvHome" class="hidedv">
             <div class="slider-iafs">
-                <div id="slider1_container" style="position: relative; margin: 10px auto; top: 0px; left: 0px; width:100%;  max-height: 500px; overflow: hidden;">
+                <div id="slider1_container" style="position: relative; margin: 10px auto; top: 0px; left: 0px; width: 1300px; height: 300px; max-height: 360px; overflow: hidden;">
                     <!-- Loading Screen -->
                     <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                         <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
@@ -72,8 +59,8 @@
                         <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;">
                         </div>
                     </div>
-                    <!-- Slides 	 -->
-                    <!--<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 300px; overflow: hidden;">
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 300px; overflow: hidden;">
                         <div>
                             <img u="image" src="1920/slider1.jpg" />
 
@@ -90,42 +77,7 @@
                             <img u="image" src="1920/slider4.jpg" />
                         </div>
 
-                    </div>-->
-                    <!--slider html-->
-                  <div >
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators" style="display:none;">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="1920/slider1.jpg" style="width:100%;" >
-      </div>
-
-      <div class="item">
-        <img src="1920/slider2.jpg" style="width:100%;" >
-      </div>
- 
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-                    <!--slider html-->
-                    <!-- Slides Container -->
+                    </div>
                 </div>
             </div>
             <div class="aboutprofile1">
@@ -189,7 +141,7 @@
                         </div>
 
                         <a id="aaLogin" href="#" style="color: #fff; font-weight: bold; font-size: 18px !important;">
-                            <div id="dvLoginnnn" class="regitered_button">LOGIN</div>
+                            <div class="regitered_button">LOGIN</div>
                         </a>
                     </div>
 
@@ -199,7 +151,32 @@
 
             </div>
             <div class="space"></div>
-            
+            <div class="about-contact">
+                <h2>
+                   <!-- <img src="images/contact_add.png">-->
+                   <i class="fa fa-envelope" style="margin-top:2px; font-size:35px;"></i> <i class="fa fa-phone-square" style="margin-top:5px; font-size:35px;"></i>
+                </h2>
+
+
+
+                <p>
+                    <strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.<br>
+
+
+
+                    <strong>Tel :</strong> +91-11-4901 6676, +91-11-4901 6678<br>
+
+
+
+                    <strong>Fax :</strong> +91-11-4901 8607, +91-11-49015408<br>
+
+
+
+                    <strong>Email:</strong> <a href="#" style="text-decoration: underline; color: #06C;">info@iafs.in</a>
+                </p>
+
+
+            </div>
         </div>
         <!-- End of the about IAFS -->
         <!-- Start of the Media List-->
@@ -238,39 +215,6 @@
             </div>
         </div>
         <!-- End of the Media List -->
-        
-          <!-- Start of the Contact us-->
-        <div id="dvContactus" class="hidedv">
-	<div class="about-contact"><br>
-
-                <h2>
-                   <!-- <img src="images/contact_add.png">-->
-                   <i class="fa fa-envelope" style="margin-top:2px; font-size:35px;"></i> <i class="fa fa-phone-square" style="margin-top:5px; font-size:32px;"></i>
-                </h2>
-
-
-
-                <p>
-                    <strong>Address :</strong> India Africa Forum Summit Secretariat, Ministry of External Affairs, Room# 1137, Jawahar Lal Nehru Bhawan, 23-D, Janpath, New Delhi-110011 India.<br>
-
-
-
-                    <strong>Tel :</strong> +91-11-4901 6676, +91-11-4901 6678<br>
-
-
-
-                    <strong>Fax :</strong> +91-11-4901 8607, +91-11-49015408<br>
-
-
-
-                    <strong>Email:</strong> <a href="#" style="text-decoration: underline; color: #06C;">info@iafs.in</a>
-                </p>
-
-
-            </div>
-        </div>
-        <!-- End of the Contact us -->
-        
         <!-- Start of the Notification -->
         <div id="dvNoti" class="hidedv">
             <div id="dvNotification" style="padding-top: 45px;">
@@ -414,13 +358,13 @@
                     <div id="dvLoginConcept" class="press-release-login">
                         <form id="myform" method="post">
 
-                            <label><i class="fa fa-user" style="font-size:25px"></i> </label>
+                            <label>Login ID </label>
                             <input type="text" id="txtUserId" name="txtUserId" required style="color: black;">
                             <br>
-                            <label><i class="fa fa-unlock-alt" style="font-size:25px"></i> </label>
+                            <label>Password </label>
                             <input type="password" id="txtPassword" name="txtPassword" required style="color: black;">
                             <br>
-                            <input type="button" value="Login" id="btnSubmit" onclick="javascript: LoginFunc();" style="color: #fff; font-size:20px !important;">
+                            <input type="button" value="Login" id="btnSubmit" onclick="javascript: LoginFunc();" style="color: #fff;">
                         </form>
                         <div id="dvResult"></div>
                     </div>
@@ -531,7 +475,7 @@
             <div data-role="ui-content_fav">
                 Indira Gandhi Stadium Complex, New Delhi India
       
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="512" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224328.02353710987!2d77.14284574999999!3d28.535951249999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium!5e0!3m2!1sen!2sin!4v1442923699484" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <div class="press-release-contact">
                 </div>
             </div>
@@ -1709,7 +1653,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28014.93273226093!2d77.21980223653262!3d28.6337602173253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390cfd32312dee27%3A0xc40680170b85d192!2sThe+Lalit+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.631382!2d77.2270302!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577242264" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28014.93273226093!2d77.21980223653262!3d28.6337602173253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390cfd32312dee27%3A0xc40680170b85d192!2sThe+Lalit+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.631382!2d77.2270302!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577242264" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
                 <div class="press-release-contact">
@@ -1729,7 +1673,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56039.41810502118!2d77.18548494162941!3d28.61586355038021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce29fb44a031b%3A0xdf089a5045bdcdcc!2sThe+Ashok%2C+New+Delhi%2C+Delhi!3m2!1d28.596978999999997!2d77.19587!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577301968" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56039.41810502118!2d77.18548494162941!3d28.61586355038021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce29fb44a031b%3A0xdf089a5045bdcdcc!2sThe+Ashok%2C+New+Delhi%2C+Delhi!3m2!1d28.596978999999997!2d77.19587!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577301968" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
                 <div class="press-release-contact">
 
@@ -1747,7 +1691,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.96419368215!2d77.21567538651902!3d28.62614967027021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2ca5c27f3eb%3A0xfd30c43060eccfd2!2sLe+Meridien+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.618681!2d77.2178583!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577338495" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.96419368215!2d77.21567538651902!3d28.62614967027021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2ca5c27f3eb%3A0xfd30c43060eccfd2!2sLe+Meridien+New+Delhi%2C+New+Delhi%2C+Delhi!3m2!1d28.618681!2d77.2178583!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577338495" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
                 <div class="press-release-contact">
@@ -1767,7 +1711,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56043.72666234628!2d77.20675979663282!3d28.607788207038748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d018900000001%3A0xff8f5df30e8835b2!2sThe+Leela+Palace%2C+New+Delhi%2C+Delhi!3m2!1d28.579977099999997!2d77.1893047!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577423678" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56043.72666234628!2d77.20675979663282!3d28.607788207038748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d018900000001%3A0xff8f5df30e8835b2!2sThe+Leela+Palace%2C+New+Delhi%2C+Delhi!3m2!1d28.579977099999997!2d77.1893047!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577423678" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
                 <div class="press-release-contact">
 
@@ -1787,7 +1731,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.7752945525!2d77.13285020521103!3d28.614046561025667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d155a398e29%3A0x2108db1d5496ce9f!2sTaj+Palace+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.595422!2d77.17062419999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577480937" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.7752945525!2d77.13285020521103!3d28.614046561025667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d155a398e29%3A0x2108db1d5496ce9f!2sTaj+Palace+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.595422!2d77.17062419999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577480937" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
                 <div class="press-release-contact">
 
@@ -1808,7 +1752,7 @@
 
 
             <div data-role="ui-content_fav">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.23215732917!2d77.13414775522588!3d28.614555510066694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d402faf44c9%3A0x89c489e861057115!2sITC+Maurya%2C+Sardar+Patel+Marg%2C+Diplomatic+Enclave%2C+New+Delhi%2C+Delhi!3m2!1d28.596996999999998!2d77.173694!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577525731" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112080.23215732917!2d77.13414775522588!3d28.614555510066694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390d1d402faf44c9%3A0x89c489e861057115!2sITC+Maurya%2C+Sardar+Patel+Marg%2C+Diplomatic+Enclave%2C+New+Delhi%2C+Delhi!3m2!1d28.596996999999998!2d77.173694!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577525731" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
 
@@ -1829,7 +1773,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.964193682154!2d77.21509588651901!3d28.626149670270184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2c9cb8494fd%3A0x1f64b7c1ecbca4b4!2sThe+Imperial%2C+Janpath+Lane%2C+Connaught+Place%2C+New+Delhi%2C+Delhi!3m2!1d28.6254445!2d77.2181873!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577561533" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.964193682154!2d77.21509588651901!3d28.626149670270184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2c9cb8494fd%3A0x1f64b7c1ecbca4b4!2sThe+Imperial%2C+Janpath+Lane%2C+Connaught+Place%2C+New+Delhi%2C+Delhi!3m2!1d28.6254445!2d77.2181873!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577561533" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
                 <div class="press-release-contact">
@@ -1851,7 +1795,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28019.45594941604!2d77.22101218650229!3d28.616812173882543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe+Oberoi%2C+New+Delhi%2C+Doctor+Zakir+Hussain+Marg%2C+New+Delhi%2C+Delhi!3m2!1d28.596239999999998!2d77.239717!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577588745" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28019.45594941604!2d77.22101218650229!3d28.616812173882543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe+Oberoi%2C+New+Delhi%2C+Doctor+Zakir+Hussain+Marg%2C+New+Delhi%2C+Delhi!3m2!1d28.596239999999998!2d77.239717!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577588745" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
                 <div class="press-release-contact">
@@ -1871,7 +1815,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28021.0241529892!2d77.22534328982147!3d28.610934126149786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe+Oberoi%2C+New+Delhi%2C+Doctor+Zakir+Hussain+Marg%2C+New+Delhi%2C+Delhi!3m2!1d28.596239999999998!2d77.239717!5e0!3m2!1sen!2sin!4v1442408629015" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28021.0241529892!2d77.22534328982147!3d28.610934126149786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!4m5!1s0x390ce2e1f627bc0d%3A0x40c25df4a92d1404!2sThe+Oberoi%2C+New+Delhi%2C+Doctor+Zakir+Hussain+Marg%2C+New+Delhi%2C+Delhi!3m2!1d28.596239999999998!2d77.239717!5e0!3m2!1sen!2sin!4v1442408629015" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 
                 <div class="press-release-contact">
@@ -1891,7 +1835,7 @@
 
             <div data-role="ui-content_fav">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.96419368215!2d77.21613018651902!3d28.62614967027021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2ca7e019e6f%3A0x5712d360e4d75c71!2sShangri-La&#39;s+-+Eros+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.620956999999997!2d77.21816799999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577670248" width="100%" height="550" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d28016.96419368215!2d77.21613018651902!3d28.62614967027021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x390ce2ca7e019e6f%3A0x5712d360e4d75c71!2sShangri-La&#39;s+-+Eros+Hotel%2C+New+Delhi%2C+Delhi!3m2!1d28.620956999999997!2d77.21816799999999!4m5!1s0x390ce0151053471f%3A0x763527d859a397ff!2sindira+gandhi+stadium%2C+IG+Indoor+Stadium%2C+ITO%2C+Asola%2C+New+Delhi%2C+Delhi+110074!3m2!1d28.630315799999998!2d77.2472746!5e0!3m2!1sen!2sin!4v1442577670248" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
                 <div class="press-release-contact">
 
@@ -1921,7 +1865,7 @@
     	<div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page9" style="margin-left: auto; margin-right: auto">
            
-               <i id="iQuiz" class="fa fa-question" style="font-size:35px; color:#fff;"> <p style="margin-top:-1px; font-family: 'Roboto', sans-serif; font-size:13px;  margin-left:-2px;">Quiz</p></i>
+               <i class="fa fa-question" style="font-size:35px; color:#fff;"> <p style="margin-top:-1px; font-family: 'Roboto', sans-serif; font-size:13px;  margin-left:-2px;">Quiz</p></i>
 
             </a>
             </div>
@@ -1936,7 +1880,7 @@
             </a>
             </div>
     </div>
-<!--<div class="col-xs-3 text-center">
+    <div class="col-xs-3 text-center">
     	<div style="margin-top:4px">
     	<a class="navbar-brand page-scroll" href="#page26" style="margin-left: auto; margin-right: auto">
                 <i  id="imgNoti"class="fa fa-bell" style="font-size:37px; color:#fff;">
@@ -1945,16 +1889,8 @@
                
 
             </a>
-           </div></div>-->
-           <div class="col-xs-3 text-center">
-           <div style="margin-top:4px">
-    	<a class="navbar-brand page-scroll" href="#" style="margin-left: auto; margin-right: auto">
-            <i id="imgContact" class="fa fa-phone" style="font-size:37px; color:#fff;">
-            <p style="margin-top:-3px; font-family: 'Roboto', sans-serif; font-size:13px;">Contact</p>
-            </i>
-           </a>
-            </div>
-           <!--<div class="circle" style="position:relative; left:50%; margin-top:-50px; float:none"></div>-->
+           </div>
+           <div class="circle" style="position:relative; left:50%; margin-top:-50px; float:none"></div>
     </div>
     </div>
     <!--<script type="text/javascript" src="js/script.js"></script>-->
@@ -2057,107 +1993,90 @@
 
         });
     </script>
-<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-  
- .carousel {
-    position: relative;
-}
-.carousel-inner {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-.carousel-inner > .item {
-    display: none;
-    position: relative;
-    transition: left 0.6s ease-in-out 0s;
-}
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    display: inline-block;
-    height: auto;
-    line-height: 1;
-    max-width: 100%;
-}
-.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
-    display: block;
-}
-.carousel-inner > .active {
-    left: 0;
-}
-.carousel-inner > .next, .carousel-inner > .prev {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.carousel-inner > .next {
-    left: 100%;
-}
-.carousel-inner > .prev {
-    left: -100%;
-}
-.carousel-inner > .next.left, .carousel-inner > .prev.right {
-    left: 0;
-}
-.carousel-inner > .active.left {
-    left: -100%;
-}
-.carousel-inner > .active.right {
-    left: 100%;
-}
-.carousel-control {
-    bottom: 0;
-    color: #ffffff;
-    font-size: 20px;
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    top: 0;
-    width: 15%;
-}
-.carousel-control.left {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0px, rgba(0, 0, 0, 0) 100%);
-    background-repeat: repeat-x;
-}
-.carousel-control.right {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    left: auto;
-    right: 0;
-}
-.carousel-control:hover, .carousel-control:focus {
-    color: #ffffff;
-    opacity: 0.9;
-    text-decoration: none;
-}
-.carousel-control .icon-prev, .carousel-control .icon-next {
-    display: inline-block;
-    font-family: serif;
-    height: 20px;
-    left: 50%;
-    margin-left: -10px;
-    margin-top: -10px;
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    z-index: 5;
-}
-.carousel-control .icon-prev::before {
-    content: "‹";
-}
-.carousel-control .icon-next::before {
-    content: "›";
-}
-  </style>
+ <script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8 } };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5 } };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8 } };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic } };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic } };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    
+      <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+
     <!--Notification Start-->
    <!-- <link href="css/jquery.notify.css" type="text/css" rel="stylesheet" />
 
