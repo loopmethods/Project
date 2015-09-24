@@ -2500,6 +2500,7 @@
     text-align:center;
 	line-height:40px;
     border-radius: 5px;
+	cursor:pointer;
 }
 
 .venu_address {
@@ -2515,12 +2516,15 @@
         padding: 0px 10px 0px 0px;
         margin: 0px auto 0px auto;
     }
-
+venu_location{
+	cursor:pointer;
+	}
 .venu_location h1 {
     font-size: 16px;
     color: #f88000;
     text-align: left;
 	margin:0;
+	cursor:pointer;
 }
 
 
