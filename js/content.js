@@ -941,7 +941,38 @@ function closeMore() {
 
 
 $(document).ready(function () {
-    var jsonList = "http://constantdesign.com/samples/indian-african/api/getAboutUs.php";
+	
+	$.ajax({
+                type: "get",
+                dataType: "json",
+                url: "http://constantdesign.com/samples/indian-african/api/getAboutUs.php",
+                
+                //data: '{"user_name":' + sUserId + ', "password":' + sPwd + '}',
+                //data: '{"country":"India"}',
+
+                success: function (res) {
+
+        $("#h1Aboutus").text(res.data[0].title);
+
+        //var aa = (data.data[0].paragraph1.toString().substring(5, 40).css('font-weight', 'bold'));
+
+        $("#pAboutus").html(res.data[0].paragraph1.substring(0, 104)) + "...";
+        var aa = res.data[0].paragraph1.length;
+        //alert(aa);
+        $("#p1Aboutus").html(res.data[0].paragraph1.substring(104, aa - 1) + "<br><br>");
+        $("#p2Aboutus").html(res.data[0].paragraph2 + "<br><br>");
+        $("#p3Aboutus").html(res.data[0].paragraph3 + "");
+                },
+                error: function (xhr, textStatus, error) {
+                    //Show error message(if occured)
+                    //$('#dvResult').text("Error: " + error);
+                    alert(error);
+                  //  $("#txtUserId").focus();
+
+                }
+            });
+/*	
+   var jsonList = "http://constantdesign.com/samples/indian-african/api/getAboutUs.php";
     var json = $.getJSON(jsonList, function (data) {
 
         $("#h1Aboutus").text(data.data[0].title);
@@ -956,7 +987,7 @@ $(document).ready(function () {
         $("#p3Aboutus").html(data.data[0].paragraph3 + "");
 
 
-    });
+    });*/
 });
 
 $(document).ready(function () {
